@@ -1,1 +1,3 @@
 huyle_scrapy_shell/venv/
+**/pycache/
+.vscode/

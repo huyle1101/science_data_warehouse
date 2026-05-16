@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class DwhScholarPipeline:
+class ScienceDwhPipeline:
     def process_item(self, item, spider):
         return item

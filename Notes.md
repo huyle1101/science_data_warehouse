@@ -91,3 +91,17 @@ To connect Scrapy Shell to S3 bucket, configure `FEEDS`, `AWS_ACCESS_KEY_ID`, an
 [For more instructions, follow this link](https://stackoverflow.com/questions/38788096/how-to-upload-crawled-data-from-scrapy-to-amazon-s3-as-csv-or-json)
 
 To hide secret information, install `python-dotenv`, create the `.env` file and add the secret information there, and configure `load_env` as is in the `settings.py` file.
+
+
+------
+To install all packages for Scrapling, run:
+```pip install "scrapling[all]"```
+
+```scrapling install```
+
+
+To run Scrapling in terminal:
+
+```python # similar to scrapy shell environment```
+
+```import```

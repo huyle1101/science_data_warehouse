@@ -26,7 +26,7 @@ To define fields, go to `items.py` file.
 # 5. Create Scrapy spider
 ```cd job_scraper/spiders```
 
-```scrapy genspider <name> <url>``` -> used for different websites, note that files in the home folder is used universally for all spiders, make sure to use CUSTOM_SETTINGS for each spider
+```scrapy genspider <name> <domain>``` -> used for different websites, note that files in the home folder is used universally for all spiders, make sure to use CUSTOM_SETTINGS for each spider
 
 ```scrapy genspider jobspider https://www.topcv.vn/tim-viec-lam-moi-nhat```
 

@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "dwh_scholar"
+BOT_NAME = "science_dwh"
 
-SPIDER_MODULES = ["dwh_scholar.spiders"]
-NEWSPIDER_MODULE = "dwh_scholar.spiders"
+SPIDER_MODULES = ["science_dwh.spiders"]
+NEWSPIDER_MODULE = "science_dwh.spiders"
 
 ADDONS = {}
 
@@ -41,13 +41,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "dwh_scholar.middlewares.DwhScholarSpiderMiddleware": 543,
+#    "science_dwh.middlewares.ScienceDwhSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "dwh_scholar.middlewares.DwhScholarDownloaderMiddleware": 543,
+#    "science_dwh.middlewares.ScienceDwhDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -59,7 +59,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "dwh_scholar.pipelines.DwhScholarPipeline": 300,
+   "science_dwh.pipelines.ScienceDwhPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

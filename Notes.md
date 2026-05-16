@@ -88,7 +88,7 @@ To connect Scrapy Shell to S3 bucket, configure `FEEDS`, `AWS_ACCESS_KEY_ID`, an
 
 To hide secret information, install `python-dotenv`, create the `.env` file and add the secret information there, and configure `load_env` as is in the `settings.py` file.
 
-10. Incremental crawling
+10. DELTAFETCH - prevent crawling the same urls again 
 
 ```pip install scrapy-deltafetch```
 
@@ -99,9 +99,10 @@ To hide secret information, install `python-dotenv`, create the `.env` file and 
 ```overwrite=False in FEEDS``` append mode in the result file
 
 SPIDER_MIDDLEWARES = {
-   "science_dwh.middlewares.ScienceDwhSpiderMiddleware": 543,
-   'scrapy_deltafetch.DeltaFetch': 100,
+   'scrapy_deltafetch.DeltaFetch': 100
 }
+
+DELTAFETCH works if this line is in log ```INFO: Ignoring already visited: <url>```
 
 11. JOBDIR
 

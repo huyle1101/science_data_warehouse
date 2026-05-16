@@ -1,4 +1,4 @@
 huyle_scrapy_shell/venv/
-**/pycache/
+**/__pycache__/
 .vscode/
 check.py

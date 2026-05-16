@@ -24,13 +24,16 @@ class SclsSpiderSpider(scrapy.Spider):
         "CONCURRENT_REQUESTS_PER_DOMAIN" : 8,
         "DOWNLOAD_DELAY" : 1,
         "RANDOMIZED_DOWNLOAD_DELAY":True,
+        
         "RETRY_ENABLED":True,
         "RETRY_TIMES": 5, 
         "RETRY_HTTP_CODES": [500, 502, 503, 504, 408, 429, 403],
+
         "AUTOTHROTTLE_ENABLED": True,
         "AUTOTHROTTLE_START_DELAY": 5, # initial download delay
         "AUTOTHROTTLE_MAX_DELAY": 60, # maximum download delay to be set in case of high latencies
         "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 1.0, # average number of requests Scrapy should be sending in parallel to each remote server
+
         "FEED_EXPORT_FIELDS": [
             "ho_ten",
             "chuc_vu",

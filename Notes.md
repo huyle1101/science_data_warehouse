@@ -74,10 +74,6 @@ Install scrapy user agents `pip install scrapy-user-agents`.
 Configure `DOWNLOADER_MIDDLEWARES` as in `settings.py`.
 
 
-*To avoid crawling the same jobs, configure `JOBDIR` as is the settings*
-
-Note, the `crawls` folder causes the terminal to return an error next time we run `fetch`, so considering moving it next time running this command.
-
 # 8. Data Cleanings
 First, go to `items.py` and define fields in it, this would make our script less vulnerable to errors.
 Then, import the name of the function where we define these fields into the main script and modify the main script as is.
@@ -92,6 +88,25 @@ To connect Scrapy Shell to S3 bucket, configure `FEEDS`, `AWS_ACCESS_KEY_ID`, an
 
 To hide secret information, install `python-dotenv`, create the `.env` file and add the secret information there, and configure `load_env` as is in the `settings.py` file.
 
+10. Incremental crawling
+
+```pip install scrapy-deltafetch```
+
+```DELTAFETCH_ENABLED = True``` remember crawled urls
+ 
+```DELTAFETCH_ITEM_BASED = True``` an url is only marked finished only if the inside data is crawled
+
+```overwrite=False in FEEDS``` append mode in the result file
+
+SPIDER_MIDDLEWARES = {
+   "science_dwh.middlewares.ScienceDwhSpiderMiddleware": 543,
+   'scrapy_deltafetch.DeltaFetch': 100,
+}
+
+11. JOBDIR
+
+JOBDIR only remembers urls crawl in a single crawl job, doesn't work between multilple jobs, to resume a crawl job, run this command:
+```scrapy crawl <ten_>spider_name> -s JOBDIR=jobdir```
 
 ------
 To install all packages for Scrapling, run:
@@ -105,3 +120,4 @@ To run Scrapling in terminal:
 ```python # similar to scrapy shell environment```
 
 ```import```
+

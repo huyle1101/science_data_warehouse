@@ -14,6 +14,8 @@ NEWSPIDER_MODULE = "science_dwh.spiders"
 
 ADDONS = {}
 
+DELTAFETCH_ENABLED = True
+DELTAFETCH_ITEM_BASED = True
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "dwh_scholar (+http://www.yourdomain.com)"
@@ -40,9 +42,10 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    "science_dwh.middlewares.ScienceDwhSpiderMiddleware": 543,
-#}
+SPIDER_MIDDLEWARES = {
+   "science_dwh.middlewares.ScienceDwhSpiderMiddleware": 543,
+   'scrapy_deltafetch.DeltaFetch': 100,
+}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html

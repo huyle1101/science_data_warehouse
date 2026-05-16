@@ -1,7 +1,7 @@
 import scrapy
 from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-from dwh_scholar.items import ScholarItem
+from science_dwh.items import ScholarItem
 
 class SoictSpiderSpider(scrapy.Spider):
     name = "soict_spider"
@@ -9,10 +9,11 @@ class SoictSpiderSpider(scrapy.Spider):
     start_urls = ["https://soict.hust.edu.vn/can-bo"]
 
     custom_settings = {
-        "LOG_FILE":f"../soict_output/logs/soict_{timestamp}.log",
+        
+        "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/soict/logs/soict_{timestamp}.log",
         "LOG_LEVEL":"DEBUG",
         "FEEDS":{
-            f"../soict_output/data/soict_{timestamp}.csv":{
+            f"f:/science_data_warehouse_repo/output/hust/soict/data/soict_{timestamp}.csv":{
                 'format':'csv',
                 "encoding": "utf8"
             }
@@ -49,9 +50,6 @@ class SoictSpiderSpider(scrapy.Spider):
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
         }
-
-
-
     }
 
     def parse(self, response):

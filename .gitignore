@@ -2,3 +2,4 @@ huyle_scrapy_shell/venv/
 **/__pycache__/
 .vscode/
 check.py
+page_*.html

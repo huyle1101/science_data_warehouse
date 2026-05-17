@@ -14,6 +14,7 @@ class ScienceDWHItem(scrapy.Item):
     pass
 
 class ScholarItem(scrapy.Item):
+    # hust
     # soict
     url = scrapy.Field()
     name = scrapy.Field()
@@ -48,5 +49,20 @@ class ScholarItem(scrapy.Item):
     ct_chuong_sach = scrapy.Field()
     thanh_vien = scrapy.Field()
     to_chuc = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
+
+    # sme
+    url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    chuc_vu = scrapy.Field()
+    thuoc_don_vi = scrapy.Field()
+    dia_chi_email = scrapy.Field()
+    nhom_chuyen_mon = scrapy.Field()
+    dia_chi_lam_viec = scrapy.Field()
+    cac_mon_giang_day = scrapy.Field()
+    cac_nghien_cuu_quan_tam = scrapy.Field()
+    cac_cong_trinh_khoa_hoc_tieu_bieu = scrapy.Field()
+    qua_trinh_dao_tao = scrapy.Field()
     dai_hoc = scrapy.Field()
     don_vi_truc_thuoc = scrapy.Field()

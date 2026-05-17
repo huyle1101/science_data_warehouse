@@ -104,6 +104,13 @@ SPIDER_MIDDLEWARES = {
 
 DELTAFETCH works if this line is in log ```INFO: Ignoring already visited: <url>```
 
+There is a db for DELTAFETCH to work, it's stored in ```.scrapy/deltafetch```, don't delete this folder
+
+Note that everytime DELTAFETCH runs, there is a redundant header so remember to delete that header 
+
+To reset deltafetch, run this command
+```scrapy crawl <spider_name> -a deltafetch_reset=1```
+
 11. JOBDIR
 
 JOBDIR only remembers urls crawl in a single crawl job, doesn't work between multilple jobs, to resume a crawl job, run this command:

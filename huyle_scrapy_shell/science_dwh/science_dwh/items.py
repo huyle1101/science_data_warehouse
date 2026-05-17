@@ -8,7 +8,7 @@ from urllib import response
 import scrapy
 
 
-class DwhScholarItem(scrapy.Item):
+class ScienceDWHItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
@@ -29,6 +29,7 @@ class ScholarItem(scrapy.Item):
     projects = scrapy.Field()
 
     # scls
+    url = scrapy.Field()
     ho_ten = scrapy.Field()
     chuc_vu = scrapy.Field()
     don_vi = scrapy.Field()

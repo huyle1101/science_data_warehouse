@@ -20,7 +20,7 @@ class SclsSpiderSpider(scrapy.Spider):
                 "overwrite": False # append mode
             }
     },
-        "CONCURRENT_REQUESTS" : 16,
+        "CONCURRENT_REQUESTS" : 32,
         "CONCURRENT_REQUESTS_PER_DOMAIN" : 8,
         "DOWNLOAD_DELAY" : 1,
         "RANDOMIZED_DOWNLOAD_DELAY":True,
@@ -35,6 +35,7 @@ class SclsSpiderSpider(scrapy.Spider):
         "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 1.0, # average number of requests Scrapy should be sending in parallel to each remote server
 
         "FEED_EXPORT_FIELDS": [
+            "url",
             "ho_ten",
             "chuc_vu",
             "don_vi",
@@ -79,6 +80,7 @@ class SclsSpiderSpider(scrapy.Spider):
             )
 
     def parse_scholar(self, response):
+        url = response.url
         ho_ten = response.xpath('//b[contains(text(), "Họ tên")]/following-sibling::text()').get()
         chuc_vu = response.xpath('//b[contains(text(), "Chức vụ")]/following-sibling::text()').get(default='').strip()
         don_vi = response.xpath('//b[contains(text(), "Thuộc đơn vị")]/following-sibling::a/text()').get(default='').strip()
@@ -107,11 +109,12 @@ class SclsSpiderSpider(scrapy.Spider):
         don_vi_truc_thuoc = "Trường Hóa và Khoa học sự sống"
 
         yield {
-            "ho_ten":ho_ten,
-            "chuc_vu":chuc_vu,
-            "don_vi":don_vi,
-            "email":email,
-            "dien_thoai":dien_thoai,
+            "url": url,
+            "ho_ten": ho_ten,
+            "chuc_vu": chuc_vu,
+            "don_vi": don_vi,
+            "email": email,
+            "dien_thoai": dien_thoai,
             "nhom_chuyen_mon":nhom_chuyen_mon,
             "dao_tao":dao_tao,
             "cong_tac":cong_tac,

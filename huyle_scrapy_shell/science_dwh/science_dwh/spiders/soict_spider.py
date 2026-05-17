@@ -25,19 +25,19 @@ class SoictSpiderSpider(scrapy.Spider):
         "RETRY_ENABLED":True,
         "RETRY_TIMES": 5, 
         "RETRY_HTTP_CODES": [500, 502, 503, 504, 408, 429, 403],
-        "FEED_EXPORT_FIELDS": [
-            "url", 
-            "name", 
-            "email", 
-            "position", 
-            "academic_title", 
-            "education", 
-            "research_fields", 
-            "interested_research_fields", 
-            "publications", 
-            "awards", 
-            "subjects", 
-            "projects"
+        "FEED_EXPORT_FIELDS": [ # columns to export in csv
+            "url",
+            "ho_ten",
+            "email",
+            "chuc_vu",
+            "hoc_ham_hoc_vi",
+            "qua_trinh_dao_tao",
+            "linh_vuc_nghien_cuu",
+            "linh_vuc_nghien_cuu_quan_tam",
+            "cong_trinh_khoa_hoc_tieu_bieu",
+            "giai_thuong_khen_thuong",
+            "mon_hoc_giang_day",
+            "du_an_hien_tai"
         ],
         "DOWNLOADER_MIDDLEWARES":{
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,

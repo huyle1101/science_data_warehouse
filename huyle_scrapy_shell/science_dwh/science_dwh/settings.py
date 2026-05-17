@@ -14,6 +14,9 @@ NEWSPIDER_MODULE = "science_dwh.spiders"
 
 ADDONS = {}
 
+import warnings
+from scrapy.exceptions import ScrapyDeprecationWarning
+warnings.filterwarnings("ignore", category=ScrapyDeprecationWarning)
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

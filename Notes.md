@@ -21,8 +21,6 @@ Activate virtual environment: specify the path to activate file
 
 *If `import scrapy` causes an error, press F1 -> Python: Select Interpreter -> .\venv\Scripts\python.exe*
 
-To define fields, go to `items.py` file.
-
 # 5. Create Scrapy spider
 ```cd job_scraper/spiders```
 
@@ -88,7 +86,7 @@ To connect Scrapy Shell to S3 bucket, configure `FEEDS`, `AWS_ACCESS_KEY_ID`, an
 
 To hide secret information, install `python-dotenv`, create the `.env` file and add the secret information there, and configure `load_env` as is in the `settings.py` file.
 
-10. DELTAFETCH - prevent crawling the same urls again 
+# 10. DELTAFETCH - prevent crawling the same urls again 
 
 ```pip install scrapy-deltafetch```
 
@@ -111,7 +109,7 @@ Note that everytime DELTAFETCH runs, there is a redundant header so remember to 
 To reset deltafetch, run this command
 ```scrapy crawl <spider_name> -a deltafetch_reset=1```
 
-11. JOBDIR
+# 11. JOBDIR
 
 JOBDIR only remembers urls crawl in a single crawl job, doesn't work between multilple jobs, to resume a crawl job, run this command:
 ```scrapy crawl <ten_>spider_name> -s JOBDIR=jobdir```
@@ -128,4 +126,18 @@ To run Scrapling in terminal:
 ```python # similar to scrapy shell environment```
 
 ```import```
+
+# 12. items.py
+
+To define fields, go to items.py, the best practice is define a class for each set of fields
+
+To use those defined fields, in the main scripts:
+
+```
+from science_dwh.items import sme_item
+sme_item = sme_item()
+sme_item['url'] = url
+yield sme_item
+
+```
 

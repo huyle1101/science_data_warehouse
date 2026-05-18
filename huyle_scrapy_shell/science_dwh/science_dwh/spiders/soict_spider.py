@@ -1,7 +1,7 @@
 import scrapy
 from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-from science_dwh.items import ScholarItem
+from science_dwh.items import soict_item
 
 class SoictSpiderSpider(scrapy.Spider):
     name = "soict_spider"
@@ -11,45 +11,43 @@ class SoictSpiderSpider(scrapy.Spider):
     custom_settings = {
         
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/soict/logs/soict_{timestamp}.log",
-        "LOG_LEVEL":"DEBUG",
+        "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/soict/data/soict_{timestamp}.csv":{
+            f"f:/science_data_warehouse_repo/output/hust/soict/data/soict.csv":{
                 'format':'csv',
-                "encoding": "utf8"
+                "encoding": "utf8",
+                "overwrite": False
             }
     },
-        "CONCURRENT_REQUESTS" : 16,
+        "CONCURRENT_REQUESTS" : 32,
         "CONCURRENT_REQUESTS_PER_DOMAIN" : 8,
         "DOWNLOAD_DELAY" : 1,
         "RANDOMIZED_DOWNLOAD_DELAY":True,
+
         "RETRY_ENABLED":True,
-        "RETRY_TIMES": 5, 
+        "RETRY_TIMES": 10, 
         "RETRY_HTTP_CODES": [500, 502, 503, 504, 408, 429, 403],
+
+        "AUTOTHROTTLE_ENABLED": True,
+        "AUTOTHROTTLE_START_DELAY": 5, # initial download delay
+        "AUTOTHROTTLE_MAX_DELAY": 60, # maximum download delay to be set in case of high latencies
+        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 1.0, # average number of requests Scrapy should be sending in parallel to each remote server
+        
         "FEED_EXPORT_FIELDS": [ # columns to export in csv
             "url",
             "ho_ten",
-            "email",
+            "vi_tri",
             "chuc_vu",
             "hoc_ham_hoc_vi",
             "qua_trinh_dao_tao",
+            "email",
             "linh_vuc_nghien_cuu",
-            "linh_vuc_nghien_cuu_quan_tam",
-            "cong_trinh_khoa_hoc_tieu_bieu",
+            "nghien_cuu_quan_tam",
+            "du_an_hien_tai",
+            "cong_trinh_tieu_bieu",
             "giai_thuong_khen_thuong",
-            "mon_hoc_giang_day",
-            "du_an_hien_tai"
-        ],
-        "DOWNLOADER_MIDDLEWARES":{
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-            'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-            'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
-        },
-        "DEFAULT_REQUEST_HEADERS": {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-            'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Cache-Control': 'max-age=0',
-            'Connection': 'keep-alive',
-        }
+            "cac_mon_giang_day"
+        ]
     }
 
     def parse(self, response):
@@ -60,7 +58,7 @@ class SoictSpiderSpider(scrapy.Spider):
             yield response.follow(
                 scholar,
                 callback = self.parse_scholar,
-                dont_filter=True
+                # dont_filter=True
             )
         next_page_url = response.xpath('//ul[contains(@class, "page-numbers")]//a[contains(@class, "next")]/@href').get()
         # if not blank, go to next_page_url
@@ -68,62 +66,32 @@ class SoictSpiderSpider(scrapy.Spider):
             yield response.follow(next_page_url, callback=self.parse)
     
     def parse_scholar(self, response):
-        url = response.url
+        item = soict_item()
+        item['url'] = response.url
 
-        name = response.css('span.breadcrumb_last::text').get()
-        email = response.css('a[href^="mailto:"]::text').getall()
+        item['ho_ten'] = response.css('span.breadcrumb_last::text').get()
+        item['gioi_thieu'] = response.xpath('//span[contains(text(), "Giới thiệu")]/ancestor::div[1]/following-sibling::p[1]//text()').getall()
 
-        # chức vụ - học hàm
         info_list = response.css('div.col-inner p:not(.lead) strong::text').getall()
+        # chức vụ = hiệu trưởng,....
+        item['chuc_vu'] = info_list[0] if len(info_list) > 0 else None
+        # vị trí = trưởng nhóm nghiên cứu tối ưu hóa,.....
+        item['vi_tri'] = info_list[1] if len(info_list) > 1 else None
+        # học hàm học vị = tiến s khoa học máy tính,....
+        item['hoc_ham_hoc_vi'] = info_list[2] if len(info_list) > 2 else None
 
-        position = info_list[0] if len(info_list) > 0 else None
-        academic_title = info_list[1] if len(info_list) > 1 else None
+        raw_edu = response.css('div.col-inner p:not(.lead) strong::text').getall()[3:]
+        item['qua_trinh_dao_tao'] = raw_edu[:3] if len(raw_edu) > 3 else raw_edu
 
-        # con đường học vấn
-        raw_edu = response.css('div.col-inner p:nth-of-type(3)::text').getall()
-        edu = raw_edu[:3]
+        item['email'] = response.css('a[href^="mailto:"]::text').getall()
 
-        # lĩnh vực nghiên cứu
-        research_fields = response.xpath('//h3[contains(., "Lĩnh vực nghiên cứu")]/parent::div/following-sibling::ul[1]/li/text()').getall()
+        item['linh_vuc_nghien_cuu'] = response.xpath('//span[contains(text(), "Lĩnh vực nghiên cứu")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+        item['nghien_cuu_quan_tam'] = response.xpath('//span[contains(text(), "Các nghiên cứu quan tâm")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+        item['cong_trinh_tieu_bieu'] = response.xpath('//span[contains(text(), "Các công trình khoa học tiêu biểu")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+        item['giai_thuong_khen_thuong'] = response.xpath('//span[contains(text(), "Giải thưởng, khen thưởng")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+        item['cac_mon_giang_day'] = response.xpath('//span[contains(text(), "Giảng dạy")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
 
-        # nghiên cứu quan tâm
-        interested_rs_fields = response.xpath('//h3[contains(., "Các nghiên cứu quan tâm")]/parent::div/following-sibling::ul[1]/li/text()').getall()
-
-        # các công trình khoa học
-        publications = [
-            "".join(li.xpath('.//text()').getall()).strip() 
-            for li in response.xpath('//h3[contains(., "Các công trình khoa học tiêu biểu")]/parent::div/following-sibling::ul[1]/li')
-        ]
-
-        # giải thưởng
-        award = [
-            "".join(li.xpath('.//text()').getall()).strip() 
-            for li in response.xpath('//h3[contains(., "Giải thưởng, khen thưởng")]/parent::div/following-sibling::ul[1]/li')
-        ]
-
-        # các môn giảng dạy
-        subjects = [
-            "".join(li.xpath('.//text()').getall()).strip() 
-            for li in response.xpath('//h3[contains(., "Giảng dạy")]/parent::div/following-sibling::ul[1]/li')
-        ]
-
-        # dự án hiện tại
-        projects =[
-            "".join(li.xpath('.//text()').getall()).strip() 
-            for li in response.xpath('//h3[contains(., "Dự án hiện tại")]/parent::div/following-sibling::ul[1]/li')
-        ]
-
-        scholar_item = ScholarItem()
-        scholar_item['url'] = url
-        scholar_item['name'] = name
-        scholar_item['email'] = email
-        scholar_item['position'] = position
-        scholar_item['academic_title'] = academic_title
-        scholar_item['education'] = [e.strip() for e in edu if e.strip()]
-        scholar_item['research_fields'] = [f.strip() for f in research_fields if f.strip()]
-        scholar_item['interested_research_fields'] = [f.strip() for f in interested_rs_fields if f.strip()]
-        scholar_item['publications'] = publications
-        scholar_item['awards'] = award
-        scholar_item['subjects'] = subjects
-        scholar_item['projects'] = projects
-        yield scholar_item
+        du_an_1 = response.xpath('//span[contains(text(), "Dự án hiện tại")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+        du_an_2 = response.xpath('//span[contains(text(), "Các dự án đang thực hiện")]/ancestor::div[1]/following-sibling::ol[1]/li//text()').getall()
+        item['du_an_hien_tai'] = du_an_1 if du_an_1 else du_an_2
+        yield item

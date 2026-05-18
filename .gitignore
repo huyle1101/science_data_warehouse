@@ -1,5 +1,6 @@
 huyle_scrapy_shell/venv/
 **/__pycache__/
 .vscode/
-check.py
+*.py
 page_*.html
+Notes.md

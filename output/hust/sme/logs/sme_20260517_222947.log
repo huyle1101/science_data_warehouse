@@ -1,0 +1,193 @@
+2026-05-17 22:29:47 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-17 22:29:47 [scrapy.extensions.telnet] INFO: Telnet Password: 1eed9f36e06a4d27
+2026-05-17 22:29:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-17 22:29:47 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'ho_ten',
+                        'chuc_vu',
+                        'chuc_danh_kiem_nhiem',
+                        'don_vi',
+                        'email',
+                        'nhom_chuyen_mon',
+                        'dia_chi_lam_viec',
+                        'cac_mon_giang_day',
+                        'linh_vuc_nghien_cuu',
+                        'qua_trinh_dao_tao',
+                        'cong_trinh_tieu_bieu',
+                        'du_an_hien_tai',
+                        'hv_cao_hoc',
+                        'ncs_phd',
+                        'sach',
+                        'giai_thuong',
+                        'hop_tac_chuyen_giao',
+                        'thong_tin_khac',
+                        'dai_hoc',
+                        'don_vi_truc_thuoc'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/sme/logs/sme_20260517_222947.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 5,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-17 22:29:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-17 22:29:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-17 22:29:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-17 22:29:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-17 22:29:50 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-17 22:29:50 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-17 22:29:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-17 22:29:50 [scrapy.core.engine] INFO: Spider opened
+2026-05-17 22:29:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-17 22:29:50 [sme_spider] INFO: Spider opened: sme_spider
+2026-05-17 22:29:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-17 22:30:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/ThS-Do-Thanh-Cong-203/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/ThS-Du-Tuan-Dat-193/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:44 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/ThS-Nguyen-Ngoc-Long-183/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/KS-Phan-Viet-Hung-180/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/ThS-Tran-Quang-Vu-171/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/ThS-Pham-Tien-Trung-168/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/ThS-Luu-Quynh-Trang-151/>: HTTP status code is not handled or not allowed
+2026-05-17 22:30:50 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 47 pages/min), scraped 38 items (at 38 items/min)
+2026-05-17 22:30:50 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 0 pages/min), scraped 38 items (at 0 items/min)
+2026-05-17 22:30:50 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 0 pages/min), scraped 38 items (at 0 items/min)
+2026-05-17 22:30:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-co-khi-16/KS-Nguyen-Thi-Huyen-150/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/TS-Nguyen-Tien-Quang-217/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/PGS-TS-Pham-Hoang-Luong-216/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:43 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/Ths-Pham-Anh-Minh-215/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:44 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/ThS-Nguyen-Duc-Quyen-214/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/ThS-Bui-Thanh-Hung-213/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/Tran-Huy-Cap-184/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/TS-Vu-Huy-Khue-166/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/PGS-TS-Nguyen-Nguyen-An-161/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/TS-Ta-Van-Chuong-160/>: HTTP status code is not handled or not allowed
+2026-05-17 22:31:50 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 50 pages/min), scraped 78 items (at 40 items/min)
+2026-05-17 22:31:50 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 0 pages/min), scraped 78 items (at 0 items/min)
+2026-05-17 22:31:50 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 0 pages/min), scraped 78 items (at 0 items/min)
+2026-05-17 22:31:50 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 0 pages/min), scraped 78 items (at 0 items/min)
+2026-05-17 22:31:51 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Nang-luong-nhiet-15/Le-Xuan-Tuan-159/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/ThS-Dinh-Duy-Khoe-138/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:43 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-GVCC-Phan-Van-Hieu-119/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:44 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/GS-TS-GVCC-Nguyen-Duc-Toan-103/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Nguyen-Lan-Phuong-104/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-GVCC-Nguyen-Huy-Ninh-106/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Nguyen-Thi-Hong-Minh-101/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Nguyen-Tien-Duong-105/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:50 [scrapy.extensions.logstats] INFO: Crawled 146 pages (at 49 pages/min), scraped 118 items (at 40 items/min)
+2026-05-17 22:32:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Nguyen-Manh-Toan-112/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:51 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-GVCC-Hoang-Long-102/>: HTTP status code is not handled or not allowed
+2026-05-17 22:32:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Tran-Van-Thuc-24/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:30 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Truong-Duc-Phuc-95/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:32 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Tran-Dinh-Long-120/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:33 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Luu-Trong-Thuan-11/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:34 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Vu-Dinh-Toai-25/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:36 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Phan-Huy-Le-45/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:37 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Han-Le-Duy-75/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:38 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/ThS-Bui-Duy-Thinh-121/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Nguyen-Thi-Ngoc-Huyen-97/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Dinh-Hong-Bo-129/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Nguyen-Thi-Phuong-Giang-99/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:44 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Nguyen-Danh-Truong-23/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Le-Thanh-Son-87/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVCC-Tran-Thi-Thanh-Hai-82/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Nguyen-Thanh-Trung-88/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Le-Thi-Bich-Nam-14/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:50 [scrapy.extensions.logstats] INFO: Crawled 193 pages (at 47 pages/min), scraped 148 items (at 30 items/min)
+2026-05-17 22:33:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/ThS-Nguyen-Duc-Huy-86/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Le-Duc-Bao-84/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Tran-Duc-Toan-9/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-GVCC-Nguyen-Nhat-Thang-125/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-GVCC-Bui-Tuan-Anh-4/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Hoang-Long-67/>: HTTP status code is not handled or not allowed
+2026-05-17 22:33:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/ThS-Nguyen-Thi-Thu-Nga-77/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Bui-Long-Vinh-63/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/ThS-Nguyen-Thanh-Trung-52/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Nguyen-Thi-Kim-Cuc-53/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:04 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-GVC-Pham-Van-Son-54/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:05 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/TS-Vu-Van-Quang-55/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Vu-Thanh-Tung-60/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/ThS-Hoang-Thi-Bich-Thuy-59/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/GS-TS-Le-Minh-Quy-58/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-khi-che-tao-may-13/PGS-TS-Hoang-Vinh-Sinh-1/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-dien-tu-12/ThS-Nguyen-Huu-Cuong-283/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-dien-tu-12/TS-Do-Duc-Nam-282/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-dien-tu-12/TS-GVC-Dang-Bao-Lam-278/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://sme.hust.edu.vn/vi/organs/person/Khoa-Co-dien-tu-12/Nguyen-Thi-Tra-Giang-269/>: HTTP status code is not handled or not allowed
+2026-05-17 22:34:16 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2026-05-17 22:34:16 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2026-05-17 22:34:16 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown

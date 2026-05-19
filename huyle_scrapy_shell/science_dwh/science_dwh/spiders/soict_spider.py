@@ -35,6 +35,7 @@ class SoictSpiderSpider(scrapy.Spider):
         
         "FEED_EXPORT_FIELDS": [ # columns to export in csv
             "url",
+            "avt_url",
             "ho_ten",
             "gioi_thieu",
             "vi_tri",
@@ -69,6 +70,7 @@ class SoictSpiderSpider(scrapy.Spider):
     def parse_scholar(self, response):
         item = soict_item()
         item['url'] = response.url
+        item['avt_url'] = response.css('img.attachment-original::attr(data-lazy-src)').get()
 
         item['ho_ten'] = response.css('span.breadcrumb_last::text').get()
         item['gioi_thieu'] = response.xpath('//span[contains(text(), "Giới thiệu")]/ancestor::div[1]/following-sibling::p[1]//text()').getall()

@@ -77,6 +77,7 @@ class sme_item(scrapy.Item):
 
 class soict_item(scrapy.Item):
     url = scrapy.Field()
+    avt_url = scrapy.Field()
     ho_ten = scrapy.Field()
     gioi_thieu = scrapy.Field()
     vi_tri = scrapy.Field()

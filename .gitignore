@@ -6,3 +6,4 @@ page_*.html
 Notes.md
 .env
 *.txt
+output/

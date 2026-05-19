@@ -84,11 +84,17 @@ class SmeSpiderSpider(scrapy.Spider):
         url = response.url
 
         # normalize space to ignore case and extra whitespace, then split by first colon to get value
-        ho_ten = response.xpath('normalize-space(//*[contains(text(), "Họ tên")]/parent::*)').get(default='').split(':', 1)[-1].strip()
-        chuc_vu = response.xpath('normalize-space(//*[contains(text(), "Chức vụ")]/parent::*)').get(default='').split(':', 1)[-1].strip()
-        chuc_danh_kiem_nhiem = response.xpath('normalize-space(//*[contains(text(), "Chức danh kiêm nhiệm")]/parent::*)').get(default='').split(':', 1)[-1].strip()
-        don_vi = response.xpath('normalize-space(//*[contains(text(), "Thuộc đơn vị")]/parent::*)').get(default='').split(':', 1)[-1].strip()
-        email = response.xpath('normalize-space(//*[contains(text(), "Địa chỉ email")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['ho_ten'] = response.xpath('normalize-space(//*[contains(text(), "Họ tên")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['chuc_vu'] = response.xpath('normalize-space(//*[contains(text(), "Chức vụ")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['vi_tri'] = response.xpath('normalize-space(//*[contains(text(), "Chức danh kiêm nhiệm")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['don_vi'] = response.xpath('normalize-space(//*[contains(text(), "Thuộc đơn vị")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['email'] = response.xpath('normalize-space(//*[contains(text(), "Địa chỉ email")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['dai_hoc'] = 'Đại học Bách Khoa Hà Nội'
+        item['don_vi_truc_thuoc'] = 'Trường Cơ khí'
+        
+        
+        
+        
         dia_chi_lam_viec = response.xpath('//strong[contains(text(), "Địa chỉ làm việc")]/following-sibling::text()').get()
         nhom_chuyen_mon = response.xpath('//b[contains(text(), "Nhóm chuyên môn")]/following-sibling::text()').get()
         mon_giang_day = response.xpath('//b[contains(text(), "Các môn giảng dạy")]/following-sibling::text()').get() # following-sbling ->  get text of tags after and outside of <b> tag, not inside <b> tag
@@ -108,16 +114,8 @@ class SmeSpiderSpider(scrapy.Spider):
         li_elements_ctkh = response.xpath('//p[contains(., "Các công trình khoa học tiêu biểu")]/following-sibling::ul[1]/li')
         cong_trinh_tieu_bieu = [" ".join(li.xpath('.//text()').getall()).strip() for li in li_elements_ctkh]
 
-        xpath_lvnc = f'//p[contains(., "Các nghiên cứu quan tâm") or contains(., "Lĩnh vực nghiên cứu/Research Arears") or contains(., "Hướng nghiên cứu")]/following-sibling::ul[1]/li'
 
-        li_elements = response.xpath('//p[contains(., "Các nghiên cứu quan tâm") or contains(., "Lĩnh vực nghiên cứu/Research Arears") or contains(., "Hướng nghiên cứu")]/following::ul[1]/li')
 
-        item['url'] = url
-        item['ho_ten'] = ho_ten
-        item['chuc_vu'] = chuc_vu
-        item['chuc_danh_kiem_nhiem'] = chuc_danh_kiem_nhiem
-        item['don_vi'] = don_vi 
-        item['email'] = email
         item['dia_chi_lam_viec'] = dia_chi_lam_viec
         item['nhom_chuyen_mon'] = nhom_chuyen_mon
         item['cac_mon_giang_day'] = mon_giang_day

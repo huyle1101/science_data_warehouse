@@ -5,3 +5,4 @@ huyle_scrapy_shell/venv/
 page_*.html
 Notes.md
 .env
+*.txt

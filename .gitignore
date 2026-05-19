@@ -4,3 +4,4 @@ huyle_scrapy_shell/venv/
 *.py
 page_*.html
 Notes.md
+.env

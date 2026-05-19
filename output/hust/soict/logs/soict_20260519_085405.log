@@ -1,0 +1,149 @@
+2026-05-19 08:54:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-19 08:54:05 [scrapy.extensions.telnet] INFO: Telnet Password: c2918dea566c7b3c
+2026-05-19 08:54:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-19 08:54:05 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'ho_ten',
+                        'gioi_thieu',
+                        'vi_tri',
+                        'chuc_vu',
+                        'hoc_ham_hoc_vi',
+                        'qua_trinh_dao_tao',
+                        'email',
+                        'linh_vuc_nghien_cuu',
+                        'nghien_cuu_quan_tam',
+                        'du_an_hien_tai',
+                        'cong_trinh_tieu_bieu',
+                        'giai_thuong_khen_thuong',
+                        'cac_mon_giang_day'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/soict/logs/soict_20260519_085405.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 10,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-19 08:54:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-19 08:54:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-19 08:54:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-19 08:54:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-19 08:54:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-19 08:54:08 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-19 08:54:08 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-19 08:54:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-19 08:54:08 [scrapy.core.engine] INFO: Spider opened
+2026-05-19 08:54:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-19 08:54:09 [soict_spider] INFO: Spider opened: soict_spider
+2026-05-19 08:54:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-19 08:55:09 [scrapy.extensions.logstats] INFO: Crawled 44 pages (at 44 pages/min), scraped 40 items (at 40 items/min)
+2026-05-19 08:56:08 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 48 pages/min), scraped 85 items (at 45 items/min)
+2026-05-19 08:56:08 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 0 pages/min), scraped 85 items (at 0 items/min)
+2026-05-19 08:56:08 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 0 pages/min), scraped 85 items (at 0 items/min)
+2026-05-19 08:56:08 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 0 pages/min), scraped 85 items (at 0 items/min)
+2026-05-19 08:56:08 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 0 pages/min), scraped 85 items (at 0 items/min)
+2026-05-19 08:56:08 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 0 pages/min), scraped 85 items (at 0 items/min)
+2026-05-19 08:56:34 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-19 08:56:34 [scrapy.extensions.feedexport] INFO: Stored csv feed (107 items) in: f:/science_data_warehouse_repo/output/hust/soict/data/soict.csv
+2026-05-19 08:56:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'deltafetch/stored': 107,
+ 'downloader/request_bytes': 53508,
+ 'downloader/request_count': 114,
+ 'downloader/request_method_count/GET': 114,
+ 'downloader/response_bytes': 2457626,
+ 'downloader/response_count': 114,
+ 'downloader/response_status_count/200': 114,
+ 'elapsed_time_seconds': 145.455339,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 19, 1, 56, 34, 453936, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 11399414,
+ 'httpcompression/response_count': 114,
+ 'item_scraped_count': 107,
+ 'items_per_minute': 44.27586206896552,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 6,
+ 'response_received_count': 114,
+ 'responses_per_minute': 47.17241379310345,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 113,
+ 'scheduler/dequeued/memory': 113,
+ 'scheduler/enqueued': 113,
+ 'scheduler/enqueued/memory': 113,
+ 'start_time': datetime.datetime(2026, 5, 19, 1, 54, 8, 998597, tzinfo=datetime.timezone.utc)}
+2026-05-19 08:56:34 [scrapy.core.engine] INFO: Spider closed (finished)

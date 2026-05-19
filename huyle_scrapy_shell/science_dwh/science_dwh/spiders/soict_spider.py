@@ -36,6 +36,7 @@ class SoictSpiderSpider(scrapy.Spider):
         "FEED_EXPORT_FIELDS": [ # columns to export in csv
             "url",
             "ho_ten",
+            "gioi_thieu",
             "vi_tri",
             "chuc_vu",
             "hoc_ham_hoc_vi",

@@ -1,7 +1,10 @@
 huyle_scrapy_shell/venv/
 **/__pycache__/
 .vscode/
-*.py
+api_key_rotating.py
+check.py
+test_01.py
+test_gemini_api.py
 page_*.html
 Notes.md
 .env

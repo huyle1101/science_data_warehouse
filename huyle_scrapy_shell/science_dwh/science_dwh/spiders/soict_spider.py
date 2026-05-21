@@ -1,3 +1,5 @@
+from urllib import response
+
 import scrapy
 from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -20,9 +22,9 @@ class SoictSpiderSpider(scrapy.Spider):
             }
     },
         "CONCURRENT_REQUESTS" : 32,
-        "CONCURRENT_REQUESTS_PER_DOMAIN" : 8,
+        "CONCURRENT_REQUESTS_PER_DOMAIN": 8,
         "DOWNLOAD_DELAY" : 1,
-        "RANDOMIZED_DOWNLOAD_DELAY":True,
+        "RANDOMIZED_DOWNLOAD_DELAY":True, 
 
         "RETRY_ENABLED":True,
         "RETRY_TIMES": 10, 
@@ -98,3 +100,7 @@ class SoictSpiderSpider(scrapy.Spider):
         du_an_2 = response.xpath('//span[contains(text(), "Các dự án đang thực hiện")]/ancestor::div[1]/following-sibling::ol[1]/li//text()').getall()
         item['du_an_hien_tai'] = du_an_1 if du_an_1 else du_an_2
         yield item
+
+
+        section = response.xpath('(//span[contains(@class, "section-title-main") and contains(., "Các công trình")]/ancestor::div[contains(@class, "section-title-container")]/following-sibling::*[1])[1]')
+        texts = section.xpath('.//li//text()').getall()

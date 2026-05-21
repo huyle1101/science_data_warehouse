@@ -35,26 +35,28 @@ class SmeSpiderSpider(scrapy.Spider):
 
         "FEED_EXPORT_FIELDS": [
             "url",
+            "avt_url",
             'ho_ten',
             'chuc_vu',
             'chuc_danh_kiem_nhiem',
             'don_vi',
             'email',
             'nhom_chuyen_mon',
-            'dia_chi_lam_viec',
-            'cac_mon_giang_day',
-            'linh_vuc_nghien_cuu',
-            'qua_trinh_dao_tao',
-            'cong_trinh_tieu_bieu',
-            'du_an_hien_tai',
-            'hv_cao_hoc',
-            'ncs_phd',
-            'sach',
-            'giai_thuong',
-            'hop_tac_chuyen_giao',
-            'thong_tin_khac',
+            # 'dia_chi_lam_viec',
+            # 'cac_mon_giang_day',
+            # 'linh_vuc_nghien_cuu',
+            # 'qua_trinh_dao_tao',
+            # 'cong_trinh_tieu_bieu',
+            # 'du_an_hien_tai',
+            # 'hv_cao_hoc',
+            # 'ncs_phd',
+            # 'sach',
+            # 'giai_thuong',
+            # 'hop_tac_chuyen_giao',
+            # 'thong_tin_khac',
             "dai_hoc",
-            "don_vi_truc_thuoc"
+            "don_vi_truc_thuoc",
+            "html_text"
         ],
         "DOWNLOADER_MIDDLEWARES":{
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
@@ -78,58 +80,48 @@ class SmeSpiderSpider(scrapy.Spider):
                 callback = self.parse_scholar,
                 # dont_filter=True
             )
+    # clean html text before feeding into Gemini API for information extraction to avoid excessive token usage
+    def clean_html_text(self,html_text): 
+        if not html_text:
+            return ""
+            
+        # 1. Xóa toàn bộ cặp thẻ <script>...</script> và nội dung Javascript bên trong
+        html_text = re.sub(r'<script\b[^>]*>([\s\S]*?)<\/script>', '', html_text, flags=re.IGNORECASE)
+        
+        # 2. Xóa toàn bộ cặp thẻ <style>...</style> và nội dung CSS bên trong
+        html_text = re.sub(r'<style\b[^>]*>([\s\S]*?)<\/style>', '', html_text, flags=re.IGNORECASE)
+        
+        # 3. Xóa các đoạn Comment HTML ()
+        html_text = re.sub(r'', '', html_text)
+        
+        # 4. Xóa tất cả các thẻ HTML còn lại (các cặp ngoặc nhọn <...>)
+        html_text = re.sub(r'<[^>]+>', '', html_text)
+        
+        # 5. Dọn dẹp khoảng trắng, dấu xuống dòng thừa (\n) để văn bản đẹp hơn
+        html_text = re.sub(r'\n+', '\n', html_text)
+        cleaned_text = '\n'.join([line.strip() for line in html_text.splitlines() if line.strip()])
+        
+        return cleaned_text
 
     def parse_scholar(self, response):
         item = sme_item() # don't use sme_item = sme_item() which creates an instance at the class level and causes data overwriting across items, instead create a new instance for each item in the parse method.
-        url = response.url
+        item['url'] = response.url
 
+        relative_url = response.css('.flex-avatar img::attr(data-src)').get()
+        item['avt_url'] = response.urljoin(relative_url)
+        
         # normalize space to ignore case and extra whitespace, then split by first colon to get value
         item['ho_ten'] = response.xpath('normalize-space(//*[contains(text(), "Họ tên")]/parent::*)').get(default='').split(':', 1)[-1].strip()
         item['chuc_vu'] = response.xpath('normalize-space(//*[contains(text(), "Chức vụ")]/parent::*)').get(default='').split(':', 1)[-1].strip()
-        item['vi_tri'] = response.xpath('normalize-space(//*[contains(text(), "Chức danh kiêm nhiệm")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        # chức danh kiêm nhiệm = trưởng NCM robot,....
+        item['chuc_danh_kiem_nhiem'] = response.xpath('normalize-space(//*[contains(text(), "Chức danh kiêm nhiệm")]/parent::*)').get(default='').split(':', 1)[-1].strip()
         item['don_vi'] = response.xpath('normalize-space(//*[contains(text(), "Thuộc đơn vị")]/parent::*)').get(default='').split(':', 1)[-1].strip()
         item['email'] = response.xpath('normalize-space(//*[contains(text(), "Địa chỉ email")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['nhom_chuyen_mon'] = response.xpath('//b[contains(text(), "Nhóm chuyên môn")]/following-sibling::text()').get()
         item['dai_hoc'] = 'Đại học Bách Khoa Hà Nội'
         item['don_vi_truc_thuoc'] = 'Trường Cơ khí'
         
-        
-        
-        
-        dia_chi_lam_viec = response.xpath('//strong[contains(text(), "Địa chỉ làm việc")]/following-sibling::text()').get()
-        nhom_chuyen_mon = response.xpath('//b[contains(text(), "Nhóm chuyên môn")]/following-sibling::text()').get()
-        mon_giang_day = response.xpath('//b[contains(text(), "Các môn giảng dạy")]/following-sibling::text()').get() # following-sbling ->  get text of tags after and outside of <b> tag, not inside <b> tag
-
-        # find the first <ul> element that follows the <p> element containing "Các nghiên cứu quan tâm", then get all <li> elements inside that <ul>
-        for tag in ['p','strong']:
-            xpath_lvnc = f'//{tag}[contains(., "Các nghiên cứu quan tâm") or contains(., "Lĩnh vực nghiên cứu/Research Arears") or contains(., "Hướng nghiên cứu")]/following-sibling::ul[1]/li'
-            li_elements_lvnc = response.xpath(xpath_lvnc)
-            linh_vuc_nghien_cuu = [" ".join(li.xpath('.//text()').getall()).strip() for li in li_elements_lvnc]
-            if linh_vuc_nghien_cuu: # if found the research areas, no need to check other tags to prevent data overwriting, if not found, continue to check other tags
-                break
-
-        li_elements_qtdt = response.xpath('//p[contains(., "Đào tạo")]/following-sibling::ul[1]/li')
-        qua_trinh_dao_tao = [" ".join(li.xpath('.//text()').getall()).strip() for li in li_elements_qtdt]
-
-        
-        li_elements_ctkh = response.xpath('//p[contains(., "Các công trình khoa học tiêu biểu")]/following-sibling::ul[1]/li')
-        cong_trinh_tieu_bieu = [" ".join(li.xpath('.//text()').getall()).strip() for li in li_elements_ctkh]
-
-
-
-        item['dia_chi_lam_viec'] = dia_chi_lam_viec
-        item['nhom_chuyen_mon'] = nhom_chuyen_mon
-        item['cac_mon_giang_day'] = mon_giang_day
-        item['linh_vuc_nghien_cuu'] = linh_vuc_nghien_cuu
-        item['qua_trinh_dao_tao'] = qua_trinh_dao_tao
-        item['cong_trinh_tieu_bieu'] = cong_trinh_tieu_bieu
-        item['du_an_hien_tai'] = du_an_hien_tai
-        item['hv_cao_hoc'] = hv_cao_hoc
-        item['ncs_phd'] = ncs_phd
-        item['sach'] = sach
-        item['giai_thuong'] = giai_thuong
-        item['hop_tac_chuyen_giao'] = hop_tac_chuyen_giao
-        item['thong_tin_khac'] = thong_tin_khac
-        item['dai_hoc'] = dai_hoc
-        item['don_vi_truc_thuoc'] = don_vi_truc_thuoc
+        html_text = response.text
+        item['html_text'] = self.clean_html_text(html_text)
 
         yield item

@@ -54,26 +54,16 @@ class ScholarItem(scrapy.Item):
 
 class sme_item(scrapy.Item):
     url = scrapy.Field()
+    avt_url = scrapy.Field()
     ho_ten = scrapy.Field()
     chuc_vu = scrapy.Field()
     chuc_danh_kiem_nhiem = scrapy.Field()
     don_vi = scrapy.Field()
     email = scrapy.Field()
     nhom_chuyen_mon = scrapy.Field()
-    dia_chi_lam_viec = scrapy.Field()
-    cac_mon_giang_day = scrapy.Field()
-    linh_vuc_nghien_cuu = scrapy.Field()
-    qua_trinh_dao_tao = scrapy.Field()
-    cong_trinh_tieu_bieu = scrapy.Field()
-    du_an_hien_tai = scrapy.Field()
-    hv_cao_hoc = scrapy.Field()
-    ncs_phd = scrapy.Field()
-    sach = scrapy.Field()
-    giai_thuong = scrapy.Field()
-    hop_tac_chuyen_giao = scrapy.Field()
-    thong_tin_khac = scrapy.Field()
     dai_hoc = scrapy.Field()
     don_vi_truc_thuoc = scrapy.Field()
+    html_text = scrapy.Field()
 
 class soict_item(scrapy.Item):
     url = scrapy.Field()

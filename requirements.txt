@@ -1,0 +1,5 @@
+itemadapter==0.13.1
+pandas==3.0.3
+protobuf==7.35.0
+python-dotenv==1.2.2
+scrapy==2.16.0

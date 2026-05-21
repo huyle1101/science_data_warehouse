@@ -6,7 +6,7 @@ check.py
 test_01.py
 test_gemini_api.py
 page_*.html
-Notes.md
+# Notes.md
 .env
-*.txt
+html_text.txt
 output/

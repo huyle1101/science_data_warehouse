@@ -13,7 +13,7 @@ class SmeSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/sme/logs/sme_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/sme/data/sme.csv":{
+            f"f:/science_data_warehouse_repo/output/hust/sme/raw_data/sme.csv":{
                 'format':'csv',
                 "encoding": "utf8",
                 "overwrite": False # append mode
@@ -42,18 +42,6 @@ class SmeSpiderSpider(scrapy.Spider):
             'don_vi',
             'email',
             'nhom_chuyen_mon',
-            # 'dia_chi_lam_viec',
-            # 'cac_mon_giang_day',
-            # 'linh_vuc_nghien_cuu',
-            # 'qua_trinh_dao_tao',
-            # 'cong_trinh_tieu_bieu',
-            # 'du_an_hien_tai',
-            # 'hv_cao_hoc',
-            # 'ncs_phd',
-            # 'sach',
-            # 'giai_thuong',
-            # 'hop_tac_chuyen_giao',
-            # 'thong_tin_khac',
             "dai_hoc",
             "don_vi_truc_thuoc",
             "html_text"
@@ -80,24 +68,15 @@ class SmeSpiderSpider(scrapy.Spider):
                 callback = self.parse_scholar,
                 # dont_filter=True
             )
+
     # clean html text before feeding into Gemini API for information extraction to avoid excessive token usage
     def clean_html_text(self,html_text): 
         if not html_text:
             return ""
-            
-        # 1. Xóa toàn bộ cặp thẻ <script>...</script> và nội dung Javascript bên trong
         html_text = re.sub(r'<script\b[^>]*>([\s\S]*?)<\/script>', '', html_text, flags=re.IGNORECASE)
-        
-        # 2. Xóa toàn bộ cặp thẻ <style>...</style> và nội dung CSS bên trong
         html_text = re.sub(r'<style\b[^>]*>([\s\S]*?)<\/style>', '', html_text, flags=re.IGNORECASE)
-        
-        # 3. Xóa các đoạn Comment HTML ()
         html_text = re.sub(r'', '', html_text)
-        
-        # 4. Xóa tất cả các thẻ HTML còn lại (các cặp ngoặc nhọn <...>)
         html_text = re.sub(r'<[^>]+>', '', html_text)
-        
-        # 5. Dọn dẹp khoảng trắng, dấu xuống dòng thừa (\n) để văn bản đẹp hơn
         html_text = re.sub(r'\n+', '\n', html_text)
         cleaned_text = '\n'.join([line.strip() for line in html_text.splitlines() if line.strip()])
         
@@ -121,7 +100,20 @@ class SmeSpiderSpider(scrapy.Spider):
         item['dai_hoc'] = 'Đại học Bách Khoa Hà Nội'
         item['don_vi_truc_thuoc'] = 'Trường Cơ khí'
         
-        html_text = response.text
+        # get all text under "Lý lịch khoa học" section of sole text-break class
+        list = response.xpath('//h2[span[contains(text(), "Lý lịch khoa học")]]/following-sibling::div[contains(@class, "text-break")]//text()').getall()
+        html_text = ' '.join(list)
         item['html_text'] = self.clean_html_text(html_text)
 
         yield item
+    
+    def closed(self, reason):
+        # calculate coverage percentage and store in Dumping Scrapy stats
+        stats = self.crawler.stats 
+
+        crawled = stats.get_value('response_received_count', 0)
+        scraped = stats.get_value('item_scraped_count', 0)
+
+        if crawled > 0:
+            coverage = (scraped / crawled) * 100
+            stats.set_value('coverage_percent', round(coverage, 2))

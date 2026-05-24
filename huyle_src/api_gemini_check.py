@@ -48,7 +48,7 @@ MODEL_LIST = [
     os.getenv("MODEL_02"),
     os.getenv("MODEL_03"),
     os.getenv("MODEL_04"),
-    os.getenv("MODEL_05"),
+    # os.getenv("MODEL_05"),
 ]
 print(f"Model list ({len(MODEL_LIST)}): {MODEL_LIST}")
 
@@ -229,6 +229,10 @@ Mỗi profile có nhãn "ho_ten=<tên>" — đây là người cần trích xu�
 Trả về ĐÚNG một JSON array gồm {len(profiles)} object theo thứ tự PROFILE_0, PROFILE_1, ...
 Mỗi object có các field sau:
 {FIELD_DESCRIPTIONS}
+- chua_cong_bo (boolean):
+    true nếu trang hồ sơ không có thông tin thực sự — ví dụ chỉ có "Đang cập nhật", rỗng,
+    hoặc chỉ có boilerplate/menu mà không có lý lịch khoa học thực của người đó.
+    false nếu trang có ít nhất một thông tin thực (địa chỉ, môn học, bài báo, v.v.)
 
 QUY TẮC BẮT BUỘC:
 1. CHỈ lấy thông tin của đúng người có tên "ho_ten" trong profile đó.
@@ -288,6 +292,9 @@ Nhiệm vụ của bạn gồm 2 bước:
 Trả về ĐÚNG một JSON array gồm {len(profiles)} object theo thứ tự PROFILE_0, PROFILE_1, ...
 Mỗi object có các field sau:
 {FIELD_DESCRIPTIONS}
+- chua_cong_bo (boolean):
+    true nếu toàn bộ dữ liệu của hồ sơ này trống hoặc không có thông tin thực sự.
+    false nếu có ít nhất một thông tin thực tìm được.
 
 QUY TẮC BẮT BUỘC:
 1. Đọc TẤT CẢ các cột của một người trước khi điền — thông tin cần tìm có thể nằm ở cột bất kỳ.
@@ -470,6 +477,11 @@ def call_batch(profiles: list[dict], prompt_builder=None) -> list[dict]:
             results = []
             for item in parsed:
                 clean = empty()
+                # Nếu Gemini phán đoán trang không có thông tin thực → đánh dấu NO_DATA
+                if item.get("chua_cong_bo") is True:
+                    clean["thong_tin_khac"] = NO_DATA_LABEL
+                    results.append(clean)
+                    continue
                 for f in OUTPUT_FIELDS:
                     val = item.get(f)
                     if val is None:
@@ -489,7 +501,7 @@ def call_batch(profiles: list[dict], prompt_builder=None) -> list[dict]:
         except Exception as e:
             err      = str(e)
             is_quota = "429" in err or "RESOURCE_EXHAUSTED" in err
-            is_500   = "500" in err or "INTERNAL" in err
+            is_500 = "500" in err or "503" in err or "INTERNAL" in err or "UNAVAILABLE" in err
 
             if is_quota and len(API_KEY_LIST) > 1:
                 keys_tried_this_round += 1
@@ -535,13 +547,17 @@ def call_batch(profiles: list[dict], prompt_builder=None) -> list[dict]:
 
 
 # MAIN 
+NO_DATA_LABEL = "Thông tin không được công bố"
+
 def main():
-    df = pd.read_csv(OUTPUT_CSV) if os.path.exists(OUTPUT_CSV) else pd.read_csv(INPUT_CSV)
-    # Remove duplicate header rows that appear mid-file (happens when checkpoint is written multiple times)
-    dup_header_mask = df.apply(lambda r: r.astype(str).eq(df.columns).all(), axis=1)
-    if dup_header_mask.any():
-        print(f"🧹 Removed {dup_header_mask.sum()} duplicate header rows from file.")
-        df = df[~dup_header_mask].reset_index(drop=True)
+    raw_df = pd.read_csv(OUTPUT_CSV) if os.path.exists(OUTPUT_CSV) else pd.read_csv(INPUT_CSV)
+
+    # Xóa duplicate header rows, lưu vào df sạch — dùng xuyên suốt
+    dup_mask = raw_df.apply(lambda r: r.astype(str).eq(raw_df.columns).all(), axis=1)
+    if dup_mask.any():
+        print(f"🧹 Removed {dup_mask.sum()} duplicate header rows.")
+    df = raw_df[~dup_mask].reset_index(drop=True)
+
     total = len(df)
     print(f"📂 Loaded {total} rows from {OUTPUT_CSV if os.path.exists(OUTPUT_CSV) else INPUT_CSV}")
     print(f"📋 Available columns: {list(df.columns)}")
@@ -553,7 +569,7 @@ def main():
     else:
         print("🟡 Mode: RE-EXTRACT + FIX column mismatch (no html_text)")
 
-    # Validate CSV before processing 
+    # Validate CSV before processing
     validate_csv(df, has_html_text)
 
     # Initialize output fields if not present
@@ -561,12 +577,39 @@ def main():
         if f not in df.columns:
             df[f] = None
 
+    # Pre-mark các dòng html_text rỗng / chỉ có boilerplate là NO_DATA (chỉ khi chưa đánh dấu)
+    if has_html_text:
+        NO_DATA_PATTERNS = ["đang cập nhật", "updating", "coming soon", "to be updated"]
+
+        def _is_no_data(text) -> bool:
+            if pd.isna(text):
+                return True
+            s = str(text).strip()
+            if not s:
+                return True
+            s_lower = s.lower()
+            # Nếu text ngắn (< 100 ký tự) VÀ chứa keyword boilerplate → không có thông tin thực
+            if len(s) < 100 and any(p in s_lower for p in NO_DATA_PATTERNS):
+                return True
+            return False
+
+        not_yet_marked = ~df["thong_tin_khac"].str.startswith(NO_DATA_LABEL, na=False)
+        to_mark = df["html_text"].apply(_is_no_data) & not_yet_marked
+        if to_mark.any():
+            print(f"ℹ️  Pre-marked {to_mark.sum()} rows as '{NO_DATA_LABEL}' (html_text rỗng/boilerplate).")
+            df.loc[to_mark, "thong_tin_khac"] = NO_DATA_LABEL
+
     non_error_fields = [f for f in OUTPUT_FIELDS if f != "thong_tin_khac"]
-    has_any_data = df[non_error_fields].notna().any(axis=1)
-    has_error    = df["thong_tin_khac"].str.startswith("ERROR", na=False)
-    done_mask    = has_any_data & ~has_error
+    has_any_data  = df[non_error_fields].notna().any(axis=1)
+    has_error     = df["thong_tin_khac"].str.startswith("ERROR", na=False)
+    not_published = df["thong_tin_khac"].str.startswith(NO_DATA_LABEL, na=False)
+    # Skip các dòng "Thông tin không được công bố" — không check, không process
+    done_mask = (has_any_data & ~has_error) | not_published
     todo = df.index[~done_mask].tolist()
     total_batches = (len(todo) + BATCH_SIZE - 1) // BATCH_SIZE
+
+    if not_published.sum():
+        print(f"ℹ️  Skipping {not_published.sum()} rows '{NO_DATA_LABEL}'.")
 
     print(f"📋 To process: {len(todo)} rows → {total_batches} batches "
           f"(batch_size={BATCH_SIZE})")
@@ -574,7 +617,6 @@ def main():
 
     # Select prompt builder based on mode
     all_columns = list(df.columns)
-
     if has_html_text:
         def prompt_builder(profiles):
             return build_batch_prompt(profiles)
@@ -612,6 +654,7 @@ def main():
             for f, v in result.items():
                 df.at[profile["idx"], f] = v
 
+        # Luôn xuất df sạch — không có duplicate headers
         df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
         print(f"  ✅ Saved checkpoint → {OUTPUT_CSV}")
 
@@ -622,15 +665,24 @@ def main():
     print(f"\n🎉 Done! Total time: {elapsed}")
     print(f"📄 Output file: {OUTPUT_CSV}\n")
 
-    df_out = pd.read_csv(OUTPUT_CSV)
-    errors = df_out["thong_tin_khac"].str.startswith("ERROR", na=False).sum()
+    # Thống kê cuối — dùng df sạch
+    not_published   = df["thong_tin_khac"].str.startswith(NO_DATA_LABEL, na=False)
+    has_error_final = df["thong_tin_khac"].str.startswith("ERROR", na=False)
+    has_data_final  = df[non_error_fields].notna().any(axis=1)
+    error_count     = ((~has_data_final | has_error_final) & ~not_published).sum()
+    nodata_count    = not_published.sum()
+
+    if nodata_count:
+        print(f"  ℹ️  {nodata_count} rows '{NO_DATA_LABEL}' (bỏ qua).")
+    if error_count:
+        print(f"  ⚠️  {error_count} rows with errors — re-run script to retry automatically.")
     print("── Statistics ──")
     for f in OUTPUT_FIELDS:
-        filled = df_out[f].notna().sum()
+        filled = df[f].notna().sum()
         bar    = "█" * int(filled / total * 20)
         print(f"  {f:<28} {filled:>3}/{total}  {bar}")
-    if errors:
-        print(f"\n  ⚠️  {errors} rows with errors — re-run script to retry automatically.")
+    if error_count:
+        print(f"\n  ⚠️  {error_count} rows with errors — re-run script to retry automatically.")
 
 
 if __name__ == "__main__":

@@ -48,7 +48,7 @@ MODEL_LIST = [
     os.getenv("MODEL_02"),
     os.getenv("MODEL_03"),
     os.getenv("MODEL_04"),
-    os.getenv("MODEL_05")
+    # os.getenv("MODEL_05")
 ]
 print(f"Model list ({len(MODEL_LIST)}): {MODEL_LIST}")
 
@@ -72,7 +72,7 @@ def current_model_label() -> str:
 INPUT_CSV   = r"output/hust/sme/raw_data/sme.csv"
 OUTPUT_CSV  = r"output/hust/sme/processed_data/sme_extracted.csv"
 
-BATCH_SIZE  = 15      # Reduce if MAX_CHARS is large, to avoid exceeding context window
+BATCH_SIZE  = 10     # Reduce if MAX_CHARS is large, to avoid exceeding context window
 
 DELAY_BETWEEN_BATCHES = 10       # seconds between batch calls
 ALL_KEYS_EXHAUSTED_WAIT = 60
@@ -163,21 +163,19 @@ trên trang web (dùng để xác định vị trí dữ liệu trong văn bản
     Bao gồm: chức vụ kiêm nhiệm, thành viên hội đồng biên tập, thành viên hiệp hội nghề nghiệp...
 """
 
-def build_batch_prompt(profiles: list[dict]) -> str:
-    """Build a batched prompt from profiles, requesting a JSON array response."""
-    blocks = []
-    for i, p in enumerate(profiles):
-        blocks.append(f"=== PROFILE_{i} | ho_ten={p['ho_ten']} ===\n{p['text']}")
-
-    return f"""Bạn là chuyên gia trích xuất thông tin học thuật từ trang web hồ sơ cán bộ.
+SYSTEM_INSTRUCTION = f"""Bạn là chuyên gia trích xuất thông tin học thuật từ trang web hồ sơ cán bộ.
 Nhiệm vụ: SAO CHÉP và LIỆT KÊ thông tin nguyên văn, KHÔNG tóm tắt, KHÔNG bỏ sót.
 
-Dưới đây là {len(profiles)} hồ sơ lý lịch khoa học, phân cách bằng "=== PROFILE_N ===".
+Mỗi request sẽ gồm N hồ sơ lý lịch khoa học, phân cách bằng "=== PROFILE_N ===".
 Mỗi profile có nhãn "ho_ten=<tên>" — đây là người cần trích xuất.
 
-Trả về ĐÚNG một JSON array gồm {len(profiles)} object theo thứ tự PROFILE_0, PROFILE_1, ...
+Trả về ĐÚNG một JSON array gồm N object theo thứ tự PROFILE_0, PROFILE_1, ...
 Mỗi object có các field sau:
 {FIELD_DESCRIPTIONS}
+- chua_cong_bo (boolean):
+    true nếu trang hồ sơ không có thông tin thực sự — ví dụ chỉ có "Đang cập nhật", rỗng,
+    hoặc chỉ có boilerplate/menu mà không có lý lịch khoa học thực của người đó.
+    false nếu trang có ít nhất một thông tin thực (địa chỉ, môn học, bài báo, v.v.)
 
 QUY TẮC BẮT BUỘC:
 1. CHỈ lấy thông tin của đúng người có tên "ho_ten" trong profile đó.
@@ -189,18 +187,31 @@ QUY TẮC BẮT BUỘC:
 6. KHÔNG thêm bất kỳ text hay markdown nào bên ngoài JSON array.
 7. Đặc biệt chú ý các field: linh_vuc_nghien_cuu, cong_trinh_tieu_bieu, du_an_hien_tai,
    sach, giai_thuong, cac_mon_giang_day — đây là các field hay bị bỏ sót nhất.
-   Tìm kỹ các section header tương ứng được mô tả ở trên trước khi kết luận là null.
+   Tìm kỹ các section header tương ứng được mô tả ở trên trước khi kết luận là null."""
 
-{''.join(chr(10) + b for b in blocks)}
 
-Trả về JSON array:"""
+def build_batch_prompt(profiles: list[dict]) -> str:
+    """Build dynamic user content — chỉ chứa profile data, system instruction đã được cache."""
+    blocks = []
+    for i, p in enumerate(profiles):
+        blocks.append(f"=== PROFILE_{i} | ho_ten={p['ho_ten']} ===\n{p['text']}")
+
+    profile_text = "\n".join(blocks)
+    return (
+        f"Dưới đây là {len(profiles)} hồ sơ cần trích xuất:\n\n"
+        f"{profile_text}\n\n"
+        f"Trả về JSON array:"
+    )
 
 
 # ─── API CALL WITH RETRY + KEY ROTATION ───────────────────────────────────────
+NO_DATA_LABEL = "Thông tin không được công bố"
+
 config = types.GenerateContentConfig(
     temperature=0.05,
     response_mime_type="application/json",
     thinking_config=types.ThinkingConfig(thinking_budget=0),
+    system_instruction=SYSTEM_INSTRUCTION,
 )
 
 def call_batch(profiles: list[dict]) -> list[dict]:
@@ -237,6 +248,11 @@ def call_batch(profiles: list[dict]) -> list[dict]:
             results = []
             for item in parsed:
                 clean = empty()
+                # Nếu Gemini phán đoán trang không có thông tin thực → đánh dấu NO_DATA
+                if item.get("chua_cong_bo") is True:
+                    clean["thong_tin_khac"] = NO_DATA_LABEL
+                    results.append(clean)
+                    continue
                 for f in OUTPUT_FIELDS:
                     val = item.get(f)
                     if val is None:
@@ -256,7 +272,7 @@ def call_batch(profiles: list[dict]) -> list[dict]:
         except Exception as e:
             err      = str(e)
             is_quota = "429" in err or "RESOURCE_EXHAUSTED" in err
-            is_500   = "500" in err or "INTERNAL" in err
+            is_500 = "500" in err or "503" in err or "INTERNAL" in err or "UNAVAILABLE" in err
 
             if is_quota and len(API_KEY_LIST) > 1:
                 keys_tried_this_round += 1
@@ -303,18 +319,50 @@ def call_batch(profiles: list[dict]) -> list[dict]:
 
 # MAIN 
 def main():
-    df = pd.read_csv(OUTPUT_CSV) if os.path.exists(OUTPUT_CSV) else pd.read_csv(INPUT_CSV)
+    raw_df = pd.read_csv(OUTPUT_CSV) if os.path.exists(OUTPUT_CSV) else pd.read_csv(INPUT_CSV)
+
+    # Xóa duplicate header rows, lưu vào df sạch — dùng xuyên suốt để tránh tái xuất header thừa
+    dup_mask = raw_df.apply(lambda r: r.astype(str).eq(raw_df.columns).all(), axis=1)
+    if dup_mask.any():
+        print(f"🧹 Removed {dup_mask.sum()} duplicate header rows.")
+    df = raw_df[~dup_mask].reset_index(drop=True)
+
     total = len(df)
     print(f"📂 Loaded {total} rows from {OUTPUT_CSV if os.path.exists(OUTPUT_CSV) else INPUT_CSV}")
 
+    # Khởi tạo các cột output nếu chưa có
     for f in OUTPUT_FIELDS:
         if f not in df.columns:
             df[f] = None
 
+    # Đánh dấu các dòng không có thông tin thực là NO_DATA_LABEL (chỉ khi chưa đánh dấu)
+    # Bắt cả: rỗng, NaN, hoặc chỉ chứa các cụm từ "đang cập nhật" dạng boilerplate
+    NO_DATA_PATTERNS = ["đang cập nhật", "updating", "coming soon", "to be updated"]
+
+    def _is_no_data(text) -> bool:
+        if pd.isna(text):
+            return True
+        s = str(text).strip()
+        if not s:
+            return True
+        s_lower = s.lower()
+        # Nếu text ngắn (< 200 ký tự) VÀ chứa keyword boilerplate → không có thông tin thực
+        if len(s) < 100 and any(p in s_lower for p in NO_DATA_PATTERNS):
+            return True
+        return False
+
+    not_yet_marked = ~df["thong_tin_khac"].str.startswith(NO_DATA_LABEL, na=False)
+    to_mark = df["html_text"].apply(_is_no_data) & not_yet_marked
+    if to_mark.any():
+        print(f"ℹ️  Marked {to_mark.sum()} rows as '{NO_DATA_LABEL}'.")
+        df.loc[to_mark, "thong_tin_khac"] = NO_DATA_LABEL
+
     non_error_fields = [f for f in OUTPUT_FIELDS if f != "thong_tin_khac"]
-    has_any_data = df[non_error_fields].notna().any(axis=1)
-    has_error    = df["thong_tin_khac"].str.startswith("ERROR", na=False)
-    done_mask    = has_any_data & ~has_error
+    has_any_data  = df[non_error_fields].notna().any(axis=1)
+    has_error     = df["thong_tin_khac"].str.startswith("ERROR", na=False)
+    not_published = df["thong_tin_khac"].str.startswith(NO_DATA_LABEL, na=False)
+    # done = có data và không lỗi, HOẶC là dòng không công bố (skip luôn)
+    done_mask = (has_any_data & ~has_error) | not_published
     todo = df.index[~done_mask].tolist()
     total_batches = (len(todo) + BATCH_SIZE - 1) // BATCH_SIZE
 
@@ -331,8 +379,7 @@ def main():
             row = df.loc[idx]
             profiles.append({
                 "ho_ten": row.get("ho_ten", f"row_{idx}"),
-                # "text":   clean_profile_text(row.get("html_text", "")),
-                "text":  row.get("html_text", ""),
+                "text":   row.get("html_text", ""),
                 "idx":    idx,
             })
 
@@ -346,6 +393,7 @@ def main():
             for f, v in result.items():
                 df.at[profile["idx"], f] = v
 
+        # Luôn xuất df sạch — không có duplicate headers
         df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
         print(f"  ✅ Saved checkpoint → {OUTPUT_CSV}")
 
@@ -356,15 +404,24 @@ def main():
     print(f"\n🎉 Done! Total time: {elapsed}")
     print(f"📄 Output file: {OUTPUT_CSV}\n")
 
-    df_out = pd.read_csv(OUTPUT_CSV)
-    errors = df_out["thong_tin_khac"].str.startswith("ERROR", na=False).sum()
+    # Thống kê cuối — dùng df đã sạch, không đọc lại file
+    not_published   = df["thong_tin_khac"].str.startswith(NO_DATA_LABEL, na=False)
+    has_error_final = df["thong_tin_khac"].str.startswith("ERROR", na=False)
+    has_data_final  = df[non_error_fields].notna().any(axis=1)
+    error_count     = ((~has_data_final | has_error_final) & ~not_published).sum()
+    nodata_count    = not_published.sum()
+
+    if nodata_count:
+        print(f"  ℹ️  {nodata_count} rows '{NO_DATA_LABEL}' (bỏ qua).")
+    if error_count:
+        print(f"  ⚠️  {error_count} rows with errors — re-run script to retry automatically.")
     print("── Statistics ──")
     for f in OUTPUT_FIELDS:
-        filled = df_out[f].notna().sum()
+        filled = df[f].notna().sum()
         bar    = "█" * int(filled / total * 20)
         print(f"  {f:<28} {filled:>3}/{total}  {bar}")
-    if errors:
-        print(f"\n  ⚠️  {errors} rows with errors — re-run script to retry automatically.")
+    if error_count:
+        print(f"\n  ⚠️  {error_count} rows with errors — re-run script to retry automatically.")
 
 
 if __name__ == "__main__":

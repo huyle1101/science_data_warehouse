@@ -1,5 +1,5 @@
 from urllib import response
-
+import re
 import scrapy
 from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -15,7 +15,7 @@ class SoictSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/soict/logs/soict_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/soict/data/soict.csv":{
+            f"f:/science_data_warehouse_repo/output/hust/soict/raw_data/soict.csv":{
                 'format':'csv',
                 "encoding": "utf8",
                 "overwrite": False
@@ -50,7 +50,8 @@ class SoictSpiderSpider(scrapy.Spider):
             "du_an_hien_tai",
             "cong_trinh_tieu_bieu",
             "giai_thuong_khen_thuong",
-            "cac_mon_giang_day"
+            "cac_mon_giang_day",
+            "html_text"
         ]
     }
 
@@ -68,6 +69,19 @@ class SoictSpiderSpider(scrapy.Spider):
         # if not blank, go to next_page_url
         if next_page_url:
             yield response.follow(next_page_url, callback=self.parse)
+
+    # clean html text before feeding into Gemini API for information extraction to avoid excessive token usage
+    def clean_html_text(self,html_text): 
+        if not html_text:
+            return ""
+        html_text = re.sub(r'<script\b[^>]*>([\s\S]*?)<\/script>', '', html_text, flags=re.IGNORECASE)
+        html_text = re.sub(r'<style\b[^>]*>([\s\S]*?)<\/style>', '', html_text, flags=re.IGNORECASE)
+        html_text = re.sub(r'', '', html_text)
+        html_text = re.sub(r'<[^>]+>', '', html_text)
+        html_text = re.sub(r'\n+', '\n', html_text)
+        cleaned_text = '\n'.join([line.strip() for line in html_text.splitlines() if line.strip()])
+        
+        return cleaned_text
     
     def parse_scholar(self, response):
         item = soict_item()
@@ -88,19 +102,39 @@ class SoictSpiderSpider(scrapy.Spider):
         raw_edu = response.css('div.col-inner p:not(.lead) strong::text').getall()[3:]
         item['qua_trinh_dao_tao'] = raw_edu[:3] if len(raw_edu) > 3 else raw_edu
 
+        
+
         item['email'] = response.css('a[href^="mailto:"]::text').getall()
 
         item['linh_vuc_nghien_cuu'] = response.xpath('//span[contains(text(), "Lĩnh vực nghiên cứu")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
         item['nghien_cuu_quan_tam'] = response.xpath('//span[contains(text(), "Các nghiên cứu quan tâm")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
-        item['cong_trinh_tieu_bieu'] = response.xpath('//span[contains(text(), "Các công trình khoa học tiêu biểu")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+
+        section = response.xpath('(//span[contains(@class, "section-title-main") and contains(., "Các công trình")]/ancestor::div[contains(@class, "section-title-container")]/following-sibling::*[1])[1]')
+        item['cong_trinh_tieu_bieu'] = section.xpath('.//li//text()').getall()
         item['giai_thuong_khen_thuong'] = response.xpath('//span[contains(text(), "Giải thưởng, khen thưởng")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
         item['cac_mon_giang_day'] = response.xpath('//span[contains(text(), "Giảng dạy")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
 
         du_an_1 = response.xpath('//span[contains(text(), "Dự án hiện tại")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
         du_an_2 = response.xpath('//span[contains(text(), "Các dự án đang thực hiện")]/ancestor::div[1]/following-sibling::ol[1]/li//text()').getall()
         item['du_an_hien_tai'] = du_an_1 if du_an_1 else du_an_2
+
+        list = response.css('div.entry-content ::text').getall()
+        html_text = ' '.join(list)
+        item['html_text'] = self.clean_html_text(html_text)
+
+
         yield item
+    
+    def closed(self, reason):
+        # calculate coverage percentage and store in Dumping Scrapy stats
+        stats = self.crawler.stats 
+
+        crawled = stats.get_value('response_received_count', 0)
+        scraped = stats.get_value('item_scraped_count', 0)
+
+        if crawled > 0:
+            coverage = (scraped / crawled) * 100
+            stats.set_value('coverage_percent', round(coverage, 2))
 
 
-        section = response.xpath('(//span[contains(@class, "section-title-main") and contains(., "Các công trình")]/ancestor::div[contains(@class, "section-title-container")]/following-sibling::*[1])[1]')
-        texts = section.xpath('.//li//text()').getall()
+        

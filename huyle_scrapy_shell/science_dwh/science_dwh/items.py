@@ -81,3 +81,4 @@ class soict_item(scrapy.Item):
     cong_trinh_tieu_bieu = scrapy.Field()
     giai_thuong_khen_thuong = scrapy.Field()
     cac_mon_giang_day = scrapy.Field()
+    html_text = scrapy.Field()

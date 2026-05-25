@@ -1,9 +1,8 @@
 import scrapy
-# from scrapling.fetchers import Fetcher, AsyncFetcher, StealthyFetcher, DynamicFetcher
-# StealthyFetcher.adaptive = True
+import re
 from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-from science_dwh.items import ScholarItem
+from science_dwh.items import scls_item
 
 class SclsSpiderSpider(scrapy.Spider):
     name = "scls_spider"
@@ -14,7 +13,7 @@ class SclsSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/scls/logs/scls_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/scls/data/scls.csv":{
+            f"f:/science_data_warehouse_repo/output/hust/scls/raw_data/scls.csv":{
                 'format':'csv',
                 "encoding": "utf8",
                 "overwrite": False # append mode
@@ -36,39 +35,30 @@ class SclsSpiderSpider(scrapy.Spider):
 
         "FEED_EXPORT_FIELDS": [
             "url",
+            "avt_url",
             "ho_ten",
             "chuc_vu",
+            "chuc_danh_kiem_nhiem",
             "don_vi",
             "email",
-            "dien_thoai",
             "nhom_chuyen_mon",
-            "dao_tao",
-            "cong_tac",
-            "giang_day",
-            "linh_vuc_nghien_cuu",
-            "dt_chu_nhiem",
-            "dt_tham_gia",
-            "dt_giai_thuong",
-            "dt_sang_che_shtt",
-            "ct_tap_chi_khoa_hoc",
-            "ct_chuong_sach",
-            "thanh_vien",
-            "to_chuc",
             "dai_hoc",
-            "don_vi_truc_thuoc"
-        ],
-        "DOWNLOADER_MIDDLEWARES":{
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-            'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-            'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
-        },
-        "DEFAULT_REQUEST_HEADERS": {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-            'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Cache-Control': 'max-age=0',
-            'Connection': 'keep-alive',
-        }
+            "don_vi_truc_thuoc",
+            "html_text"
+        ]
     }
+
+    def clean_html_text(self,html_text): 
+        if not html_text:
+            return ""
+        html_text = re.sub(r'<script\b[^>]*>([\s\S]*?)<\/script>', '', html_text, flags=re.IGNORECASE)
+        html_text = re.sub(r'<style\b[^>]*>([\s\S]*?)<\/style>', '', html_text, flags=re.IGNORECASE)
+        html_text = re.sub(r'', '', html_text)
+        html_text = re.sub(r'<[^>]+>', '', html_text)
+        html_text = re.sub(r'\n+', '\n', html_text)
+        cleaned_text = '\n'.join([line.strip() for line in html_text.splitlines() if line.strip()])
+        
+        return cleaned_text
 
     def parse(self, response):
         scholars = response.css('table.table-striped h3.font-size-h3 a::attr(href)').getall()
@@ -80,54 +70,38 @@ class SclsSpiderSpider(scrapy.Spider):
             )
 
     def parse_scholar(self, response):
-        url = response.url
-        ho_ten = response.xpath('//b[contains(text(), "Họ tên")]/following-sibling::text()').get()
-        chuc_vu = response.xpath('//b[contains(text(), "Chức vụ")]/following-sibling::text()').get(default='').strip()
-        don_vi = response.xpath('//b[contains(text(), "Thuộc đơn vị")]/following-sibling::a/text()').get(default='').strip()
-        email = response.xpath('//b[contains(text(), "Địa chỉ email")]/following-sibling::a/text()').get(default='').strip()
-        dien_thoai = response.xpath('//b[contains(text(), "Điện thoại")]/following-sibling::text()').get(default='').strip()
-        nhom_chuyen_mon = response.xpath('//b[contains(text(), "Nhóm chuyên môn")]/following-sibling::text()').get(default='').strip()
+        item = scls_item()
+        item['url'] = response.url
 
-        dao_tao = [li.xpath('string(.)').get().strip() for li in response.xpath('//h2[contains(string(.), "ĐÀO TẠO")]/following-sibling::ul[1]/li')]
-        cong_tac = [li.xpath('string(.)').get().strip() for li in response.xpath('//h2[contains(string(.), "QUÁ TRÌNH CÔNG TÁC")]/following-sibling::ul[1]/li')]
+        relative_url = response.css('.flex-avatar img::attr(data-src)').get()
+        item['avt_url'] = response.urljoin(relative_url)
+        
+        # normalize space to ignore case and extra whitespace, then split by first colon to get value
+        item['ho_ten'] = response.xpath('normalize-space(//*[contains(text(), "Họ tên")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['chuc_vu'] = response.xpath('normalize-space(//*[contains(text(), "Chức vụ")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        
+        # chức danh kiêm nhiệm = trưởng NCM robot,....
+        item['chuc_danh_kiem_nhiem'] = response.xpath('normalize-space(//*[contains(text(), "Chức danh kiêm nhiệm")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['don_vi'] = response.xpath('normalize-space(//*[contains(text(), "Thuộc đơn vị")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['email'] = response.xpath('normalize-space(//*[contains(text(), "Địa chỉ email")]/parent::*)').get(default='').split(':', 1)[-1].strip()
+        item['nhom_chuyen_mon'] = response.xpath('//b[contains(text(), "Nhóm chuyên môn")]/following-sibling::text()').get()
 
-        giang_day = [li.xpath('string(.)').get().strip() for li in response.xpath('//h2[contains(string(.), "GIẢNG DẠY")]/following-sibling::ul[1]/li')]
-        linh_vuc_nghien_cuu = [li.xpath('string(.)').get().strip() for li in response.xpath('//h2[contains(string(.), "LĨNH VỰC NGHIÊN CỨU")]/following-sibling::ul[1]/li')]
+        item['dai_hoc'] = 'Đại học Bách Khoa Hà Nội'
+        item['don_vi_truc_thuoc'] = "Trường Hóa và Khoa học sự sống"
 
-        dt_chu_nhiem = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Chủ nhiệm")]/following-sibling::ul[1]/li')]
-        dt_tham_gia = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Tham gia")]/following-sibling::ul[1]/li')]
-        dt_giai_thuong = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Giải thưởng")]/following-sibling::ul[1]/li')]
-        dt_sang_che_shtt = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Sáng chế và Giải pháp hữu ích")]/following-sibling::ul[1]/li')]
+        list = response.xpath('//h2[span[contains(text(), "Lý lịch khoa học")]]/following-sibling::div[contains(@class, "text-break")]//text()').getall()
+        html_text = ' '.join(list)
+        item['html_text'] = self.clean_html_text(html_text)
 
-        ct_tap_chi_khoa_hoc = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Tạp chí khoa học")]/following-sibling::*[self::ul or self::ol][1]/li')]
-        ct_chuong_sach = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Chương sách")]/following-sibling::*[self::ul or self::ol][1]/li')]
+        yield item
 
-        thanh_vien = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Thành viên")]/following-sibling::ul[1]/li')]
-        to_chuc = [li.xpath('string(.)').get().strip() for li in response.xpath('//h3[contains(string(.), "Tổ chức")]/following-sibling::ul[1]/li')]
+    def closed(self, reason):
+        # calculate coverage percentage and store in Dumping Scrapy stats
+        stats = self.crawler.stats 
 
-        dai_hoc = 'Đại học Bách Khoa Hà Nội'
-        don_vi_truc_thuoc = "Trường Hóa và Khoa học sự sống"
+        crawled = stats.get_value('response_received_count', 0)
+        scraped = stats.get_value('item_scraped_count', 0)
 
-        yield {
-            "url": url,
-            "ho_ten": ho_ten,
-            "chuc_vu": chuc_vu,
-            "don_vi": don_vi,
-            "email": email,
-            "dien_thoai": dien_thoai,
-            "nhom_chuyen_mon":nhom_chuyen_mon,
-            "dao_tao":dao_tao,
-            "cong_tac":cong_tac,
-            "giang_day":giang_day,
-            "linh_vuc_nghien_cuu":linh_vuc_nghien_cuu,
-            "dt_chu_nhiem":dt_chu_nhiem,
-            "dt_tham_gia":dt_tham_gia,
-            "dt_giai_thuong":dt_giai_thuong,
-            "dt_sang_che_shtt":dt_sang_che_shtt,
-            "ct_tap_chi_khoa_hoc":ct_tap_chi_khoa_hoc,
-            "ct_chuong_sach":ct_chuong_sach,
-            "thanh_vien":thanh_vien,
-            "to_chuc":to_chuc,
-            "dai_hoc":dai_hoc,
-            "don_vi_truc_thuoc":don_vi_truc_thuoc
-        }
+        if crawled > 0:
+            coverage = (scraped / crawled) * 100
+            stats.set_value('coverage_percent', round(coverage, 2))

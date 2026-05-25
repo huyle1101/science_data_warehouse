@@ -1,4 +1,8 @@
-import os, re, time, json
+import os
+import re
+import time
+import json
+import sys
 import pandas as pd
 from datetime import datetime
 from google import genai
@@ -7,7 +11,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+# ==============================================================================
 # API KEY ROTATION
+# Up to 6 keys loaded from .env. Empty/missing keys are filtered out.
+# _key_index tracks the currently active key. _rotate_key() advances it by one
+# using modular arithmetic. Returns False when a full cycle completes (all keys
+# have been tried), which triggers the all-keys-exhausted wait before retrying.
+# ==============================================================================
+
 API_KEY_LIST = [
     os.getenv("API_KEY_01"),
     os.getenv("API_KEY_02"),
@@ -19,699 +31,484 @@ API_KEY_LIST = [
 API_KEY_LIST = [k for k in API_KEY_LIST if k]
 
 if not API_KEY_LIST:
-    raise ValueError("No API keys found! Check your .env file.")
+    raise ValueError("No API keys found. Check your .env file.")
 
-print(f"🔑 Found {len(API_KEY_LIST)} API key(s).")
+print(f"Found {len(API_KEY_LIST)} API key(s).")
 
 _key_index = 0
+
 
 def _make_client(key_idx: int) -> genai.Client:
     return genai.Client(api_key=API_KEY_LIST[key_idx])
 
+
 def _rotate_key() -> bool:
-    """Rotate to next key. Returns False if a full cycle was completed."""
+    # Advance to the next key. Returns False if we wrapped back to index 0,
+    # meaning all keys have been exhausted in this round.
     global _key_index
     next_idx = (_key_index + 1) % len(API_KEY_LIST)
-    if next_idx == 0 and len(API_KEY_LIST) > 1:
-        _key_index = next_idx
-        return False
+    wrapped  = next_idx == 0 and len(API_KEY_LIST) > 1
     _key_index = next_idx
-    return True
+    return not wrapped
+
 
 def current_key_label() -> str:
     return f"key[{_key_index + 1}/{len(API_KEY_LIST)}]"
 
+
+# ==============================================================================
 # MODEL ROTATION
+# Up to 4 models loaded from .env. _model_index tracks the active model.
+# _rotate_model() advances it. Returns False when all models have been tried
+# in one round, which triggers an exponential backoff before the next retry.
+# ==============================================================================
 
 MODEL_LIST = [
     os.getenv("MODEL_01"),
     os.getenv("MODEL_02"),
     os.getenv("MODEL_03"),
     os.getenv("MODEL_04"),
-    # os.getenv("MODEL_05"),
 ]
+MODEL_LIST = [m for m in MODEL_LIST if m]
+
+if not MODEL_LIST:
+    raise ValueError("No models found. Check your .env file.")
+
 print(f"Model list ({len(MODEL_LIST)}): {MODEL_LIST}")
 
 _model_index = 0
 
+
 def _rotate_model() -> bool:
-    """Rotate to next model. Returns False if a full cycle was completed."""
+    # Advance to the next model. Returns False when a full cycle completes.
     global _model_index
     next_idx = (_model_index + 1) % len(MODEL_LIST)
-    if next_idx == 0:
-        _model_index = next_idx
-        return False
+    wrapped  = next_idx == 0
     _model_index = next_idx
-    return True
+    return not wrapped
+
 
 def current_model_label() -> str:
     return f"{MODEL_LIST[_model_index]} [{_model_index + 1}/{len(MODEL_LIST)}]"
 
 
+# ==============================================================================
 # CONFIG
-INPUT_CSV   = r"f:/science_data_warehouse_repo/output/hust/soict/raw_data/soict.csv"
-OUTPUT_CSV  = r"f:/science_data_warehouse_repo/output/hust/soict/processed_data/soict_extracted.csv"
+# EXTRACTED_CSV : input — the output of api_gemini_extract.py.
+# CHECKED_CSV   : output — written after every row. On re-runs the script reads
+#                 this instead so it resumes from where it stopped.
+# BATCH_SIZE    : number of rows per Gemini call during re-extraction.
+# ==============================================================================
 
-BATCH_SIZE  = 15      # Reduce if MAX_CHARS is large, to avoid exceeding context window
+EXTRACTED_CSV            = r"f:/science_data_warehouse_repo/output/hust/scls/processed_data/scls_extracted.csv"
+CHECKED_CSV              = r"f:/science_data_warehouse_repo/output/hust/scls/processed_data/scls_checked.csv"
 
-DELAY_BETWEEN_BATCHES = 10       # seconds between batch calls
-ALL_KEYS_EXHAUSTED_WAIT = 60
+BATCH_SIZE               = 10
+DELAY_BETWEEN_BATCHES    = 10
+ALL_KEYS_EXHAUSTED_WAIT  = 60
+MAX_RETRIES              = 4
 
-MAX_RETRIES  = 4
+# Column names — must match the extract script exactly.
+EXTRACT_STATUS_COL = "extract_status"
+NO_DATA_COL        = "thong_tin_khong_cong_bo"
+HTML_TEXT_COL      = "html_text"
+IS_CHECKED_COL     = "is_checked"
+IDENTITY_COL       = "ho_ten"   # used only for logging; overridden below if detected
 
-# These will be populated by detect_schema() at startup
-OUTPUT_FIELDS      = []    # list of column names to extract into
-STRING_FIELDS      = set() # subset of OUTPUT_FIELDS that are plain strings (not lists)
-FIELD_DESCRIPTIONS = ""    # injected into prompts
-IDENTITY_COL       = "ho_ten"  # best-guess name column, overridden by detect_schema
+
+# ==============================================================================
+# UTILITY: resolve which columns sit after html_text and are eligible to check.
+# Columns before html_text are untouched (they pre-date extraction).
+# The two status columns (extract_status, thong_tin_khong_cong_bo) are excluded
+# even if they happen to appear after html_text in the column order.
+# is_checked itself is excluded as well.
+# ==============================================================================
+
+COLS_TO_EXCLUDE_FROM_CHECK = {
+    EXTRACT_STATUS_COL,
+    NO_DATA_COL,
+    IS_CHECKED_COL,
+    "_failure_reason",
+    "_check_failure_reason",
+}
 
 
-# ── SCHEMA DETECTION (one-time startup call) ──────────────────────────────────
+def get_extraction_columns(df: pd.DataFrame) -> list[str]:
+    # Return the ordered list of columns that come strictly after html_text
+    # and are not internal status columns.
+    html_pos = df.columns.get_loc(HTML_TEXT_COL)
+    return [
+        c for c in df.columns[html_pos + 1:]
+        if c not in COLS_TO_EXCLUDE_FROM_CHECK
+    ]
 
-def detect_schema(df: pd.DataFrame) -> str | None:
-    """
-    One Gemini call at startup: inspects column names + sample values and returns
-    a JSON schema describing each column's role and extraction instructions.
-    Populates OUTPUT_FIELDS, STRING_FIELDS, FIELD_DESCRIPTIONS, IDENTITY_COL.
-    Returns source_text_col (e.g. "html_text") or None.
-    """
-    global OUTPUT_FIELDS, STRING_FIELDS, FIELD_DESCRIPTIONS, IDENTITY_COL
 
-    # Build compact sample: column name + up to 3 non-null sample values
-    sample_rows = df.dropna(how="all").head(20)
-    col_samples = {}
-    for col in df.columns:
-        vals = sample_rows[col].dropna().astype(str).str.strip()
-        vals = [v for v in vals if v and v.lower() not in ("nan", "none", "")]
-        col_samples[col] = vals[:3]
+# ==============================================================================
+# VERBATIM CHECK PROMPT
+# Sends one row's html_text and all its extracted column values to Gemini.
+# Asks Gemini to return a per-field verdict: "ok" if every list item (or the
+# string value) appears verbatim as a substring of html_text, or the correct
+# verbatim extraction if something is wrong or missing.
+#
+# Using a per-field verdict in a single call gives both speed (one round-trip
+# per row) and granularity (we know exactly which fields need correction).
+# ==============================================================================
 
-    col_summary_lines = []
-    for col, samples in col_samples.items():
-        samples_str = " | ".join(f'"{s[:120]}"' for s in samples) if samples else "(all empty)"
-        col_summary_lines.append(f"  - {col}: {samples_str}")
-    col_summary = "\n".join(col_summary_lines)
+def build_check_prompt(
+    identity: str,
+    html_text: str,
+    field_values: dict[str, str | None],
+) -> str:
+    field_lines = []
+    for col, val in field_values.items():
+        display = val if val is not None else "(null)"
+        field_lines.append(f"  [{col}]: {display}")
+    fields_block = "\n".join(field_lines)
 
-    detection_prompt = f"""You are a data schema analyst. Below are the columns of a CSV file,
-each with up to 3 sample values. The file contains profiles of people (researchers, faculty, students, etc.).
+    return f"""You are an expert data auditor for academic researcher profiles.
 
-Columns and samples:
-{col_summary}
+Profile identity: {identity}
 
-Your task: classify each column and return ONLY a JSON object (no markdown, no explanation) with this structure:
+Source text (html_text):
+{html_text}
+
+Extracted field values:
+{fields_block}
+
+Your task:
+For each field listed above, verify that every item in the extracted value appears
+VERBATIM as a substring of the source text. "Verbatim" means character-for-character
+identical — no paraphrasing, no summarising, no shortening.
+
+Rules:
+- For list fields (JSON arrays): every element must appear verbatim in html_text.
+- For string fields: the value must appear verbatim in html_text.
+- If a field is null and the information genuinely does not exist in html_text, that is correct.
+- If a field is null but the information IS present in html_text, extract it verbatim.
+- If a field has a value that does NOT appear verbatim in html_text, replace it with the
+  correct verbatim extraction from html_text.
+- If a field is correct, return the exact same value unchanged.
+- Never invent data. If something is not in html_text, return null.
+
+Return ONLY a JSON object (no markdown, no explanation) with this structure:
 {{
-  "identity_col": "<column name that uniquely identifies a person — typically full name>",
-  "source_text_col": "<column name containing raw scraped text/HTML to extract from, or null if absent>",
-  "output_fields": [
-    {{
-      "name": "<column name>",
-      "type": "string" | "list",
-      "description": "<2-3 sentence extraction instruction in the same language as the column data: what to look for, how to format each value, verbatim copy rules, example value>",
-      "priority": "high" | "normal"
-    }},
-    ...
-  ]
+  "<field_name>": {{
+    "verdict": "ok" | "corrected",
+    "value": <corrected value, or the original value if ok, or null>
+  }},
+  ...
 }}
 
-Rules for classifying columns:
-- identity_col: the person's name or unique ID — NOT an output field.
-- source_text_col: raw HTML/text blob used as extraction source — NOT an output field.
-- output_fields: ONLY columns that contain or should contain structured facts about the person.
-  Focus especially on: research areas, publications, projects, scientific interests, education,
-  teaching, students supervised, awards, books, collaborations, contact/address.
-  Set type="string" for single-value fields (address, email, phone).
-  Set type="list" for multi-value fields (publications, courses, projects, research fields, etc.).
-  Set priority="high" for research/science-focused fields (publications, projects, research areas,
-  students, grants). Set priority="normal" for everything else.
-- Skip columns that are: URLs, timestamps, internal IDs, scraping metadata, or clearly irrelevant.
-- Write description in the same language as the sample values (Vietnamese if samples are Vietnamese,
-  English if English, etc.).
-- Be specific: mention section headings, formatting patterns, or keywords that signal where this
-  data appears in scraped text.
-"""
+One key per field. "verdict" is "ok" if the value was already correct, "corrected" if you changed it."""
 
-    print("🔍 Detecting schema from CSV columns (one-time startup call)...")
-    client = _make_client(_key_index)
+
+# ==============================================================================
+# SINGLE-ROW CHECK API CALL WITH RETRY AND ROTATION
+# Handles transient failures identically to the extract script.
+#
+# Quota error (429) with multiple keys:
+#   Rotate to the next key immediately. If all keys exhausted, wait then retry.
+#
+# Quota error with a single key:
+#   Exponential backoff up to MAX_RETRIES.
+#
+# Server error (500/503):
+#   Rotate to the next model. If all models exhausted, exponential backoff.
+#
+# Any other error:
+#   Non-transient. Return None immediately with a logged reason.
+#   is_checked stays False so the row is retried on the next run.
+# ==============================================================================
+
+def call_check(prompt: str, label: str) -> dict | None:
     cfg = types.GenerateContentConfig(
-        temperature=0.1,
-        response_mime_type="application/json",
-        thinking_config=types.ThinkingConfig(thinking_budget=0),
-    )
-
-    for attempt in range(MAX_RETRIES):
-        try:
-            response = client.models.generate_content(
-                model=MODEL_LIST[_model_index],
-                contents=detection_prompt,
-                config=cfg,
-            )
-            raw = response.text.strip()
-            raw = re.sub(r"^```json\s*|^```\s*|```$", "", raw, flags=re.MULTILINE).strip()
-            schema = json.loads(raw)
-            break
-        except Exception as e:
-            err = str(e)
-            is_quota = "429" in err or "RESOURCE_EXHAUSTED" in err
-            if is_quota and attempt < MAX_RETRIES - 1:
-                print(f"  ⚠️  Quota on schema detection, waiting 30s...")
-                time.sleep(30)
-            elif attempt < MAX_RETRIES - 1:
-                print(f"  ⚠️  Schema detection error (attempt {attempt+1}): {err[:100]}")
-                time.sleep(5)
-            else:
-                raise RuntimeError(f"Schema detection failed after {MAX_RETRIES} attempts: {err}")
-
-    # Apply detected schema
-    IDENTITY_COL = schema.get("identity_col", "ho_ten")
-
-    fields_data = schema.get("output_fields", [])
-    existing_cols = set(df.columns)
-    fields_data = [f for f in fields_data if f["name"] in existing_cols]
-
-    OUTPUT_FIELDS.clear()
-    STRING_FIELDS.clear()
-
-    desc_lines = []
-    for fd in fields_data:
-        name = fd["name"]
-        OUTPUT_FIELDS.append(name)
-        if fd.get("type") == "string":
-            STRING_FIELDS.add(name)
-        priority_tag = " [HIGH PRIORITY]" if fd.get("priority") == "high" else ""
-        desc_lines.append(
-            f"- {name} ({'string' if fd.get('type') == 'string' else 'list of strings'}){priority_tag}:\n"
-            f"    {fd.get('description', 'Extract relevant information verbatim.')}"
-        )
-
-    FIELD_DESCRIPTIONS = "\n\n".join(desc_lines)
-
-    print(f"✅ Schema detected:")
-    print(f"   Identity column : {IDENTITY_COL}")
-    print(f"   Source text col : {schema.get('source_text_col', 'None')}")
-    print(f"   Output fields   : {OUTPUT_FIELDS}")
-    high_prio = [f["name"] for f in fields_data if f.get("priority") == "high"]
-    if high_prio:
-        print(f"   High-priority   : {high_prio}")
-    print()
-
-    return schema.get("source_text_col")
-
-
-# ── BATCH PROMPTS ─────────────────────────────────────────────────────────────
-
-def build_batch_prompt(profiles: list[dict]) -> str:
-    """
-    Mode A: extract from raw source text (html_text or equivalent).
-    System instruction is passed separately in config.
-    """
-    blocks = []
-    for i, p in enumerate(profiles):
-        blocks.append(f"=== PROFILE_{i} | identity={p['identity']} ===\n{p['text']}")
-
-    profile_text = "\n".join(blocks)
-    return (
-        f"Below are {len(profiles)} profiles to extract:\n\n"
-        f"{profile_text}\n\n"
-        f"Return JSON array:"
-    )
-
-
-def build_batch_prompt_from_columns(profiles: list[dict], all_columns: list[str]) -> str:
-    """
-    Mode B: no source text available. Dump ALL column values per person and ask
-    the model to detect misplaced data and sort it into the correct output fields.
-    all_columns = full list of df columns (Option A: everything except identity dumped).
-    """
-    # All columns except the identity column are potential data sources
-    source_cols = [c for c in all_columns if c != IDENTITY_COL]
-
-    blocks = []
-    for i, p in enumerate(profiles):
-        row_dump_lines = []
-        for col in source_cols:
-            val = p["raw_columns"].get(col)
-            if val and str(val).strip() and str(val).strip().lower() not in ("nan", "none", ""):
-                row_dump_lines.append(f"  [{col}]: {str(val).strip()}")
-
-        row_dump = "\n".join(row_dump_lines) if row_dump_lines else "  (no data)"
-        blocks.append(
-            f"=== PROFILE_{i} | identity={p['identity']} ===\n"
-            f"Existing data (columns may contain mismatched or mixed data):\n{row_dump}"
-        )
-
-    high_prio = [f for f in OUTPUT_FIELDS if f not in STRING_FIELDS]
-    field_list_str = "\n".join(f"- {f}" for f in OUTPUT_FIELDS)
-
-    return f"""You are an expert at auditing and reorganizing academic profile data.
-
-Below are {len(profiles)} researcher profiles. Each person's data is listed by column,
-but values MAY be misplaced: the correct content for one field may be sitting in another column,
-or one column may contain mixed data from multiple fields.
-
-Your task has 2 steps:
-1. DETECT mismatches: identify which values are in the wrong column.
-2. REORGANIZE: read all data for each person and classify it correctly into the output fields.
-
-Output fields to populate:
-{FIELD_DESCRIPTIONS}
-
-- unpublished (boolean):
-    true if all data for this profile is empty or contains no real information.
-    false if at least one real piece of information was found.
-
-MANDATORY RULES:
-1. Read ALL columns for a person before filling any field — the needed value may be anywhere.
-2. If a value clearly belongs to field A but is currently in column B → place it in field A.
-3. COPY VERBATIM — no paraphrasing, no shortening.
-4. LIST EXHAUSTIVELY — each item is a separate array element.
-5. List-type fields must be JSON arrays of strings.
-6. If truly no information exists → null. Do NOT invent data.
-7. Do NOT add any text or markdown outside the JSON array.
-8. Pay special attention to high-priority fields: {', '.join(high_prio) if high_prio else 'all fields'}.
-9. If you detect a column mismatch, note it briefly in any available "other info" field,
-   e.g.: "[FIX] publication_list value was found in column 'address'".
-
-Return EXACTLY one JSON array of {len(profiles)} objects in order PROFILE_0, PROFILE_1, ...
-
-{"".join(chr(10) + b for b in blocks)}
-
-Return JSON array:"""
-
-
-# ── VALIDATE CSV ──────────────────────────────────────────────────────────────
-
-def validate_csv(df: pd.DataFrame, has_source_text: bool, source_col: str | None) -> None:
-    total = len(df)
-    print("\n" + "═" * 60)
-    print("📊 VALIDATE CSV")
-    print("═" * 60)
-
-    if has_source_text:
-        print(f"✅ Found source text column '{source_col}'. Checking fill rate of output fields:\n")
-
-        all_null_fields = []
-        for f in OUTPUT_FIELDS:
-            if f in df.columns:
-                filled = df[f].notna().sum()
-                pct    = filled / total * 100
-                bar    = "█" * int(pct / 5)
-                flag   = " ⚠️  NULL 100%" if filled == 0 else ""
-                print(f"  {f:<28} {filled:>3}/{total}  ({pct:5.1f}%)  {bar}{flag}")
-                if filled == 0:
-                    all_null_fields.append(f)
-            else:
-                print(f"  {f:<28} (column not yet created)")
-
-        if all_null_fields:
-            print(f"\n⚠️  Fields with 100% NULL — prompt may not be extracting these correctly:")
-            for f in all_null_fields:
-                print(f"     • {f}")
-
-        # Spot-check 3 random rows with non-empty source text
-        valid_src = df[df[source_col].notna() & (df[source_col].astype(str).str.strip() != "")]
-        sample_idx = valid_src.sample(min(3, len(valid_src)), random_state=42).index.tolist()
-
-        print(f"\n🔍 Spot-check {len(sample_idx)} random rows:\n")
-        for idx in sample_idx:
-            row = df.loc[idx]
-            identity = row.get(IDENTITY_COL, f"row_{idx}")
-            src_preview = str(row.get(source_col, ""))[:300].replace("\n", " ")
-            print(f"  ── {identity} (idx={idx}) ──")
-            print(f"  {source_col} (300 chars): {src_preview}...")
-            for f in OUTPUT_FIELDS:
-                val = row.get(f)
-                if pd.notna(val) and str(val).strip():
-                    preview = str(val)[:120].replace("\n", " ")
-                    print(f"    {f}: {preview}")
-            print()
-
-    else:
-        print("⚠️  No source text column found. Checking for column mismatches:\n")
-
-        issues_found = False
-
-        # Check for HTML tags inside extracted columns
-        html_tag_re = re.compile(r"<[a-zA-Z/][^>]{0,50}>")
-        print("  [1] Checking for HTML tags in extracted columns:")
-        for f in OUTPUT_FIELDS:
-            if f not in df.columns:
-                continue
-            col_str = df[f].dropna().astype(str)
-            has_html = col_str.str.contains(html_tag_re).sum()
-            if has_html:
-                print(f"    ⚠️  '{f}': {has_html} rows contain HTML tags — source text may be in wrong column")
-                issues_found = True
-        if not issues_found:
-            print("    ✅ No HTML tags detected in extracted columns.")
-
-        # Check for abnormally long values (>500 chars) in STRING_FIELDS
-        print("\n  [2] Checking for abnormally long values (>500 chars) in string fields:")
-        found_long = False
-        for f in STRING_FIELDS:
-            if f not in df.columns:
-                continue
-            long_rows = df[df[f].notna() & (df[f].astype(str).str.len() > 500)]
-            if not long_rows.empty:
-                print(f"    ⚠️  '{f}': {len(long_rows)} rows with values >500 chars")
-                for idx, row in long_rows.head(2).iterrows():
-                    print(f"       idx={idx}: {str(row[f])[:150]}...")
-                found_long = True
-                issues_found = True
-        if not found_long:
-            print("    ✅ No abnormally long values detected.")
-
-        # Check if identity column contains mixed data (emails, URLs, addresses)
-        print(f"\n  [3] Checking '{IDENTITY_COL}' column for mixed data:")
-        if IDENTITY_COL in df.columns:
-            suspicious_re = re.compile(
-                r"(@|http|www\.|\\.com|\\.vn|\\d{5,}|phòng|tầng|số \\d|P\\.\\d)", re.IGNORECASE
-            )
-            sus_rows = df[df[IDENTITY_COL].notna() & df[IDENTITY_COL].astype(str).str.contains(suspicious_re)]
-            if not sus_rows.empty:
-                print(f"    ⚠️  {len(sus_rows)} rows with suspicious {IDENTITY_COL} values:")
-                for idx, row in sus_rows.head(5).iterrows():
-                    print(f"       idx={idx}: {row[IDENTITY_COL]}")
-                issues_found = True
-            else:
-                print(f"    ✅ {IDENTITY_COL} column looks clean.")
-
-        # Sample values for all columns
-        print("\n  [4] Sample values for all columns (first 5 rows):\n")
-        sample_df = df.head(5)
-        for col in df.columns:
-            print(f"  ── {col} ──")
-            for idx, val in sample_df[col].items():
-                preview = str(val)[:100].replace("\n", " ") if pd.notna(val) else "(null)"
-                print(f"    idx={idx}: {preview}")
-            print()
-
-        if not issues_found:
-            print("✅ No obvious mismatches detected. Proceeding with re-extraction from existing columns.")
-        else:
-            print("⚠️  Issues detected. Script will use Gemini to re-extract and reorganize data.")
-
-    print("═" * 60 + "\n")
-
-
-# ── API CALL WITH RETRY + KEY ROTATION ────────────────────────────────────────
-
-NO_DATA_LABEL = "Thông tin không được công bố"
-
-def _build_config(system_instruction: str | None = None) -> types.GenerateContentConfig:
-    kwargs = dict(
         temperature=0.05,
         response_mime_type="application/json",
         thinking_config=types.ThinkingConfig(thinking_budget=0),
     )
-    if system_instruction:
-        kwargs["system_instruction"] = system_instruction
-    return types.GenerateContentConfig(**kwargs)
 
-
-def _build_system_instruction_extract() -> str:
-    high_prio = [f for f in OUTPUT_FIELDS if f not in STRING_FIELDS]
-    return f"""You are an expert at extracting structured academic and professional information from researcher/faculty profile pages.
-Task: COPY and LIST information verbatim — do NOT summarize, do NOT omit.
-
-Each request contains N profiles separated by "=== PROFILE_N ===".
-Each profile has a label "identity=<name>" — this is the person to extract for.
-
-Return EXACTLY one JSON array of N objects in order PROFILE_0, PROFILE_1, ...
-Each object must have these fields:
-{FIELD_DESCRIPTIONS}
-
-- unpublished (boolean):
-    true if the profile has no real information — only boilerplate, empty, or navigation menu.
-    false if at least one real piece of information is present.
-
-MANDATORY RULES:
-1. ONLY extract information for the person named "identity" in that profile.
-   Navigation menus may show other names — IGNORE those.
-2. COPY VERBATIM — no paraphrasing, no shortening, no replacing with "...".
-3. LIST EXHAUSTIVELY — 20 publications → 20 elements; 10 courses → 10 elements.
-4. List-type fields must be JSON arrays of strings.
-5. If not found → null. Do NOT invent data.
-6. Do NOT add any text or markdown outside the JSON array.
-7. High-priority fields: {', '.join(high_prio) if high_prio else 'all fields'}.
-   Search carefully for their section headings before concluding null."""
-
-
-def call_batch(profiles: list[dict], prompt_builder=None) -> list[dict]:
-    global _key_index
-
-    empty    = lambda: {f: None for f in OUTPUT_FIELDS}
-    fallback = [empty() for _ in profiles]
-
-    sentinel_field = "thong_tin_khac" if "thong_tin_khac" in OUTPUT_FIELDS else OUTPUT_FIELDS[-1]
-
-    if prompt_builder is None:
-        prompt_builder = build_batch_prompt
-
-    # Mode A uses system instruction; Mode B (from_columns) bundles everything in user turn
-    is_mode_b = (prompt_builder.__name__ == "build_batch_prompt_from_columns" 
-                 or (hasattr(prompt_builder, "__wrapped__") and "columns" in str(prompt_builder)))
-    if is_mode_b:
-        cfg = _build_config(system_instruction=None)
-        prompt = prompt_builder(profiles)
-    else:
-        cfg = _build_config(system_instruction=_build_system_instruction_extract())
-        prompt = prompt_builder(profiles)
-
-    attempt = 0
+    attempt               = 0
     keys_tried_this_round = 0
 
     while attempt < MAX_RETRIES:
         client = _make_client(_key_index)
         try:
-            _current_model = MODEL_LIST[_model_index]
             response = client.models.generate_content(
-                model=_current_model,
+                model=MODEL_LIST[_model_index],
                 contents=prompt,
                 config=cfg,
             )
             raw = response.text.strip()
-
-            match = re.search(r"\[.*\]", raw, re.DOTALL)
-            if not match:
-                raise ValueError(f"No JSON array found in response: {raw[:200]}")
-
-            parsed = json.loads(match.group())
-            if not isinstance(parsed, list) or len(parsed) != len(profiles):
-                raise ValueError(
-                    f"JSON array returned {len(parsed)} items, expected {len(profiles)}"
-                )
-
-            results = []
-            for item in parsed:
-                clean = empty()
-                if item.get("unpublished") is True or item.get("chua_cong_bo") is True:
-                    clean[sentinel_field] = NO_DATA_LABEL
-                    results.append(clean)
-                    continue
-                for f in OUTPUT_FIELDS:
-                    val = item.get(f)
-                    if val is None:
-                        clean[f] = None
-                    elif f in STRING_FIELDS:
-                        clean[f] = str(val).strip() if val else None
-                    elif isinstance(val, list):
-                        items = [str(v).strip() for v in val if v and str(v).strip()]
-                        clean[f] = json.dumps(items, ensure_ascii=False) if items else None
-                    else:
-                        clean[f] = json.dumps([str(val).strip()], ensure_ascii=False)
-                results.append(clean)
-
-            keys_tried_this_round = 0
-            return results
+            raw = re.sub(r"^```json\s*|^```\s*|```$", "", raw, flags=re.MULTILINE).strip()
+            parsed = json.loads(raw)
+            if not isinstance(parsed, dict):
+                raise ValueError(f"Expected a JSON object, got: {raw[:200]}")
+            return parsed
 
         except Exception as e:
             err      = str(e)
             is_quota = "429" in err or "RESOURCE_EXHAUSTED" in err
-            is_500   = "500" in err or "503" in err or "INTERNAL" in err or "UNAVAILABLE" in err
+            is_500   = any(x in err for x in ("500", "503", "INTERNAL", "UNAVAILABLE"))
 
             if is_quota and len(API_KEY_LIST) > 1:
                 keys_tried_this_round += 1
-                rotated_full_circle = not _rotate_key()
-
-                if rotated_full_circle or keys_tried_this_round >= len(API_KEY_LIST):
-                    print(f"    ⚠️  All {len(API_KEY_LIST)} keys exhausted quota. Waiting {ALL_KEYS_EXHAUSTED_WAIT}s then retrying...")
+                full_cycle = not _rotate_key()
+                if full_cycle or keys_tried_this_round >= len(API_KEY_LIST):
+                    print(
+                        f"  All {len(API_KEY_LIST)} keys exhausted quota. "
+                        f"Waiting {ALL_KEYS_EXHAUSTED_WAIT}s..."
+                    )
                     time.sleep(ALL_KEYS_EXHAUSTED_WAIT)
                     keys_tried_this_round = 0
                     attempt += 1
                 else:
-                    print(f"    🔄 Quota {current_key_label()} — rotating to {current_key_label()}")
+                    print(f"  Quota on {current_key_label()}, rotating key...")
 
             elif is_quota and len(API_KEY_LIST) == 1:
-                if attempt < MAX_RETRIES - 1:
-                    wait = 15 * (2 ** attempt)
-                    print(f"    ⚠️  Quota error (attempt {attempt+1}/{MAX_RETRIES}), "
-                          f"waiting {wait}s...")
-                    time.sleep(wait)
+                wait = 15 * (2 ** attempt)
+                print(f"  Quota error ({label}, attempt {attempt + 1}/{MAX_RETRIES}), waiting {wait}s...")
+                time.sleep(wait)
                 attempt += 1
 
             elif is_500:
-                rotated = _rotate_model()
-                if rotated:
-                    print(f"    Rotate 503 -> model: {current_model_label()}")
-                else:
+                full_cycle = not _rotate_model()
+                if full_cycle:
                     wait = 15 * (2 ** attempt)
-                    print(f"    503 full model cycle (attempt {attempt+1}/{MAX_RETRIES}), waiting {wait}s...")
+                    print(
+                        f"  Server error, all models tried ({label}, "
+                        f"attempt {attempt + 1}/{MAX_RETRIES}), waiting {wait}s..."
+                    )
                     time.sleep(wait)
                     attempt += 1
+                else:
+                    print(f"  Server error, rotating to {current_model_label()}...")
 
             else:
-                print(f"    ❌ Batch failed ({current_key_label()}): {err[:150]}")
-                for r in fallback:
-                    r[sentinel_field] = f"ERROR: {err[:100]}"
-                return fallback
+                print(f"  Non-transient error on {label} ({current_key_label()}): {err[:150]}")
+                return None
 
-    print(f"    ❌ Max retries reached ({MAX_RETRIES}). Skipping this batch.")
-    for r in fallback:
-        r[sentinel_field] = "ERROR: max retries exceeded"
-    return fallback
+    print(f"  Max retries reached on {label}. Skipping row.")
+    return None
 
 
-# ── MAIN ──────────────────────────────────────────────────────────────────────
+# ==============================================================================
+# MAIN
+# ==============================================================================
 
 def main():
-    raw_df = pd.read_csv(OUTPUT_CSV) if os.path.exists(OUTPUT_CSV) else pd.read_csv(INPUT_CSV)
 
-    # Remove duplicate header rows
-    dup_mask = raw_df.apply(lambda r: r.astype(str).eq(raw_df.columns).all(), axis=1)
-    if dup_mask.any():
-        print(f"🧹 Removed {dup_mask.sum()} duplicate header rows.")
-    df = raw_df[~dup_mask].reset_index(drop=True)
+    # --------------------------------------------------------------------------
+    # Step 1: Load CSV
+    # Prefer CHECKED_CSV if it exists (resuming an interrupted check run).
+    # Otherwise start from EXTRACTED_CSV (the extract script's output).
+    # Rows with thong_tin_khong_cong_bo=True are dropped immediately and never
+    # touched again — they have no content to check.
+    # --------------------------------------------------------------------------
+    source_path = CHECKED_CSV if os.path.exists(CHECKED_CSV) else EXTRACTED_CSV
+    print(f"Step 1: Loading CSV from {source_path}...")
+
+    raw_df = pd.read_csv(source_path, dtype=str)
+    print(f"  Loaded {len(raw_df)} total rows.")
+
+    # Normalise boolean columns that were saved as strings.
+    for bool_col in (EXTRACT_STATUS_COL, NO_DATA_COL):
+        if bool_col in raw_df.columns:
+            raw_df[bool_col] = raw_df[bool_col].astype(str).str.lower().eq("true")
+
+    # Drop no-data rows. They are excluded permanently from the check.
+    if NO_DATA_COL in raw_df.columns:
+        no_data_count = raw_df[NO_DATA_COL].sum()
+        df = raw_df[~raw_df[NO_DATA_COL]].reset_index(drop=True)
+        print(f"  Skipped {no_data_count} row(s) with thong_tin_khong_cong_bo=True.")
+    else:
+        df = raw_df.reset_index(drop=True)
+        print(f"  thong_tin_khong_cong_bo column not found. Processing all rows.")
 
     total = len(df)
-    print(f"📂 Loaded {total} rows from {OUTPUT_CSV if os.path.exists(OUTPUT_CSV) else INPUT_CSV}")
-    print(f"📋 Available columns: {list(df.columns)}")
+    print(f"  Working set: {total} row(s).")
 
-    # ── One-time schema detection ──────────────────────────────────────────────
-    source_col = detect_schema(df)
+    if HTML_TEXT_COL not in df.columns:
+        print(f"Column '{HTML_TEXT_COL}' not found. Cannot proceed.")
+        sys.exit(1)
 
-    has_source_text = (
-        source_col is not None
-        and source_col in df.columns
-        and df[source_col].notna().any()
+    # --------------------------------------------------------------------------
+    # Step 2: Create is_checked column if it does not exist.
+    # If it already exists (resume run), existing True values are preserved.
+    # --------------------------------------------------------------------------
+    print("Step 2: Initialising is_checked column...")
+    if IS_CHECKED_COL not in df.columns:
+        df[IS_CHECKED_COL] = False
+        print("  Created is_checked column (all False).")
+    else:
+        df[IS_CHECKED_COL] = df[IS_CHECKED_COL].astype(str).str.lower().eq("true")
+        already_checked = df[IS_CHECKED_COL].sum()
+        print(f"  is_checked already exists. {already_checked} row(s) already checked.")
+
+    # --------------------------------------------------------------------------
+    # Step 3: Gate — terminate if any row still has extract_status=False.
+    # This means the extract script did not finish. Running the check on
+    # partially-extracted data would produce misleading results.
+    # --------------------------------------------------------------------------
+    print("Step 3: Verifying extract_status...")
+    if EXTRACT_STATUS_COL not in df.columns:
+        print("  extract_status column not found. Cannot verify extraction completeness.")
+        sys.exit(1)
+
+    df[EXTRACT_STATUS_COL] = df[EXTRACT_STATUS_COL].astype(str).str.lower().eq("true")
+    incomplete = (~df[EXTRACT_STATUS_COL]).sum()
+
+    if incomplete > 0:
+        print(
+            f"  TERMINATED: {incomplete} row(s) have extract_status=False. "
+            f"Run api_gemini_extract.py first to complete extraction."
+        )
+        sys.exit(1)
+
+    print("  All rows have extract_status=True. Proceeding.")
+
+    # --------------------------------------------------------------------------
+    # Resolve which columns sit after html_text and are eligible to check.
+    # These are the columns created by the extract script.
+    # --------------------------------------------------------------------------
+    extraction_cols = get_extraction_columns(df)
+    print(f"  Columns to check ({len(extraction_cols)}): {extraction_cols}")
+
+    if not extraction_cols:
+        print("  No extraction columns found after html_text. Nothing to check.")
+        sys.exit(0)
+
+    # Detect identity column for logging (first col before html_text with a name-like name).
+    html_pos = df.columns.get_loc(HTML_TEXT_COL)
+    global IDENTITY_COL
+    for c in df.columns[:html_pos]:
+        if any(k in c.lower() for k in ("ten", "name", "ho", "full")):
+            IDENTITY_COL = c
+            break
+    print(f"  Identity column: {IDENTITY_COL}")
+
+    # Ensure failure-reason column exists for logging check errors.
+    if "_check_failure_reason" not in df.columns:
+        df["_check_failure_reason"] = None
+
+    # --------------------------------------------------------------------------
+    # Catch-up / resume logic:
+    # Only process rows where is_checked=False.
+    # On a fresh run, todo = all rows. On a resume run, todo = only unchecked rows.
+    # --------------------------------------------------------------------------
+    todo = df.index[~df[IS_CHECKED_COL]].tolist()
+    print(
+        f"\nCheck plan: {len(todo)} row(s) to check, "
+        f"{df[IS_CHECKED_COL].sum()} already done.\n"
     )
-    if has_source_text:
-        print(f"🟢 Mode: EXTRACT from '{source_col}'")
+
+    if not todo:
+        print("Nothing to check. All rows are already verified.")
     else:
-        print(f"🟡 Mode: RE-EXTRACT + FIX column mismatch (no source text column)")
+        start          = datetime.now()
+        reextracted    = 0    # rows where at least one field was corrected
+        failed_rows    = 0    # rows where the API call failed entirely
 
-    # Validate CSV before processing
-    validate_csv(df, has_source_text, source_col)
+        for row_num, idx in enumerate(todo, 1):
+            row      = df.loc[idx]
+            identity = str(row.get(IDENTITY_COL, f"row_{idx}"))
+            html_text = str(row.get(HTML_TEXT_COL, "") or "")
 
-    # Initialize output columns if not present
-    for f in OUTPUT_FIELDS:
-        if f not in df.columns:
-            df[f] = None
+            # Gather current extracted values for this row.
+            field_values = {}
+            for col in extraction_cols:
+                val = row.get(col)
+                field_values[col] = str(val) if pd.notna(val) and str(val).strip() else None
 
-    sentinel_field = "thong_tin_khac" if "thong_tin_khac" in OUTPUT_FIELDS else OUTPUT_FIELDS[-1]
+            print(
+                f"Row {row_num}/{len(todo)} | "
+                f"{current_key_label()} | {current_model_label()} | "
+                f"{identity}"
+            )
 
-    # Pre-mark rows with empty/boilerplate source text (only in Mode A)
-    if has_source_text:
-        NO_DATA_PATTERNS = ["đang cập nhật", "updating", "coming soon", "to be updated"]
+            # --------------------------------------------------------------------------
+            # Step 4: Per-row check.
+            # Send html_text and all extracted field values to Gemini in one call.
+            # Gemini returns a per-field verdict: "ok" or "corrected" with the new value.
+            # If a field is corrected, write the new value back to df immediately.
+            # is_checked is set to True after a successful call (even if corrections
+            # were made — the row has now been verified and corrected).
+            # is_checked stays False if the API call itself fails, so the row
+            # is retried on the next run.
+            # --------------------------------------------------------------------------
+            prompt  = build_check_prompt(identity, html_text, field_values)
+            label   = f"row {idx} ({identity})"
+            verdict = call_check(prompt, label)
 
-        def _is_no_data(text) -> bool:
-            if pd.isna(text):
-                return True
-            s = str(text).strip()
-            if not s:
-                return True
-            if len(s) < 100 and any(p in s.lower() for p in NO_DATA_PATTERNS):
-                return True
-            return False
-
-        not_yet_marked = ~df[sentinel_field].astype(str).str.startswith(NO_DATA_LABEL, na=False)
-        to_mark = df[source_col].apply(_is_no_data) & not_yet_marked
-        if to_mark.any():
-            print(f"ℹ️  Pre-marked {to_mark.sum()} rows as '{NO_DATA_LABEL}' (empty/boilerplate source text).")
-            df.loc[to_mark, sentinel_field] = NO_DATA_LABEL
-
-    non_sentinel_fields = [f for f in OUTPUT_FIELDS if f != sentinel_field]
-    has_any_data  = df[non_sentinel_fields].notna().any(axis=1)
-    has_error     = df[sentinel_field].astype(str).str.startswith("ERROR", na=False)
-    not_published = df[sentinel_field].astype(str).str.startswith(NO_DATA_LABEL, na=False)
-    done_mask     = (has_any_data & ~has_error) | not_published
-    todo = df.index[~done_mask].tolist()
-    total_batches = (len(todo) + BATCH_SIZE - 1) // BATCH_SIZE
-
-    if not_published.sum():
-        print(f"ℹ️  Skipping {not_published.sum()} rows '{NO_DATA_LABEL}'.")
-
-    print(f"📋 To process: {len(todo)} rows → {total_batches} batches "
-          f"(batch_size={BATCH_SIZE})")
-    print(f"⏱️  Estimated: ~{total_batches * (DELAY_BETWEEN_BATCHES + 5) // 60 + 1} min\n")
-
-    # Select prompt builder based on mode
-    all_columns = list(df.columns)
-    if has_source_text:
-        def prompt_builder(profiles):
-            return build_batch_prompt(profiles)
-    else:
-        def prompt_builder(profiles):
-            return build_batch_prompt_from_columns(profiles, all_columns)
-        # Tag it so call_batch can detect Mode B
-        prompt_builder.__name__ = "build_batch_prompt_from_columns"
-
-    start = datetime.now()
-
-    for batch_num, chunk_start in enumerate(range(0, len(todo), BATCH_SIZE), 1):
-        chunk_idx = todo[chunk_start: chunk_start + BATCH_SIZE]
-        profiles = []
-        for idx in chunk_idx:
-            row = df.loc[idx]
-            if has_source_text:
-                profiles.append({
-                    "identity": row.get(IDENTITY_COL, f"row_{idx}"),
-                    "text":     str(row.get(source_col, "") or ""),
-                    "idx":      idx,
-                })
+            if verdict is None:
+                # API call failed entirely. Log reason, leave is_checked=False.
+                reason = "ERROR: API call failed after max retries"
+                df.at[idx, "_check_failure_reason"] = reason
+                failed_rows += 1
+                print(f"  Failed to check row {idx}. Will retry on next run.")
             else:
-                profiles.append({
-                    "identity":    row.get(IDENTITY_COL, f"row_{idx}"),
-                    "raw_columns": row.to_dict(),
-                    "idx":         idx,
-                })
+                row_was_corrected = False
+                for col, result in verdict.items():
+                    if col not in extraction_cols:
+                        # Ignore any field Gemini returned that we did not ask about.
+                        continue
 
-        names  = ", ".join(p["identity"] for p in profiles[:3])
-        suffix = f"... (+{len(profiles)-3})" if len(profiles) > 3 else ""
-        print(f"[Batch {batch_num}/{total_batches}] {current_key_label()} | {current_model_label()} | {names}{suffix}")
+                    field_verdict = result.get("verdict", "ok")
+                    new_value     = result.get("value")
 
-        results = call_batch(profiles, prompt_builder=prompt_builder)
+                    if field_verdict == "corrected":
+                        # Write the corrected verbatim value back.
+                        # new_value may be a list (for list fields) or a string.
+                        if isinstance(new_value, list):
+                            items = [str(v).strip() for v in new_value if v and str(v).strip()]
+                            df.at[idx, col] = json.dumps(items, ensure_ascii=False) if items else None
+                        elif new_value is not None:
+                            df.at[idx, col] = str(new_value).strip() or None
+                        else:
+                            df.at[idx, col] = None
 
-        for profile, result in zip(profiles, results):
-            for f, v in result.items():
-                df.at[profile["idx"], f] = v
+                        row_was_corrected = True
 
-        df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
-        print(f"  ✅ Saved checkpoint → {OUTPUT_CSV}")
+                if row_was_corrected:
+                    reextracted += 1
+                    print(f"  Corrected {sum(1 for r in verdict.values() if r.get('verdict') == 'corrected')} field(s).")
+                else:
+                    print(f"  All fields verified correct.")
 
-        if batch_num < total_batches:
-            time.sleep(DELAY_BETWEEN_BATCHES)
+                # Mark as checked. This happens before the save so a crash
+                # mid-save does not leave the row ambiguously half-written.
+                df.at[idx, IS_CHECKED_COL] = True
 
-    elapsed = datetime.now() - start
-    print(f"\n🎉 Done! Total time: {elapsed}")
-    print(f"📄 Output file: {OUTPUT_CSV}\n")
+            # Save a checkpoint after every row so no check work is lost.
+            df.to_csv(CHECKED_CSV, index=False, encoding="utf-8-sig")
 
-    # Final statistics
-    not_published   = df[sentinel_field].astype(str).str.startswith(NO_DATA_LABEL, na=False)
-    has_error_final = df[sentinel_field].astype(str).str.startswith("ERROR", na=False)
-    has_data_final  = df[non_sentinel_fields].notna().any(axis=1)
-    error_count     = ((~has_data_final | has_error_final) & ~not_published).sum()
-    nodata_count    = not_published.sum()
+            # Delay only between rows to avoid hammering the API.
+            if row_num < len(todo):
+                time.sleep(1)
 
-    if nodata_count:
-        print(f"  ℹ️  {nodata_count} rows '{NO_DATA_LABEL}' (skipped).")
-    if error_count:
-        print(f"  ⚠️  {error_count} rows with errors — re-run script to retry automatically.")
-    print("── Statistics ──")
-    for f in OUTPUT_FIELDS:
-        filled = df[f].notna().sum()
-        bar    = "█" * int(filled / total * 20)
-        print(f"  {f:<28} {filled:>3}/{total}  {bar}")
-    if error_count:
-        print(f"\n  ⚠️  {error_count} rows with errors — re-run script to retry automatically.")
+        elapsed = datetime.now() - start
+        print(f"\nCheck complete. Total time: {elapsed}.")
+
+    # --------------------------------------------------------------------------
+    # Step 5: Final summary
+    # --------------------------------------------------------------------------
+    print("\nStep 5: Final summary")
+
+    checked_count   = df[IS_CHECKED_COL].astype(bool).sum()
+    unchecked_count = (~df[IS_CHECKED_COL].astype(bool)).sum()
+    failure_count   = df["_check_failure_reason"].notna().sum() if "_check_failure_reason" in df.columns else 0
+
+    # reextracted is only accurate for the current run. For a full-history count,
+    # re-check would need a separate column. This is intentional: the user can
+    # diff EXTRACTED_CSV and CHECKED_CSV to see all changes made.
+    print(f"  Total rows processed   : {total}")
+    print(f"  Verified correct       : {checked_count - (reextracted if 'reextracted' in dir() else 0)} ({(checked_count) / total * 100:.1f}% checked total)")
+    print(f"  Re-extracted (this run): {reextracted if 'reextracted' in dir() else 'N/A (resume run)'}")
+    print(f"  Failed (is_checked=False): {unchecked_count} ({unchecked_count / total * 100:.1f}%)")
+    if failure_count:
+        print(f"  Rows with logged error : {failure_count}")
+        print("  Re-run this script to retry failed rows automatically.")
+
+    print(f"\nOutput file: {CHECKED_CSV}")
 
 
 if __name__ == "__main__":

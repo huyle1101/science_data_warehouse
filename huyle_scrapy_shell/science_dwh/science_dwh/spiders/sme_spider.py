@@ -49,8 +49,6 @@ class SmeSpiderSpider(scrapy.Spider):
     }
 
 
-
-
     # clean html text before feeding into Gemini API for information extraction to avoid excessive token usage
     def clean_html_text(self,html_text): 
         if not html_text:

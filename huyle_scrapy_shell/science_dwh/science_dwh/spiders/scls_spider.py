@@ -19,8 +19,8 @@ class SclsSpiderSpider(scrapy.Spider):
                 "overwrite": False # append mode
             }
     },
-        "CONCURRENT_REQUESTS" : 32,
-        "CONCURRENT_REQUESTS_PER_DOMAIN" : 8,
+        "CONCURRENT_REQUESTS" : 500,
+        "CONCURRENT_REQUESTS_PER_DOMAIN" : 64,
         "DOWNLOAD_DELAY" : 1,
         "RANDOMIZED_DOWNLOAD_DELAY":True,
         

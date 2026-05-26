@@ -90,3 +90,17 @@ class seee_item(scrapy.Item):
     lab_nghien_cuu = scrapy.Field()
     dai_hoc = scrapy.Field()
     don_vi_truc_thuoc = scrapy.Field()
+
+class ctu_item(scrapy.Item):
+    url = scrapy.Field()
+    # html_text = scrapy.Field()
+    ho_ten = scrapy.Field()
+    gioi_tinh = scrapy.Field()
+    email = scrapy.Field()
+    chuc_vu = scrapy.Field()
+    trinh_do_chuyen_mon = scrapy.Field()
+    hoc_ham = scrapy.Field()
+    don_vi = scrapy.Field()
+    de_tai_nckh_da_thuc_hien = scrapy.Field()
+    sach_va_giao_trinh_xuat_ban = scrapy.Field()
+    cong_trinh_nckh_da_cong_bo = scrapy.Field()

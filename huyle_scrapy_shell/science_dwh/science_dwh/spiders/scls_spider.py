@@ -66,7 +66,7 @@ class SclsSpiderSpider(scrapy.Spider):
             yield response.follow(
                 scholar,
                 callback = self.parse_scholar,
-                dont_filter=True
+                # dont_filter=True
             )
 
     def parse_scholar(self, response):

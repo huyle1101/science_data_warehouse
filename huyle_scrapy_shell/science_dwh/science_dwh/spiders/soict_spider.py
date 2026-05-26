@@ -39,6 +39,7 @@ class SoictSpiderSpider(scrapy.Spider):
             "url",
             "avt_url",
             "ho_ten",
+            "html_text",
             "gioi_thieu",
             "vi_tri",
             "chuc_vu",
@@ -51,7 +52,6 @@ class SoictSpiderSpider(scrapy.Spider):
             "cong_trinh_tieu_bieu",
             "giai_thuong_khen_thuong",
             "cac_mon_giang_day",
-            "html_text"
         ]
     }
 

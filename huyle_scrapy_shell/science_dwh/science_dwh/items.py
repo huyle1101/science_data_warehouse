@@ -59,7 +59,7 @@ class soict_item(scrapy.Item):
     giai_thuong_khen_thuong = scrapy.Field()
     cac_mon_giang_day = scrapy.Field()
     html_text = scrapy.Field()
-uy
+
 class scls_item(scrapy.Item):
     url = scrapy.Field()
     avt_url = scrapy.Field()
@@ -72,3 +72,21 @@ class scls_item(scrapy.Item):
     dai_hoc = scrapy.Field()
     don_vi_truc_thuoc = scrapy.Field()
     html_text = scrapy.Field()
+
+class seee_item(scrapy.Item):
+    url = scrapy.Field()
+    avt_url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    chuc_vu = scrapy.Field()
+    chuc_danh_kiem_nhiem = scrapy.Field()
+    don_vi = scrapy.Field()
+    nhom_nghien_cuu = scrapy.Field()
+    html_text = scrapy.Field()
+    gioi_thieu = scrapy.Field()
+    cong_trinh_tieu_bieu = scrapy.Field()
+    cac_mon_giang_day = scrapy.Field()
+    linh_vuc_nghien_cuu = scrapy.Field()
+    nhom_chuyen_mon = scrapy.Field()
+    lab_nghien_cuu = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()

@@ -45,29 +45,11 @@ class SmeSpiderSpider(scrapy.Spider):
             "dai_hoc",
             "don_vi_truc_thuoc",
             "html_text"
-        ],
-        "DOWNLOADER_MIDDLEWARES":{
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-            'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-            'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
-        },
-        "DEFAULT_REQUEST_HEADERS": {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-            'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Cache-Control': 'max-age=0',
-            'Connection': 'keep-alive',
-        }
+        ]
     }
 
 
-    def parse(self, response):
-        scholars = response.xpath('//table[contains(@class, "table")]//tr/td[2]/h3/a/@href').getall()
-        for scholar in scholars:
-            yield response.follow(
-                scholar,
-                callback = self.parse_scholar,
-                # dont_filter=True
-            )
+
 
     # clean html text before feeding into Gemini API for information extraction to avoid excessive token usage
     def clean_html_text(self,html_text): 
@@ -81,6 +63,15 @@ class SmeSpiderSpider(scrapy.Spider):
         cleaned_text = '\n'.join([line.strip() for line in html_text.splitlines() if line.strip()])
         
         return cleaned_text
+
+    def parse(self, response):
+        scholars = response.xpath('//table[contains(@class, "table")]//tr/td[2]/h3/a/@href').getall()
+        for scholar in scholars:
+            yield response.follow(
+                scholar,
+                callback = self.parse_scholar,
+                # dont_filter=True
+            )
 
     def parse_scholar(self, response):
         item = sme_item() # don't use sme_item = sme_item() which creates an instance at the class level and causes data overwriting across items, instead create a new instance for each item in the parse method.

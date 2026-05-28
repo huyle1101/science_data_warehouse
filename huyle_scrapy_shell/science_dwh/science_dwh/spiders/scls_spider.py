@@ -13,8 +13,8 @@ class SclsSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/scls/logs/scls_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/scls/raw_data/scls.csv":{
-                'format':'csv',
+            f"f:/science_data_warehouse_repo/output/hust/scls/raw_data/scls.jsonl":{
+                'format':'jsonlines',
                 "encoding": "utf8",
                 "overwrite": False # append mode
             }
@@ -44,7 +44,10 @@ class SclsSpiderSpider(scrapy.Spider):
             "nhom_chuyen_mon",
             "dai_hoc",
             "don_vi_truc_thuoc",
-            "html_text"
+            "html_text",
+            "thong_tin_khong_cong_bo",
+            "is_extracted",
+            "is_checked"
         ]
     }
 
@@ -92,6 +95,10 @@ class SclsSpiderSpider(scrapy.Spider):
         list = response.xpath('//h2[span[contains(text(), "Lý lịch khoa học")]]/following-sibling::div[contains(@class, "text-break")]//text()').getall()
         html_text = ' '.join(list)
         item['html_text'] = self.clean_html_text(html_text)
+
+        item["thong_tin_khong_cong_bo"] = False
+        item["is_extracted"] = False
+        item["is_checked"] = False
 
         yield item
 

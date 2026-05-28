@@ -14,20 +14,21 @@ class ScienceDWHItem(scrapy.Item):
     pass
 
 class ScholarItem(scrapy.Item):
-    # hust
-    # soict
-    url = scrapy.Field()
-    name = scrapy.Field()
-    email = scrapy.Field()
-    position = scrapy.Field()
-    academic_title = scrapy.Field()
-    education = scrapy.Field()
-    research_fields = scrapy.Field()
-    interested_research_fields = scrapy.Field()
-    publications = scrapy.Field()
-    awards = scrapy.Field()
-    subjects = scrapy.Field()
-    projects = scrapy.Field()
+    pass
+    # # hust
+    # # soict
+    # url = scrapy.Field()
+    # name = scrapy.Field()
+    # email = scrapy.Field()
+    # position = scrapy.Field()
+    # academic_title = scrapy.Field()
+    # education = scrapy.Field()
+    # research_fields = scrapy.Field()
+    # interested_research_fields = scrapy.Field()
+    # publications = scrapy.Field()
+    # awards = scrapy.Field()
+    # subjects = scrapy.Field()
+    # projects = scrapy.Field()
 
 class sme_item(scrapy.Item):
     url = scrapy.Field()
@@ -80,6 +81,9 @@ class scls_item(scrapy.Item):
     dai_hoc = scrapy.Field()
     don_vi_truc_thuoc = scrapy.Field()
     html_text = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
 
 class seee_item(scrapy.Item):
     url = scrapy.Field()

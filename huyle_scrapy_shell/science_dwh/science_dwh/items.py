@@ -59,6 +59,9 @@ class soict_item(scrapy.Item):
     giai_thuong_khen_thuong = scrapy.Field()
     cac_mon_giang_day = scrapy.Field()
     html_text = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted= scrapy.Field()
+    is_checked= scrapy.Field()
 
 class scls_item(scrapy.Item):
     url = scrapy.Field()

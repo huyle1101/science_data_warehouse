@@ -1,10 +1,9 @@
-from urllib import response
-import re
 import scrapy
 from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 from science_dwh.items import soict_item
 import json
+from w3lib.html import remove_tags
 
 class SoictSpiderSpider(scrapy.Spider):
     name = "soict_spider"
@@ -16,8 +15,8 @@ class SoictSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/soict/logs/soict_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/soict/raw_data/soict_v3.csv":{
-                'format':'csv',
+            "f:/science_data_warehouse_repo/output/hust/soict/raw_data/soict.jsonl":{
+                'format':'jsonlines',
                 "encoding": "utf8",
                 "overwrite": False
             }
@@ -28,15 +27,15 @@ class SoictSpiderSpider(scrapy.Spider):
         "RANDOMIZED_DOWNLOAD_DELAY":True, 
 
         "RETRY_ENABLED":True,
-        "RETRY_TIMES": 10, 
+        "RETRY_TIMES": 3, 
         "RETRY_HTTP_CODES": [500, 502, 503, 504, 408, 429, 403],
 
         "AUTOTHROTTLE_ENABLED": True,
-        "AUTOTHROTTLE_START_DELAY": 5, # initial download delay
+        "AUTOTHROTTLE_START_DELAY": 1, # initial download delay
         "AUTOTHROTTLE_MAX_DELAY": 60, # maximum download delay to be set in case of high latencies
-        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 10, # average number of requests Scrapy should be sending in parallel to each remote server
+        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 16, # average number of requests Scrapy should be sending in parallel to each remote server
         
-        "FEED_EXPORT_FIELDS": [ # columns to export in csv
+        "FEED_EXPORT_FIELDS": [
             "url",
             "avt_url",
             "ho_ten",
@@ -53,6 +52,9 @@ class SoictSpiderSpider(scrapy.Spider):
             "cong_trinh_tieu_bieu",
             "giai_thuong_khen_thuong",
             "cac_mon_giang_day",
+            "thong_tin_khong_cong_bo",
+            "is_extracted",
+            "is_checked"
         ]
     }
 
@@ -70,19 +72,6 @@ class SoictSpiderSpider(scrapy.Spider):
         # if not blank, go to next_page_url
         if next_page_url:
             yield response.follow(next_page_url, callback=self.parse)
-
-    # clean html text before feeding into Gemini API for information extraction to avoid excessive token usage
-    def clean_html_text(self,html_text): 
-        if not html_text:
-            return ""
-        html_text = re.sub(r'<script\b[^>]*>([\s\S]*?)<\/script>', '', html_text, flags=re.IGNORECASE)
-        html_text = re.sub(r'<style\b[^>]*>([\s\S]*?)<\/style>', '', html_text, flags=re.IGNORECASE)
-        html_text = re.sub(r'', '', html_text)
-        html_text = re.sub(r'<[^>]+>', '', html_text)
-        html_text = re.sub(r'\n+', '\n', html_text)
-        cleaned_text = '\n'.join([line.strip() for line in html_text.splitlines() if line.strip()])
-        
-        return cleaned_text
     
     def parse_scholar(self, response):
         item = soict_item()
@@ -97,7 +86,7 @@ class SoictSpiderSpider(scrapy.Spider):
         item['chuc_vu'] = info_list[0] if len(info_list) > 0 else None
         # vị trí = trưởng nhóm nghiên cứu tối ưu hóa,.....
         item['vi_tri'] = info_list[1] if len(info_list) > 1 else None
-        # học hàm học vị = tiến s khoa học máy tính,....
+        # học hàm học vị = tiến sĩ khoa học máy tính,....
         item['hoc_ham_hoc_vi'] = info_list[2] if len(info_list) > 2 else None
 
         raw_edu = response.css('div.col-inner p:not(.lead) strong::text').getall()[3:]
@@ -107,37 +96,34 @@ class SoictSpiderSpider(scrapy.Spider):
 
         item['email'] = response.css('a[href^="mailto:"]::text').get()
 
-        '''
-        item['linh_vuc_nghien_cuu'] = response.xpath('//span[contains(text(), "Lĩnh vực nghiên cứu")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
-        item['nghien_cuu_quan_tam'] = json.dumps(response.xpath('//span[contains(text(), "Các nghiên cứu quan tâm")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall(), ensure_ascii=False)
+        item['linh_vuc_nghien_cuu'] = response.xpath('//span[re:test(text(), "lĩnh vực nghiên cứu", "i")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
 
-        section = response.xpath('(//span[contains(@class, "section-title-main") and contains(., "Các công trình")]/ancestor::div[contains(@class, "section-title-container")]/following-sibling::*[1])[1]', ensure_ascii=False)
-        item['cong_trinh_tieu_bieu'] = json.dumps(section.xpath('.//li//text()').getall(), ensure_ascii=False)
-        item['giai_thuong_khen_thuong'] = json.dumps(response.xpath('//span[contains(text(), "Giải thưởng, khen thưởng")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall(), ensure_ascii=False)
-        item['cac_mon_giang_day'] = json.dumps(response.xpath('//span[contains(text(), "Giảng dạy")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall(), ensure_ascii=False)
+        item['nghien_cuu_quan_tam'] = response.xpath('//span[re:test(text(), "các nghiên cứu quan tâm", "i")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
 
-        du_an_1 = response.xpath('//span[contains(text(), "Dự án hiện tại")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
-        du_an_2 = response.xpath('//span[contains(text(), "Các dự án đang thực hiện")]/ancestor::div[1]/following-sibling::ol[1]/li//text()').getall()
-        item['du_an_hien_tai'] = json.dumps(du_an_1, ensure_ascii=False) if du_an_1 else json.dumps(du_an_2, ensure_ascii=False)
-        '''
-        item['linh_vuc_nghien_cuu'] = " | ".join(response.xpath('//span[contains(text(), "Lĩnh vực nghiên cứu")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall())
+        section = response.xpath('(//span[contains(@class, "section-title-main") and re:test(., "các công trình", "i")]/ancestor::div[contains(@class, "section-title-container")]/following-sibling::*[1])[1]')
+        item['cong_trinh_tieu_bieu'] = []
 
-        item['nghien_cuu_quan_tam'] = " | ".join(response.xpath('//span[contains(text(), "Các nghiên cứu quan tâm")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall())
+        for the_li in section.xpath('.//li'):
+            cac_manh_text = the_li.xpath('.//text()').getall()
+            cong_trinh = ' '.join(''.join(cac_manh_text).split())
+            if cong_trinh:
+                item['cong_trinh_tieu_bieu'].append(cong_trinh)
 
-        section = response.xpath('(//span[contains(@class, "section-title-main") and contains(., "Các công trình")]/ancestor::div[contains(@class, "section-title-container")]/following-sibling::*[1])[1]')
-        item['cong_trinh_tieu_bieu'] = " | ".join(section.xpath('.//li//text()').getall())
+        item['giai_thuong_khen_thuong'] = response.xpath('//span[re:test(text(), "giải thưởng, khen thưởng", "i")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
 
-        item['giai_thuong_khen_thuong'] = " | ".join(response.xpath('//span[contains(text(), "Giải thưởng, khen thưởng")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall())
+        item['cac_mon_giang_day'] = response.xpath('//span[re:test(text(), "giảng dạy", "i")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
 
-        item['cac_mon_giang_day'] = " | ".join(response.xpath('//span[contains(text(), "Giảng dạy")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall())
-
-        du_an_1 = response.xpath('//span[contains(text(), "Dự án hiện tại")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
-        du_an_2 = response.xpath('//span[contains(text(), "Các dự án đang thực hiện")]/ancestor::div[1]/following-sibling::ol[1]/li//text()').getall()
-        item['du_an_hien_tai'] = " | ".join(du_an_1) if du_an_1 else " | ".join(du_an_2)
+        du_an_1 = response.xpath('//span[re:test(text(), "dự án", "i")]/ancestor::div[1]/following-sibling::ul[1]/li//text()').getall()
+        du_an_2 = response.xpath('//span[re:test(text(), "các dự án đang thực hiện", "i")]/ancestor::div[1]/following-sibling::ol[1]/li//text()').getall()
+        item['du_an_hien_tai'] = du_an_1 if du_an_1 else du_an_2
 
         list = response.css('div.entry-content ::text').getall()
         html_text = ' '.join(list)
-        item['html_text'] = self.clean_html_text(html_text)
+        item['html_text'] = ' '.join(remove_tags(html_text).split())
+
+        item['thong_tin_khong_cong_bo'] = False
+        item['is_extracted'] = True
+        item['is_checked'] = False
 
 
         yield item

@@ -119,3 +119,6 @@ class ctu_item(scrapy.Item):
     de_tai_nckh_da_thuc_hien = scrapy.Field()
     sach_va_giao_trinh_xuat_ban = scrapy.Field()
     cong_trinh_nckh_da_cong_bo = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()

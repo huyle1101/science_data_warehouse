@@ -14,30 +14,32 @@ class CtuSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/ctu/logs/ctu_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/ctu/raw_data/ctu.json":{
-                'format':'json',
+            f"f:/science_data_warehouse_repo/output/ctu/raw_data/ctu.jsonl":{
+                'format':'jsonlines',
                 "encoding": "utf8",
                 "overwrite": False # append mode
             }
         },
         "CONCURRENT_REQUESTS": 500, # maximum number of requests to all domains
-        "CONCURRENT_REQUESTS_PER_DOMAIN" : 64, # increase this first to increase speed
+        "CONCURRENT_REQUESTS_PER_DOMAIN" : 32, # increase this first to increase speed
         "DOWNLOAD_DELAY" : 1,
         "RANDOMIZED_DOWNLOAD_DELAY":True,
         
         "RETRY_ENABLED":True,
-        "RETRY_TIMES": 5, 
+        "RETRY_TIMES": 3, 
         "RETRY_HTTP_CODES": [500, 502, 503, 504, 408, 429, 403],
 
         
         "AUTOTHROTTLE_ENABLED": True,
-        "AUTOTHROTTLE_START_DELAY": 5, # initial download delay
+        "AUTOTHROTTLE_START_DELAY": 0.5, # initial download delay
         "AUTOTHROTTLE_MAX_DELAY": 60, # maximum download delay to be set in case of high latencies
-        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 1.0, # average number of requests Scrapy should be sending in parallel to each remote server
+        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 32, # average number of requests Scrapy should be sending in parallel to each remote server
         
         # increase AUTOTHROTTLE_TARGET_CONCURRENCY along with CONCURRENT_REQUESTS_PER_DOMAIN, or AUTOTHROTTLE_TARGET_CONCURRENCY
         # will limit number of requests
 
+        # "DELTAFETCH_ITEM_BASED":False,
+        
         "FEED_EXPORT_FIELDS": [
             'url',
             'ho_ten',
@@ -50,6 +52,9 @@ class CtuSpiderSpider(scrapy.Spider):
             'de_tai_nckh_da_thuc_hien',
             'sach_va_giao_trinh_xuat_ban',
             'cong_trinh_nckh_da_cong_bo',
+            "thong_tin_khong_cong_bo",
+            "is_extracted",
+            "is_checked"
         ]
     }
 
@@ -58,7 +63,8 @@ class CtuSpiderSpider(scrapy.Spider):
         return [link for link in links if pattern.match(link)]
 
     def get_personal_information(self, response, information):
-        return response.xpath(f'//td[contains(text(), "{information}")]/text()').get().strip()
+        data= response.xpath(f'//td[contains(text(), "{information}")]/text()').get().strip()
+        return data.strip() if data else ""
 
     def clean_html_text(self,html_text): 
         if not html_text:
@@ -76,19 +82,28 @@ class CtuSpiderSpider(scrapy.Spider):
         links = response.css('div.art-article a::attr(href)').getall()
         scholars = self.filter_valid_profile_links(links)
         for scholar in scholars:
-            req = response.follow(
+            # req = response.follow(
+            #     scholar,
+            #     callback = self.parse_scholar,
+            #     # dont_filter=True
+            # )
+            yield response.follow(
                 scholar,
                 callback = self.parse_scholar,
                 # dont_filter=True
             )
             # save scholar link in deltafetch to avoid mismatching url caused by redirection
             # req.meta['deltafetch_key'] = scholar
-            yield req
+            # yield req
+        next_page_relative = response.xpath('//font[@class="page-select"]/following-sibling::a[1]/@href').get()
+        if next_page_relative is not None:
+            next_page_url = response.urljoin(next_page_relative)
+            yield response.follow(next_page_url, callback=self.parse)
         
-        for i in range(1,23):
-            next_page_url = f"https://www.ctu.edu.vn/webctu_staff/staff.php?page={i}"
-            if next_page_url:
-                yield response.follow(next_page_url, callback=self.parse)
+        # for i in range(1,23):
+        #     next_page_url = f"https://www.ctu.edu.vn/webctu_staff/staff.php?page={i}"
+        #     if next_page_url:
+        #         yield response.follow(next_page_url, callback=self.parse)
 
     def parse_scholar(self, response):
 
@@ -155,6 +170,10 @@ class CtuSpiderSpider(scrapy.Spider):
             if clean_text:
                 item['cong_trinh_nckh_da_cong_bo'].append(clean_text)
         
+        item['thong_tin_khong_cong_bo'] = False
+        item['is_extracted'] = True
+        item['is_checked'] = False
+
         yield item
     
     def closed(self, reason):

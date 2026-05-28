@@ -51,10 +51,12 @@ DELTAFETCH_ITEM_BASED = True
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES={
-   'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-   'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-   'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None, # scrapy default useragent
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': None, # scrapy default retry
+    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': None, # old user agent rotator
+    'scrapy_ua_rotator.middleware.RandomUserAgentMiddleware': 400, # scrapy ua rotator
+    'scrapy_ua_rotator.middleware.RetryUserAgentMiddleware': 550, # scrapy ua rotator retry
 }
 
 DEFAULT_REQUEST_HEADERS= {

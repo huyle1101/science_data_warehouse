@@ -13,14 +13,14 @@ class SeeeSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/seee/logs/seee_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/seee/raw_data/seee.csv":{
-                'format':'csv',
+            f"f:/science_data_warehouse_repo/output/hust/seee/raw_data/seee.jsonl":{
+                'format':'jsonlines',
                 "encoding": "utf8",
                 "overwrite": False # append mode
             }
         },
         "CONCURRENT_REQUESTS" : 32,
-        "CONCURRENT_REQUESTS_PER_DOMAIN" : 8,
+        "CONCURRENT_REQUESTS_PER_DOMAIN" : 16,
         "DOWNLOAD_DELAY" : 1,
         "RANDOMIZED_DOWNLOAD_DELAY":True,
         
@@ -30,9 +30,9 @@ class SeeeSpiderSpider(scrapy.Spider):
 
         # auto adjust speed of sending request based on the server response speed
         "AUTOTHROTTLE_ENABLED": True,
-        "AUTOTHROTTLE_START_DELAY": 5, # initial download delay
+        "AUTOTHROTTLE_START_DELAY": 1, # initial download delay
         "AUTOTHROTTLE_MAX_DELAY": 60, # maximum download delay to be set in case of high latencies
-        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 1.0, # average number of requests Scrapy should be sending in parallel to each remote server
+        "AUTOTHROTTLE_TARGET_CONCURRENCY"  : 16, # average number of requests Scrapy should be sending in parallel to each remote server
 
         "DNSCACHE_ENABLED" :True, # cache IP to improve speed
 
@@ -51,7 +51,10 @@ class SeeeSpiderSpider(scrapy.Spider):
             'nhom_chuyen_mon',
             'lab_nghien_cuu',
             'dai_hoc',
-            'don_vi_truc_thuoc'
+            'don_vi_truc_thuoc',
+            "thong_tin_khong_cong_bo",
+            "is_extracted",
+            "is_checked"
         ]
     }
 
@@ -123,6 +126,10 @@ class SeeeSpiderSpider(scrapy.Spider):
         item['lab_nghien_cuu'] = self.get_information(response, "LAB NGHIÊN CỨU")
         item['dai_hoc'] = 'Đại học Bách Khoa Hà Nội'
         item['don_vi_truc_thuoc'] = 'Trường Điện - Điện tử'
+
+        item["thong_tin_khong_cong_bo"] = False
+        item["is_extracted"] = True
+        item["is_checked"] = False
 
         yield item
 

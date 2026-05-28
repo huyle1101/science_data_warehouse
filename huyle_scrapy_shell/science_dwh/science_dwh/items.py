@@ -41,6 +41,9 @@ class sme_item(scrapy.Item):
     dai_hoc = scrapy.Field()
     don_vi_truc_thuoc = scrapy.Field()
     html_text = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
 
 class soict_item(scrapy.Item):
     url = scrapy.Field()
@@ -62,6 +65,8 @@ class soict_item(scrapy.Item):
     thong_tin_khong_cong_bo = scrapy.Field()
     is_extracted= scrapy.Field()
     is_checked= scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
 
 class scls_item(scrapy.Item):
     url = scrapy.Field()

@@ -13,8 +13,8 @@ class SmeSpiderSpider(scrapy.Spider):
         "LOG_FILE":f"f:/science_data_warehouse_repo/output/hust/sme/logs/sme_{timestamp}.log",
         "LOG_LEVEL":"INFO",
         "FEEDS":{
-            f"f:/science_data_warehouse_repo/output/hust/sme/raw_data/sme.csv":{
-                'format':'csv',
+            f"f:/science_data_warehouse_repo/output/hust/sme/raw_data/sme.jsonl":{
+                'format':'jsonlines',
                 "encoding": "utf8",
                 "overwrite": False # append mode
             }
@@ -44,7 +44,10 @@ class SmeSpiderSpider(scrapy.Spider):
             'nhom_chuyen_mon',
             "dai_hoc",
             "don_vi_truc_thuoc",
-            "html_text"
+            "html_text",
+            "thong_tin_khong_cong_bo",
+            "is_extracted",
+            "is_checked"
         ]
     }
 
@@ -86,13 +89,17 @@ class SmeSpiderSpider(scrapy.Spider):
         item['don_vi'] = response.xpath('normalize-space(//*[contains(text(), "Thuộc đơn vị")]/parent::*)').get(default='').split(':', 1)[-1].strip()
         item['email'] = response.xpath('normalize-space(//*[contains(text(), "Địa chỉ email")]/parent::*)').get(default='').split(':', 1)[-1].strip()
         item['nhom_chuyen_mon'] = response.xpath('//b[contains(text(), "Nhóm chuyên môn")]/following-sibling::text()').get()
-        item['dai_hoc'] = 'Đại học Bách Khoa Hà Nội'
+        item['dai_hoc'] = 'Đại học Bách khoa Hà Nội'
         item['don_vi_truc_thuoc'] = 'Trường Cơ khí'
         
         # get all text under "Lý lịch khoa học" section of sole text-break class
         list = response.xpath('//h2[span[contains(text(), "Lý lịch khoa học")]]/following-sibling::div[contains(@class, "text-break")]//text()').getall()
         html_text = ' '.join(list)
         item['html_text'] = self.clean_html_text(html_text)
+
+        item["thong_tin_khong_cong_bo"] = False
+        item["is_extracted"] = False
+        item["is_checked"] = False
 
         yield item
     

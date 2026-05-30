@@ -122,6 +122,19 @@ class smse_item(scrapy.Item):
     is_checked = scrapy.Field()
     html_text = scrapy.Field()
 
+class sem_item(scrapy.Item):
+    url = scrapy.Field()
+    avt_url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    chuc_vu = scrapy.Field()
+    html_text = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
+
+
 class ctu_item(scrapy.Item):
     url = scrapy.Field()
     # html_text = scrapy.Field()

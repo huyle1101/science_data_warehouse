@@ -134,6 +134,29 @@ class sem_item(scrapy.Item):
     is_extracted = scrapy.Field()
     is_checked = scrapy.Field()
 
+class fed_item(scrapy.Item):
+    url = scrapy.Field()
+    avt_url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    chuc_danh = scrapy.Field()
+    don_vi = scrapy.Field()
+    phong_lam_viec = scrapy.Field()
+    email = scrapy.Field()
+    dien_thoai = scrapy.Field()
+    qua_trinh_dao_tao = scrapy.Field()
+    qua_trinh_cong_tac = scrapy.Field()
+    linh_vuc_nghien_cuu = scrapy.Field()
+    linh_vuc_phu_trach_quan_tam = scrapy.Field()
+    cac_mon_giang_day = scrapy.Field()
+    de_tai_du_an = scrapy.Field()
+    cong_trinh_khoa_hoc = scrapy.Field()
+    sach_va_giao_trinh = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
+
 
 class ctu_item(scrapy.Item):
     url = scrapy.Field()
@@ -151,3 +174,4 @@ class ctu_item(scrapy.Item):
     thong_tin_khong_cong_bo = scrapy.Field()
     is_extracted = scrapy.Field()
     is_checked = scrapy.Field()
+

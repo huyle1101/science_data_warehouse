@@ -105,3 +105,14 @@ class SmseSpiderSpider(scrapy.Spider):
         item['is_checked'] = False
 
         yield item
+
+    def closed(self, reason):
+        # calculate coverage percentage and store in Dumping Scrapy stats
+        stats = self.crawler.stats 
+
+        crawled = stats.get_value('response_received_count', 0)
+        scraped = stats.get_value('item_scraped_count', 0)
+
+        if crawled > 0:
+            coverage = (scraped / crawled) * 100
+            stats.set_value('coverage_percent', round(coverage, 2))

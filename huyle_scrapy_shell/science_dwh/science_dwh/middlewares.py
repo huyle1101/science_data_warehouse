@@ -7,6 +7,7 @@ from scrapy import signals
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
+from fake_useragent import UserAgent
 
 
 class ScienceDwhSpiderMiddleware:
@@ -98,3 +99,18 @@ class ScienceDwhDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
+
+
+class RealisticBrowserMiddleware:
+    def __init__(self):
+        # Chỉ lấy trình duyệt phổ biến trên Windows/Mac để tránh bị chú ý
+        self.ua = UserAgent(os=['windows', 'macos'], browsers=['chrome', 'edge', 'firefox'])
+
+    def process_request(self, request, spider):
+        # Tự động gắn User-Agent mới tinh vào mọi request của mọi spider
+        request.headers.setdefault(b'User-Agent', self.ua.random)
+        
+        # (Tùy chọn) Tự động thêm Referer nếu request chưa có
+        # Giúp vượt qua các trang chặn truy cập trực tiếp như trường hợp của bạn
+        if not request.headers.get(b'Referer'):
+            request.headers.setdefault(b'Referer', b'https://www.google.com/')

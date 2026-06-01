@@ -1,0 +1,23 @@
+01/06/2026 21:07:50 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_yc_m9i02
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=54992
+01/06/2026 21:07:51 Navigating to listing page: https://saa.neu.edu.vn/giang-vien/

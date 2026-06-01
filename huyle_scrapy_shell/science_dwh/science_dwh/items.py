@@ -157,6 +157,31 @@ class fed_item(scrapy.Item):
     is_extracted = scrapy.Field()
     is_checked = scrapy.Field()
 
+class sep_item(scrapy.Item):
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
+    url = scrapy.Field()
+    avt_url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    chuc_danh_kiem_nhiem = scrapy.Field()
+    chuc_vu = scrapy.Field()
+    qua_trinh_dao_tao = scrapy.Field()
+    email = scrapy.Field()
+    web = scrapy.Field()
+    gioi_thieu = scrapy.Field()
+    nghien_cuu_quan_tam = scrapy.Field()
+    linh_vuc_nghien_cuu = scrapy.Field()
+    cong_trinh_tieu_bieu = scrapy.Field()
+    sach = scrapy.Field()
+    giang_day = scrapy.Field()
+    de_tai_cho_thac_sy = scrapy.Field()
+    de_tai_cho_nghien_cuu_sinh = scrapy.Field()
+    giai_thuong = scrapy.Field()
+    html_text = scrapy.Field()
+
 
 class ctu_item(scrapy.Item):
     url = scrapy.Field()

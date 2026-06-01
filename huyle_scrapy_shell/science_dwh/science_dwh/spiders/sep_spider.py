@@ -11,7 +11,7 @@ OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'sep.jsonl')
 
 LOG_DIR = 'f:/science_data_warehouse_repo/output/hust/sep/logs'
 os.makedirs(LOG_DIR, exist_ok=True)
-LOG_FILE = os.path.join(LOG_DIR, f'sep{timestamp}.log')
+LOG_FILE = os.path.join(LOG_DIR, f'sep_{timestamp}.log')
 
 class SepSpiderSpider(scrapy.Spider):
     name = "sep_spider"

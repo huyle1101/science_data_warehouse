@@ -216,6 +216,31 @@ class sofl_item(scrapy.Item):
     de_tai_nghien_cuu       = scrapy.Field()
     html_text               = scrapy.Field()
 
+class NhtcScholarItem(scrapy.Item):
+    url = scrapy.Field()
+    avt_url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    dia_chi = scrapy.Field()
+    email = scrapy.Field()
+    huong_nghien_cuu_chinh = scrapy.Field()
+    chuyen_nganh_nghien_cuu = scrapy.Field()
+    sach = scrapy.Field()
+    bai_bao_trong_nuoc = scrapy.Field()
+    bai_bao_quoc_te = scrapy.Field()
+    bao_cao_trong_nuoc = scrapy.Field()
+    bao_cao_quoc_te = scrapy.Field()
+    de_tai_du_an = scrapy.Field()
+    giai_thuong = scrapy.Field()
+    huong_dan_ncs = scrapy.Field()
+    thong_tin_khac = scrapy.Field()
+    
+    html_text = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
+
 
 class ctu_item(scrapy.Item):
     url = scrapy.Field()

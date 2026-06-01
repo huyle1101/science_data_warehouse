@@ -194,6 +194,28 @@ class fpt_item(scrapy.Item):
     is_extracted = scrapy.Field()
     is_checked = scrapy.Field()
 
+class sofl_item(scrapy.Item):
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted            = scrapy.Field()
+    is_checked              = scrapy.Field()
+    dai_hoc                 = scrapy.Field()
+    don_vi_truc_thuoc       = scrapy.Field()
+    nhom_chuyen_mon         = scrapy.Field()
+    url                     = scrapy.Field()
+    avt_url                 = scrapy.Field()
+    ho_ten                  = scrapy.Field()
+    chuc_vu                 = scrapy.Field()
+    noi_lam_viec            = scrapy.Field()
+    email                   = scrapy.Field()
+    tel                     = scrapy.Field()
+    gioi_thieu              = scrapy.Field()
+    linh_vuc_nghien_cuu     = scrapy.Field()
+    giang_day               = scrapy.Field()
+    bai_bao_khoa_hoc        = scrapy.Field()
+    sach                    = scrapy.Field()
+    de_tai_nghien_cuu       = scrapy.Field()
+    html_text               = scrapy.Field()
+
 
 class ctu_item(scrapy.Item):
     url = scrapy.Field()

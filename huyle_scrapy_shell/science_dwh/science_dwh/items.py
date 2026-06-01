@@ -181,6 +181,18 @@ class sep_item(scrapy.Item):
     de_tai_cho_nghien_cuu_sinh = scrapy.Field()
     giai_thuong = scrapy.Field()
     html_text = scrapy.Field()
+    
+class fpt_item(scrapy.Item):
+    url = scrapy.Field()
+    ho_ten = scrapy.Field()
+    avt_url = scrapy.Field()
+    nhom_chuyen_mon = scrapy.Field()
+    html_text = scrapy.Field()
+    dai_hoc = scrapy.Field()
+    don_vi_truc_thuoc = scrapy.Field()
+    thong_tin_khong_cong_bo = scrapy.Field()
+    is_extracted = scrapy.Field()
+    is_checked = scrapy.Field()
 
 
 class ctu_item(scrapy.Item):

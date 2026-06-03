@@ -33,16 +33,6 @@ LISTING_URL = "https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien"
 async def human_sleep(min_s=1.0, max_s=3.0):
     await asyncio.sleep(random.uniform(min_s, max_s))
 
-def sanitize(value):
-    """Unwrap nodriver CDP objects and drop anything non-serializable."""
-    if isinstance(value, str):
-        return value
-    if isinstance(value, dict) and "value" in value:
-        return value["value"]
-    if isinstance(value, list):
-        return [sanitize(v) for v in value]
-    return None
-
 # get all scholar profile links from listing page and avatar urls
 async def scrape_listing_page(tab, data_dict: dict) -> dict:
     await human_sleep(1.0, 3.0) # wait for page to load
@@ -141,5 +131,7 @@ async def main():
 
         except Exception as e:
             log.warning(f"Error processing {url}: {e}")
+    
+    log.info("Finished, total running time: {:.2f} seconds".format(time.time() - script_start_time))
 
 uc.loop().run_until_complete(main())

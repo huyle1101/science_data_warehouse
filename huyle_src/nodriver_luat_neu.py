@@ -148,5 +148,7 @@ async def main():
 
         except Exception as e:
             log.warning(f"Error processing {url}: {e}")
+    
+    log.info("Finished, total running time: {:.2f} seconds".format(time.time() - script_start_time))
 
 uc.loop().run_until_complete(main())

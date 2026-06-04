@@ -170,7 +170,16 @@ async def extract_information(tab) -> dict:
         })()
     """
     data_dict['avt_url'] = await tab.evaluate(get_avt_url_js)
-
+    
+    
+    get_ho_ten_js = """
+        (() => {
+            const nameEl = document.querySelector('.info-lecturer_name-content h1 span.custom-h3');
+            return nameEl ? nameEl.textContent.trim() : null;
+        })()
+    """
+    data_dict['ho_ten'] = await tab.evaluate(get_ho_ten_js)
+    
     return data_dict
 
 

@@ -1,0 +1,129 @@
+03/06/2026 11:28:19 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_8xpcpau0
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56328
+03/06/2026 11:28:25 Found 51 scholar links to process.
+03/06/2026 11:28:31 Scraped: https://saa.neu.edu.vn/gsts-nguyen-huu-anh.html
+03/06/2026 11:28:31 Saved: https://saa.neu.edu.vn/gsts-nguyen-huu-anh.html to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:28:38 Scraped: https://saa.neu.edu.vn/pgs-ts-dinh-the-hung/
+03/06/2026 11:28:38 Saved: https://saa.neu.edu.vn/pgs-ts-dinh-the-hung/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:28:46 Scraped: https://saa.neu.edu.vn/PGSTS-NGUYEN-NGOC-QUANG/
+03/06/2026 11:28:46 Saved: https://saa.neu.edu.vn/PGSTS-NGUYEN-NGOC-QUANG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:28:53 Scraped: https://saa.neu.edu.vn/PGSTS-PHAM-DUC-CUONG/
+03/06/2026 11:28:53 Saved: https://saa.neu.edu.vn/PGSTS-PHAM-DUC-CUONG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:01 Scraped: https://saa.neu.edu.vn/PGSTS-TRAN-VAN-THUAN/
+03/06/2026 11:29:01 Saved: https://saa.neu.edu.vn/PGSTS-TRAN-VAN-THUAN/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:08 Scraped: https://saa.neu.edu.vn/PGSTS-LE-KIM-NGOC/
+03/06/2026 11:29:08 Saved: https://saa.neu.edu.vn/PGSTS-LE-KIM-NGOC/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:16 Scraped: https://saa.neu.edu.vn/PGSTS-PHAN-TRUNG-KIEN/
+03/06/2026 11:29:16 Saved: https://saa.neu.edu.vn/PGSTS-PHAN-TRUNG-KIEN/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:24 Scraped: https://saa.neu.edu.vn/PGSTS-NGUYEN-THI-THU-LIEN/
+03/06/2026 11:29:24 Saved: https://saa.neu.edu.vn/PGSTS-NGUYEN-THI-THU-LIEN/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:32 Scraped: https://saa.neu.edu.vn/pgststran-trung-tuan/
+03/06/2026 11:29:32 Saved: https://saa.neu.edu.vn/pgststran-trung-tuan/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:40 Scraped: https://saa.neu.edu.vn/pgs-ts-nguyen-thanh-hieu/
+03/06/2026 11:29:40 Saved: https://saa.neu.edu.vn/pgs-ts-nguyen-thanh-hieu/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:48 Scraped: https://saa.neu.edu.vn/TS-PHAM-XUAN-KIEN/
+03/06/2026 11:29:48 Saved: https://saa.neu.edu.vn/TS-PHAM-XUAN-KIEN/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:29:56 Scraped: https://saa.neu.edu.vn/ts-tran-quang-chung/
+03/06/2026 11:29:56 Saved: https://saa.neu.edu.vn/ts-tran-quang-chung/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:02 Scraped: https://saa.neu.edu.vn/pgsts-nguyen-duc-dung/
+03/06/2026 11:30:02 Saved: https://saa.neu.edu.vn/pgsts-nguyen-duc-dung/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:10 Scraped: https://saa.neu.edu.vn/ts-le-quang-dung/
+03/06/2026 11:30:10 Saved: https://saa.neu.edu.vn/ts-le-quang-dung/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:18 Scraped: https://saa.neu.edu.vn/TS-TRAN-THI-NAM-THANH/
+03/06/2026 11:30:18 Saved: https://saa.neu.edu.vn/TS-TRAN-THI-NAM-THANH/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:24 Scraped: https://saa.neu.edu.vn/TS-PHAM-THI-THUY/
+03/06/2026 11:30:24 Saved: https://saa.neu.edu.vn/TS-PHAM-THI-THUY/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:32 Scraped: https://saa.neu.edu.vn/TS-PHAM-THI-MINH-HONG/
+03/06/2026 11:30:32 Saved: https://saa.neu.edu.vn/TS-PHAM-THI-MINH-HONG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:39 Scraped: https://saa.neu.edu.vn/TS-NGUYEN-THI-MY/
+03/06/2026 11:30:39 Saved: https://saa.neu.edu.vn/TS-NGUYEN-THI-MY/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:47 Scraped: https://saa.neu.edu.vn/TS-PHAM-THANH-LONG/
+03/06/2026 11:30:47 Saved: https://saa.neu.edu.vn/TS-PHAM-THANH-LONG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:30:55 Scraped: https://saa.neu.edu.vn/TS-DANG-THI-THUY-HANG/
+03/06/2026 11:30:55 Saved: https://saa.neu.edu.vn/TS-DANG-THI-THUY-HANG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:02 Scraped: https://saa.neu.edu.vn/TS-BUI-THI-MINH-HAI/
+03/06/2026 11:31:02 Saved: https://saa.neu.edu.vn/TS-BUI-THI-MINH-HAI/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:10 Scraped: https://saa.neu.edu.vn/TS-HA-THI-PHUONG-DUNG/
+03/06/2026 11:31:10 Saved: https://saa.neu.edu.vn/TS-HA-THI-PHUONG-DUNG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:17 Scraped: https://saa.neu.edu.vn/pgsts-nguyen-thi-mai-anh/
+03/06/2026 11:31:17 Saved: https://saa.neu.edu.vn/pgsts-nguyen-thi-mai-anh/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:25 Scraped: https://saa.neu.edu.vn/pgs-ts-ta-thu-trang/
+03/06/2026 11:31:25 Saved: https://saa.neu.edu.vn/pgs-ts-ta-thu-trang/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:33 Scraped: https://saa.neu.edu.vn/pgsts-duong-thi-van-anh/
+03/06/2026 11:31:33 Saved: https://saa.neu.edu.vn/pgsts-duong-thi-van-anh/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:41 Scraped: https://saa.neu.edu.vn/TS-PHI-VAN-TRONG/
+03/06/2026 11:31:41 Saved: https://saa.neu.edu.vn/TS-PHI-VAN-TRONG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:50 Scraped: https://saa.neu.edu.vn/pgs-ts-doan-thanh-nga/
+03/06/2026 11:31:50 Saved: https://saa.neu.edu.vn/pgs-ts-doan-thanh-nga/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:31:56 Scraped: https://saa.neu.edu.vn/pgs-ts-nguyen-thi-minh-phuong/
+03/06/2026 11:31:56 Saved: https://saa.neu.edu.vn/pgs-ts-nguyen-thi-minh-phuong/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:03 Scraped: https://saa.neu.edu.vn/TS-NGUYEN-THI-THANH-DIEP/
+03/06/2026 11:32:03 Saved: https://saa.neu.edu.vn/TS-NGUYEN-THI-THANH-DIEP/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:11 Scraped: https://saa.neu.edu.vn/TS-NGUYEN-HA-LINH/
+03/06/2026 11:32:11 Saved: https://saa.neu.edu.vn/TS-NGUYEN-HA-LINH/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:19 Scraped: https://saa.neu.edu.vn/TS-NGUYEN-THI-LAN-ANH/
+03/06/2026 11:32:19 Saved: https://saa.neu.edu.vn/TS-NGUYEN-THI-LAN-ANH/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:27 Scraped: https://saa.neu.edu.vn/TS-LE-THI-NHU/
+03/06/2026 11:32:27 Saved: https://saa.neu.edu.vn/TS-LE-THI-NHU/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:34 Scraped: https://saa.neu.edu.vn/THS-NGUYEN-PHI-LONG/
+03/06/2026 11:32:34 Saved: https://saa.neu.edu.vn/THS-NGUYEN-PHI-LONG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:41 Scraped: https://saa.neu.edu.vn/ts-nguyen-thi-mai-chi/
+03/06/2026 11:32:41 Saved: https://saa.neu.edu.vn/ts-nguyen-thi-mai-chi/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:48 Scraped: https://saa.neu.edu.vn/THS-HAN-THI-LAN-THU/
+03/06/2026 11:32:48 Saved: https://saa.neu.edu.vn/THS-HAN-THI-LAN-THU/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:32:57 Scraped: https://saa.neu.edu.vn/THS-MAI-VAN-ANH/
+03/06/2026 11:32:57 Saved: https://saa.neu.edu.vn/THS-MAI-VAN-ANH/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:05 Scraped: https://saa.neu.edu.vn/THS-DOAN-THI-TRUC-QUYNH/
+03/06/2026 11:33:05 Saved: https://saa.neu.edu.vn/THS-DOAN-THI-TRUC-QUYNH/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:13 Scraped: https://saa.neu.edu.vn/ts-dam-thi-kim-oanh/
+03/06/2026 11:33:13 Saved: https://saa.neu.edu.vn/ts-dam-thi-kim-oanh/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:20 Scraped: https://saa.neu.edu.vn/pgsts-ha-hong-hanh/
+03/06/2026 11:33:20 Saved: https://saa.neu.edu.vn/pgsts-ha-hong-hanh/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:28 Scraped: https://saa.neu.edu.vn/pgs-ts-nguyen-la-soa/
+03/06/2026 11:33:28 Saved: https://saa.neu.edu.vn/pgs-ts-nguyen-la-soa/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:36 Scraped: https://saa.neu.edu.vn/ts-duong-thi-chi/
+03/06/2026 11:33:36 Saved: https://saa.neu.edu.vn/ts-duong-thi-chi/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:43 Scraped: https://saa.neu.edu.vn/ts-le-ngoc-thang/
+03/06/2026 11:33:43 Saved: https://saa.neu.edu.vn/ts-le-ngoc-thang/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:33:52 Scraped: https://saa.neu.edu.vn/THS-VU-THI-MINH-THU/
+03/06/2026 11:33:52 Saved: https://saa.neu.edu.vn/THS-VU-THI-MINH-THU/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:00 Scraped: https://saa.neu.edu.vn/ts-phan-thi-thanh-loan/
+03/06/2026 11:34:00 Saved: https://saa.neu.edu.vn/ts-phan-thi-thanh-loan/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:07 Scraped: https://saa.neu.edu.vn/pgsts-le-quynh-lien/
+03/06/2026 11:34:07 Saved: https://saa.neu.edu.vn/pgsts-le-quynh-lien/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:15 Scraped: https://saa.neu.edu.vn/ts-dang-thi-tra-giang/
+03/06/2026 11:34:15 Saved: https://saa.neu.edu.vn/ts-dang-thi-tra-giang/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:24 Scraped: https://saa.neu.edu.vn/THS-NGUYEN-PHUONG-THAO/
+03/06/2026 11:34:24 Saved: https://saa.neu.edu.vn/THS-NGUYEN-PHUONG-THAO/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:31 Scraped: https://saa.neu.edu.vn/ts-truong-van-tu/
+03/06/2026 11:34:31 Saved: https://saa.neu.edu.vn/ts-truong-van-tu/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:38 Scraped: https://saa.neu.edu.vn/ts-doan-thuy-duong/
+03/06/2026 11:34:38 Saved: https://saa.neu.edu.vn/ts-doan-thuy-duong/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:46 Scraped: https://saa.neu.edu.vn/THS-PHAM-THANH-HUONG/
+03/06/2026 11:34:46 Saved: https://saa.neu.edu.vn/THS-PHAM-THANH-HUONG/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:53 Scraped: https://saa.neu.edu.vn/ts-nguyen-thu-hang/
+03/06/2026 11:34:53 Saved: https://saa.neu.edu.vn/ts-nguyen-thu-hang/ to f:/science_data_warehouse_repo/output/neu/saa/raw_data\saa_20260603_112819.jsonl
+03/06/2026 11:34:56 Done. Total time: 396.6s
+03/06/2026 11:34:56 terminated browser with pid 39136 successfully
+03/06/2026 11:34:56 terminated browser with pid 39136 successfully
+03/06/2026 11:34:57 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_8xpcpau0

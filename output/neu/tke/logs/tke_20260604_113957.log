@@ -1,0 +1,45 @@
+04/06/2026 11:39:57 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_cqd3fzjm
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57454
+04/06/2026 11:40:00 Get 17 links from listing page.
+04/06/2026 11:40:00 Found 17 scholar links on page 1.
+04/06/2026 11:40:00 Found total 17 scholar links to process.
+04/06/2026 11:40:02 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-tran-thi-nga to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:05 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-cao-quoc-quang to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:07 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-nguyen-thi-xuan-mai-5718 to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:10 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ths-nguyen-bao-khanh to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:13 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ths-nguyen-huyen-trang-3634 to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:15 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-do-van-huan-1211 to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:18 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-chu-thi-bich-ngoc-0828 to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:21 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/pgs-ts-bui-duc-trieu to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:23 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ths-nguyen-quoc-hung to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:25 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ths-bui-thi-thuy to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:28 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-nguyen-minh-thu to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:31 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-pham-thi-mai-anh to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:34 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-nguyen-dang-khoa to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:37 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ts-le-hoang-minh-nguyet to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:40 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ths-tran-hoai-nam-0208 to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:42 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/pgs-ts-tran-thi-bich to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:44 Saved: https://khoathongke.neu.edu.vn/vi/can-bo-giang-vien-1745/ths-pham-thi-nga to f:/science_data_warehouse_repo/output/neu/tke/raw_data\tke_20260604_113957.jsonl
+04/06/2026 11:40:44 Finished, total running time: 47.34 seconds
+04/06/2026 11:40:45 terminated browser with pid 59964 successfully
+04/06/2026 11:40:45 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_cqd3fzjm

@@ -1,0 +1,75 @@
+04/06/2026 12:00:58 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_xnjjcn7i
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=49852
+04/06/2026 12:01:02 Get 47 links from listing page.
+04/06/2026 12:01:02 Found 47 scholar links on page 1.
+04/06/2026 12:01:02 Found total 47 scholar links to process.
+04/06/2026 12:01:06 Saved: http://mfe.edu.vn/phamthihuonghuyen to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:12 Saved: http://mfe.edu.vn/vuthibichngoc to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:25 Saved: http://mfe.edu.vn/vuduythanh to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:31 Saved: http://mfe.edu.vn/nguyenhongnhat to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:34 Saved: http://mfe.edu.vn/phamthinga to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:38 Saved: http://mfe.edu.vn/phamthihongtham to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:40 Saved: http://mfe.edu.vn/ngovanthu to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:45 Saved: http://mfe.edu.vn/tranchungthuy to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:49 Saved: http://mfe.edu.vn/nguyentuanlong to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:56 Saved: http://mfe.edu.vn/nguyenthithutrang to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:01:59 Saved: http://mfe.edu.vn/doantrongtuyen to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:02 Saved: http://mfe.edu.vn/phambaolam to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:05 Saved: http://mfe.edu.vn/hoangbichphuong to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:08 Saved: http://mfe.edu.vn/nguyenmaiquyen to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:11 Saved: http://mfe.edu.vn/tongthanhtrung to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:17 Saved: http://mfe.edu.vn/nguyenhaiduong to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:20 Saved: http://mfe.edu.vn/luongvanlong to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:23 Saved: http://mfe.edu.vn/duongvietthong to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:28 Saved: http://mfe.edu.vn/maicamtu to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:32 Saved: http://mfe.edu.vn/buiduonghai to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:35 Saved: http://mfe.edu.vn/nguyenthithuytrang to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:48 Saved: http://mfe.edu.vn/nguyenthithao to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:51 Saved: http://mfe.edu.vn/buiquochoan to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:02:54 Saved: http://mfe.edu.vn/lethianh to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:01 Saved: http://mfe.edu.vn/nguyenthanhtuan/ to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:04 Saved: http://mfe.edu.vn/phungminhduc to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:10 Saved: http://mfe.edu.vn/nguyenquanghuy to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:16 Saved: http://mfe.edu.vn/nguyenthicamvan to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:27 Saved: http://mfe.edu.vn/phamvannghia to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:30 Saved: http://mfe.edu.vn/nguyenthilien to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:35 Saved: http://mfe.edu.vn/hathiminhhue to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:38 Saved: http://mfe.edu.vn/nguyenthiquy to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:42 Saved: http://mfe.edu.vn/nguyenmanhthe to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:45 Saved: http://mfe.edu.vn/nguyenquangdong to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:49 Saved: http://mfe.edu.vn/hoangducmanh to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:52 Saved: http://mfe.edu.vn/nguyenthiminh to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:54 Saved: http://mfe.edu.vn/daobuikientrung to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:56 Saved: http://mfe.edu.vn/vuquynhanh to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:03:59 Saved: http://mfe.edu.vn/leanhduc to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:07 Saved: http://mfe.edu.vn/phamngochung to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:11 Saved: http://mfe.edu.vn/hoangthithanhtam to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:14 Saved: http://mfe.edu.vn/hoangvanthang to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:23 Saved: http://mfe.edu.vn/nguyenthian to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:26 Saved: http://mfe.edu.vn/leduchoang to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:35 Saved: http://mfe.edu.vn/danghuyngan to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:39 Saved: http://mfe.edu.vn/dinhhongtheu to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:43 Saved: http://mfe.edu.vn/buikientrung to f:/science_data_warehouse_repo/output/neu/mfe/raw_data\mfe_20260604_120058.jsonl
+04/06/2026 12:04:43 Finished, total running time: 225.32 seconds
+04/06/2026 12:04:44 terminated browser with pid 65640 successfully
+04/06/2026 12:04:45 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_xnjjcn7i

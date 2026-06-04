@@ -1,0 +1,64 @@
+03/06/2026 20:32:37 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_0_nrcm6u
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=51286
+03/06/2026 20:32:43 On page 2
+03/06/2026 20:32:45 Found 10 scholar links on page 2
+03/06/2026 20:32:48 On page 3
+03/06/2026 20:32:50 Found 10 scholar links on page 3
+03/06/2026 20:32:53 On page 4
+03/06/2026 20:32:55 Found 2 scholar links on page 4
+03/06/2026 20:32:55 No more href found for next page button, assuming last page reached.
+03/06/2026 20:32:55 Found total 32 scholar links to process.
+03/06/2026 20:32:57 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/28 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:00 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/30 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:03 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/15 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:05 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/17 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:08 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/22 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:10 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/23 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:13 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/24 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:15 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/25 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:19 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/26 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:21 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/7 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:24 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/8 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:27 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/10 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:29 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/ts-le-thi-hong-anh to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:32 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/13 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:35 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/14 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:37 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/9 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:39 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/4 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:42 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/h to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:44 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/g to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:47 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/t-4959 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:49 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/1-0400 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:51 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/2-1000 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:54 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/5 to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:33:57 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/ths-khuong-quynh-huong to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:00 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/giang-vien-m to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:02 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/n to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:05 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/o to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:07 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/p to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:10 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/cn-le-thi-kim-anh to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:12 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/ths-nguyen-ngoc-dung to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:14 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/ths-nguyen-thu-hien to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:16 Saved: https://khoaluat.neu.edu.vn/vi/giang-vien-khoa-luat/ths-do-khanh-linh to f:/science_data_warehouse_repo/output/neu/luat/raw_data\luat_20260603_203237.jsonl
+03/06/2026 20:34:16 terminated browser with pid 26052 successfully
+03/06/2026 20:34:17 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_0_nrcm6u

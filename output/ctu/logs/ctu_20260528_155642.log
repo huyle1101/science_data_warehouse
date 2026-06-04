@@ -1,0 +1,1230 @@
+2026-05-28 15:56:42 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-28 15:56:42 [scrapy.extensions.telnet] INFO: Telnet Password: 02feb22a100f1f40
+2026-05-28 15:56:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-28 15:56:42 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 0.5,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 32,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 500,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'ho_ten',
+                        'gioi_tinh',
+                        'email',
+                        'chuc_vu',
+                        'trinh_do_chuyen_mon',
+                        'hoc_ham',
+                        'don_vi',
+                        'de_tai_nckh_da_thuc_hien',
+                        'sach_va_giao_trinh_xuat_ban',
+                        'cong_trinh_nckh_da_cong_bo',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/ctu/logs/ctu_20260528_155642.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 3,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-28 15:56:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:56:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-28 15:56:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-28 15:56:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-28 15:56:45 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 15:56:45 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 15:56:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-28 15:56:45 [scrapy.core.engine] INFO: Spider opened
+2026-05-28 15:56:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-28 15:56:45 [ctu_spider] INFO: Spider opened: ctu_spider
+2026-05-28 15:56:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001578>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001056>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000413>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000404>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000365>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000352>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000347>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000345>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000322>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000283>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000281>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000273>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000267>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000044>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000312>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002657>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002655>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002439>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002424>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002421>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002398>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002359>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002345>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002336>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002295>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002204>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002191>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002187>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002163>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002153>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002143>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002138>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002137>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002078>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002012>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002002>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001920>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001916>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001867>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001860>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001859>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001807>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001800>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001799>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001798>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001796>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001795>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001787>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001753>
+2026-05-28 15:56:48 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001695>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001675>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001674>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001630>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001626>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001619>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001576>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001571>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001560>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001537>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001518>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001506>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001476>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001471>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001470>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001464>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001410>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001407>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001405>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001392>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001386>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001352>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001348>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001299>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001297>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001289>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001288>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001278>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001198>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001174>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001148>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001120>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001119>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001108>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001100>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001076>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001075>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001072>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001067>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001062>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001047>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001040>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001006>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000793>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000787>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000785>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000775>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000773>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000772>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000771>
+2026-05-28 15:56:50 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000762>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000761>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000749>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000744>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000563>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000560>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000554>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000551>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000548>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000543>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000541>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000517>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000501>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000483>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000412>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000411>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000407>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000398>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000394>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000386>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000384>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000382>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000370>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000355>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000351>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000340>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000323>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000319>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000309>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000308>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000300>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000284>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000278>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000274>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000271>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000269>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000266>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000264>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000263>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000260>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000259>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000258>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000243>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000199>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000158>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000136>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000129>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000121>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000117>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000020>
+2026-05-28 15:56:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000019>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000010>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000007>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000006>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002897>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002892>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002888>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002886>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002879>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002867>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002865>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002864>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002862>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002861>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002849>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002858>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002856>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002848>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002839>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002828>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002826>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002821>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002819>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002818>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002815>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002814>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002813>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002812>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002808>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002807>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002806>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002805>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002803>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002802>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002801>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002800>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002797>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002796>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002783>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002782>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002781>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002779>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002774>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002773>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002772>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002770>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002769>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002768>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002758>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002753>
+2026-05-28 15:56:52 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002733>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002728>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002727>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002726>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002722>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002701>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002700>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002699>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002696>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002692>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002674>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002672>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002664>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002653>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002649>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002648>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002647>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002645>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002635>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002634>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002628>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002626>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002622>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002621>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002611>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002609>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002607>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002605>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002597>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002594>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002584>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002569>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002566>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002530>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002529>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002525>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002521>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002519>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002518>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002514>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002510>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002507>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002502>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002477>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002461>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002454>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002451>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002450>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002448>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002445>
+2026-05-28 15:56:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002443>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002440>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002438>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002434>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002431>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002429>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002428>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002427>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002426>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002425>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002423>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002422>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002420>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002419>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002418>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002417>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002414>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002413>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002412>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002394>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002378>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002377>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002376>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002375>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002373>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002372>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002364>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002363>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002361>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002358>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002357>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002347>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002346>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002344>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002343>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002338>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002337>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002334>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002331>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002330>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002328>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002321>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002316>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002300>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002294>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002292>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002278>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002277>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002274>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002273>
+2026-05-28 15:56:54 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002267>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002264>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002262>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002260>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002257>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002254>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002252>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002251>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002243>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002238>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002237>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002236>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002229>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002228>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002208>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002203>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002202>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002200>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002186>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002177>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002174>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002162>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002161>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002160>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002158>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002144>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002136>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002128>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002119>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002116>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002115>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002114>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002106>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002100>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002099>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002098>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002097>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002095>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002094>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002086>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002084>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002083>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002082>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002072>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002062>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002058>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002052>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002051>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002029>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002022>
+2026-05-28 15:56:55 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002011>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002006>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002001>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001999>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001998>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001997>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001996>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001984>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001983>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001981>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001975>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001974>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001971>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001967>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001964>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001953>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001952>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001948>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001945>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001944>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001943>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001942>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001941>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001929>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001924>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001894>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001885>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001874>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001870>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001858>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001855>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001854>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001852>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001851>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001848>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001847>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001845>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001812>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001808>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001802>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001797>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001783>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001782>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001781>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001779>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001773>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001772>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001769>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001768>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001765>
+2026-05-28 15:56:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001748>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001743>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001742>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001724>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001705>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001703>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001702>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001696>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001686>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001683>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001680>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001676>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001669>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001668>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001640>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001636>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001632>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001631>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001629>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001624>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001622>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001615>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001614>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001611>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001607>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001606>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001585>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001582>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001581>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001561>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001559>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001542>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001539>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001534>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001533>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001531>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001524>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001523>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001522>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001521>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001498>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001463>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001462>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001455>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001451>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001429>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001428>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001423>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001421>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001406>
+2026-05-28 15:56:58 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001399>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001387>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001380>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001353>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001349>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001344>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001331>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001323>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001309>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001298>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001282>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001280>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001273>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001256>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001250>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001249>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001247>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001246>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001234>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001232>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001231>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001230>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001229>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001227>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001199>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001190>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001183>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001159>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001137>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001136>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001135>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001124>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001111>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001109>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001074>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001073>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001064>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001063>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001059>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001055>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001048>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001044>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001039>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001028>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000983>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000883>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000841>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000810>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000779>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000721>
+2026-05-28 15:56:59 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000707>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000568>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000553>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000520>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000486>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000482>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000466>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000454>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000422>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000401>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000361>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000342>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000334>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000317>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000291>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000247>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000228>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000211>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000200>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000195>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000194>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000179>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000167>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000155>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000119>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000107>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000106>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000080>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000049>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000040>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000016>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000013>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002602>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002910>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002907>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002898>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002895>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002894>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002893>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002891>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002890>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002887>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002884>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002883>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002881>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002880>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002878>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002876>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002870>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002854>
+2026-05-28 15:57:00 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002852>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002847>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002846>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002845>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002844>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002841>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002840>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002827>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002825>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002820>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002816>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002810>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002789>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002786>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002775>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002767>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002766>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002765>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002755>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002750>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002749>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002748>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002745>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002744>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002743>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002742>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002741>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002740>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002739>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002735>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002734>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002732>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002731>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002729>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002718>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002717>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002715>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002714>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002711>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002710>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002709>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002698>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002697>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002694>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002693>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002691>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002685>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002684>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002682>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002681>
+2026-05-28 15:57:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002676>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002662>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002652>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002651>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002643>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002640>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002639>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002629>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002625>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002624>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002623>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002619>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002616>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002615>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002614>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002613>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002608>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002606>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002603>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002601>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002600>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002598>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002596>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002595>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002593>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002592>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002591>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002590>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002589>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002588>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002587>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002586>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002585>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002568>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002562>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002561>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002560>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002559>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002557>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002549>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002544>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002532>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002526>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002524>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002520>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002517>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002516>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002513>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002512>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002511>
+2026-05-28 15:57:03 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002509>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002508>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002504>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002501>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002500>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002499>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002496>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002495>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002494>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002493>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002492>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002491>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002490>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002489>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002488>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002487>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002486>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002485>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002484>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002483>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002482>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002481>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002480>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002479>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002478>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002476>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002475>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002474>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002472>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002471>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002470>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002462>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002459>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002457>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002456>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002455>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002453>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002447>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002442>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002441>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002436>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002435>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002433>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002430>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002416>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002415>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002406>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002405>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002401>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002400>
+2026-05-28 15:57:04 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002399>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002395>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002393>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002392>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002390>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002388>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002385>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002384>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002383>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002382>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002381>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002380>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002379>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002367>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002366>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002362>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002350>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002340>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002332>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002324>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002323>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002320>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002319>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002317>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002315>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002314>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002312>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002311>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002309>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002308>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002305>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002304>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002303>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002302>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002301>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002299>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002297>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002296>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002293>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002290>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002289>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002288>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002287>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002286>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002285>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002284>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002282>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002280>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002279>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002275>
+2026-05-28 15:57:05 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002265>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002259>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002256>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002250>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002249>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002247>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002246>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002245>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002244>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002242>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002241>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002240>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002239>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002234>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002230>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002227>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002226>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002225>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002224>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002223>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002222>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002221>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002220>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002219>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002218>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002217>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002215>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002214>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002213>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002206>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002193>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002190>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002182>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002181>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002179>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002178>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002176>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002175>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002172>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002171>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002168>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002167>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002156>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002152>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002146>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002142>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002141>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002140>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002139>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002133>
+2026-05-28 15:57:06 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002130>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002129>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002125>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002123>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002122>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002118>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002117>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002113>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002111>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002110>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002108>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002103>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002101>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002091>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002090>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002089>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002088>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002087>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002085>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002081>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002079>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002073>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002059>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002056>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002054>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002050>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002028>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002019>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002017>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002016>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002009>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002004>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002003>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001993>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001991>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001990>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001989>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001988>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001987>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001986>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001985>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001980>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001978>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001951>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001947>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001928>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001927>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001926>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001922>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001918>
+2026-05-28 15:57:08 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001917>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001915>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001913>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001912>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001911>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001910>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001892>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001891>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001890>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001884>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001883>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001882>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001881>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001880>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001879>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001878>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001877>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001876>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001875>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001872>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001871>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001869>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001865>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001857>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001856>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001846>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001840>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001839>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001838>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001826>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001824>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001822>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001817>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001813>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001806>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001804>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001803>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001794>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001793>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001780>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001774>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001767>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001764>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001763>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001761>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001759>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001758>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001755>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001744>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001740>
+2026-05-28 15:57:09 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001728>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001725>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001722>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001721>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001716>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001715>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001713>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001708>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001707>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001699>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001698>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001697>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001693>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001685>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001682>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001681>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001679>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001678>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001677>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001633>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001627>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001623>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001621>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001620>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001618>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001617>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001612>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001610>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001609>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001608>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001603>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001602>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001601>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001600>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001586>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001583>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001574>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001544>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001543>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001540>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001538>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001536>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001535>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001529>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001520>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001507>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001500>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001496>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001494>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001468>
+2026-05-28 15:57:10 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001467>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001465>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001461>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001457>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001453>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001452>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001430>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001426>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001425>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001412>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001391>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001358>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001345>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001334>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001333>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001332>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001329>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001328>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001327>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001324>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001322>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001320>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001310>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001302>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001296>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001291>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001281>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001262>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001260>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001259>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001258>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001255>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001245>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001233>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001204>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001202>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001193>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001170>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001169>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001168>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001157>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001152>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001147>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001145>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001141>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001140>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001139>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001138>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001128>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001112>
+2026-05-28 15:57:12 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001110>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001083>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001070>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001069>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001068>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001065>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001061>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001060>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001057>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001054>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001046>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001043>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001042>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001008>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000929>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000882>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000839>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000809>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000799>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000791>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000770>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000768>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000727>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000726>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000719>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000570>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000565>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000558>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000557>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000550>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000540>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000534>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000504>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000500>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000497>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000474>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000473>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000470>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000462>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000451>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000448>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000445>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000443>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000430>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000403>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000346>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000337>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000214>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000210>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000207>
+2026-05-28 15:57:13 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000201>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000196>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000193>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000192>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000191>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000188>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000174>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000169>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000160>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000154>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000146>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000102>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000067>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000028>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000027>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000021>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000009>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000008>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002687>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002150>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002824>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002817>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002784>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002751>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002533>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002397>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002387>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002354>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002198>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002197>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002134>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=002071>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001357>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=001022>
+2026-05-28 15:57:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://qldiem.ctu.edu.vn/htql/canbo/llkh/codes/LyLichKhoaHoc_in.php?macb=000736>
+2026-05-28 15:57:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-28 15:57:14 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: f:/science_data_warehouse_repo/output/ctu/raw_data/ctu.jsonl
+2026-05-28 15:57:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 0.0,
+ 'deltafetch/skipped': 1084,
+ 'downloader/request_bytes': 11068,
+ 'downloader/request_count': 23,
+ 'downloader/request_method_count/GET': 23,
+ 'downloader/response_bytes': 80159,
+ 'downloader/response_count': 23,
+ 'downloader/response_status_count/200': 23,
+ 'elapsed_time_seconds': 29.726843,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 28, 8, 57, 14, 928319, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 594873,
+ 'httpcompression/response_count': 22,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 1088,
+ 'request_depth_max': 22,
+ 'response_received_count': 23,
+ 'responses_per_minute': 47.58620689655172,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'start_time': datetime.datetime(2026, 5, 28, 8, 56, 45, 201476, tzinfo=datetime.timezone.utc)}
+2026-05-28 15:57:14 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,401 @@
+2026-05-28 11:22:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-28 11:22:36 [scrapy.extensions.telnet] INFO: Telnet Password: 7b9dec90a3df436a
+2026-05-28 11:22:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-28 11:22:36 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 16,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'avt_url',
+                        'ho_ten',
+                        'chuc_vu',
+                        'chuc_danh_kiem_nhiem',
+                        'don_vi',
+                        'html_text',
+                        'gioi_thieu',
+                        'cong_trinh_tieu_bieu',
+                        'cac_mon_giang_day',
+                        'linh_vuc_nghien_cuu',
+                        'nhom_chuyen_mon',
+                        'lab_nghien_cuu',
+                        'dai_hoc',
+                        'don_vi_truc_thuoc',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/seee/logs/seee_20260528_112236.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 3,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:37 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-28 11:22:38 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:22:39 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-28 11:22:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-28 11:22:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-28 11:22:39 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 11:22:39 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 11:22:39 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-28 11:22:39 [scrapy.core.engine] INFO: Spider opened
+2026-05-28 11:22:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-28 11:22:39 [seee_spider] INFO: Spider opened: seee_spider
+2026-05-28 11:22:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Vu-Thanh-140/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Phung-Anh-Tuan-114/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Quoc-Minh-144/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Hoang-Anh-153/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thi-Anh-143/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Dang-Hoang-Anh-141/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Le-Thi-Minh-Chau-150/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Thanh-Chung-107/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dang-Chi-Dung-108/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Hung-Dung-181/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Minh-Dinh-109/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Duc-Hung-196/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vu-Xuan-Hung-147/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Duc-Huy-4/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-La-Minh-Khanh-142/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Trieu-Viet-Linh-115/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Truong-Ngoc-Minh-182/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hong-Nhung-186/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Quang-Phuong-145/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Gia-Quan-111/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thanh-Son-152/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Thanh-Son-197/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Trung-Son-195/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thi-Hoai-Thu-113/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Le-Viet-Tien-184/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Tran-Van-Top-198/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Minh-Tu-146/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Xuan-Tung-106/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Le-Duc-Tung-151/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Duc-Tuyen-112/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Pham-Nang-Van-110/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hoang-Viet-183/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Nga-Viet-199/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Dang-Quoc-Vuong-148/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/Th-S-Nguyen-The-Phong-241/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Le-Thi-Minh-Lien-246/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Ngo-Gia-Phong-247/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Tran-Ngoc-Quang-248/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Ton-Cuong-Quoc-249/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Nguyen-Huu-Phat-10/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Viet-Dung-194/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Pham-Nguyen-Thanh-Loan-164/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thuy-Anh-27/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thanh-Binh-18/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vo-Le-Cuong-200/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hoang-Dung-11/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Nguyen-Tien-Dung-9/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Han-Huy-Dung-30/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Trinh-Quang-Duc-201/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thai-Ha-26/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Vu-Duy-Hai-24/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Dang-Quang-Hieu-25/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Tien-Hoa-12/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Manh-Hoang-202/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Huy-Hoang-8/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Ta-Thi-Kim-Hue-29/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Manh-Hung-203/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Dao-Viet-Hung-22/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Hoang-Quang-Huy-21/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Phan-Kien-14/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Phuong-Linh-238/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Duong-Trong-Luong-15/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Duc-Minh-2/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Quang-Minh-7/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Duong-Tan-Nghia-205/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Phuc-Ngoc-28/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dinh-Thi-Nhung-20/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Hoang-Manh-Thang-180/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Han-Trong-Thanh-13/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-GVC-Dao-Le-Thu-Thao-206/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thi-Kim-Thoa-16/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Doan-Tinh-17/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Song-Tung-19/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Ngoc-Van-207/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Anh-Vu-23/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Quynh-Hoa-235/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Phuong-Linh-240/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/Th-S-Tran-Thi-Hau-252/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-To-Viet-Hoang-253/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Trinh-Thi-My-Linh-254/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Thi-Nhan-255/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-La-Anh-Tai-256/>
+2026-05-28 11:22:40 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Luong-Thi-Hong-Lien-258/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Viet-Phuong-81/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thu-Ha-50/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-Duong-Minh-Duc-62/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Pham-Thuc-Anh-68/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dinh-Thi-Lan-Anh-175/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Do-Tuan-Anh-70/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thi-Van-Anh-48/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Phan-Thi-Huyen-Chau-221/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Hoang-Duc-Chinh-57/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Quoc-Cuong-49/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Do-Manh-Cuong-222/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Hoang-Manh-Cuong-69/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Tri-Cuong-74/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Le-Cong-Cuong-223/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Dai-Duong-77/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Quang-Dich-224/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Duy-Dinh-225/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vu-Van-Ha-226/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Le-Thi-Thanh-Ha-80/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Do-Trong-Hieu-58/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Dinh-Hoa-242/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Le-Minh-Hoang-227/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Hoang-Si-Hong-5/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Thi-Hue-172/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thi-Lan-Huong-45/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thanh-Huong-71/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Danh-Huy-61/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Bao-Huy-60/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Tung-Lam-179/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Van-Hung-243/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/GS-TS-Tran-Hoai-Linh-64/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Manh-Linh-67/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Cung-Thanh-Long-55/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Duy-Long-36/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Van-Long-228/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Tran-Trong-Minh-229/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Le-Phan-Nhat-Minh-35/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dang-Van-My-230/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Dao-Phuong-Nam-53/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hoang-Nam-72/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Hoai-Nam-47/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Giap-Van-Nam-63/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Vu-Thi-Thuy-Nga-54/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Thuy-Nguyen-231/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Tuan-Ninh-46/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/GS-TS-Nguyen-Doan-Phuoc-232/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Cong-Phuong-43/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Huy-Phuong-233/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Vu-Hoang-Phuong-177/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Hong-Quang-79/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Hong-Quang-173/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Canh-Quang-73/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Viet-Son-65/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Anh-Tan-34/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Dang-Thanh-234/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Vo-Duy-Thanh-33/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Tran-Thi-Thao-51/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dao-Duc-Thinh-37/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Dao-Quy-Thinh-178/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Duc-Thuan-44/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Le-Minh-Thuy-66/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Cao-Thanh-Trung-78/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-Nguyen-Kien-Trung-59/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Pham-Van-Truong-52/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Tran-Van-Tuan-174/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Van-Tuynh-56/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Chu-Duc-Viet-75/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Thi-Anh-Xuan-76/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Le-Hai-Anh-244/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thi-Hien-245/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Ha-Duyen-Trung-119/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Tran-Quang-Vinh-154/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Truong-Thu-Huong-139/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hong-Anh-156/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Hoang-Phuong-Chi-155/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thanh-Chuyen-32/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Thanh-Cong-167/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Do-Thi-Ngoc-Diep-39/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Trung-Dung-208/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Xuan-Dung-158/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Tien-Dung-133/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/GS-TS-Nguyen-Van-Duc-165/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Phung-Thi-Kieu-Ha-136/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hoang-Hai-41/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Tran-Thi-Thanh-Hai-117/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Vu-Hai-168/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Doan-Thi-Ngoc-Hien-170/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Nguyen-Tai-Hung-135/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Bich-Huyen-210/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Quoc-Khuong-163/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Khac-Kiem-38/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Dao-Trung-Kien-31/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Thi-Ngoc-Lan-132/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Le-Thi-Lan-116/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vuong-Hoang-Nam-40/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Thu-Nga-159/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Nam-Phong-171/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Phuong-Xuan-Quang-161/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Anh-Quang-134/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Xuan-Quyen-157/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Vu-Thang-211/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Huu-Thanh-1/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Tran-Thi-Thom-169/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Van-Tien-160/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Huu-Trung-137/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Luu-Quang-Trung-138/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-GVCC-Do-Trong-Tuan-166/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Ngoc-Tuan-118/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Viet-Tung-42/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Dinh-Van-126/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Phan-Xuan-Vu-212/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Ta-Son-Xuat-213/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/GS-TS-Vu-Van-Yem-162/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Ma-Viet-Duc-236/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Le-Hai-Dang-237/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Tran-Thi-Thao-Anh-250/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thu-Huong-251/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Bui-Hanh-Trang-257/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Viet-Anh-98/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Tran-Thi-Kim-Bich-104/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Nguyen-Thi-Kim-Cuc-100/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Tao-Van-Cuong-214/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Duc-Duy-128/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Minh-Duc-121/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Thanh-Hai-124/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Pham-Hong-Hai-131/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Tran-Nguyen-Hanh-96/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dao-Quang-Huan-129/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Vuong-Xuan-Hieu-127/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Vu-Quang-Hung-95/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Thanh-Huong-215/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Thi-Huong-193/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Le-Van-Nam-187/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Tran-Hai-Nam-189/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Le-Xuan-Nghia-190/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Vu-Hong-Ngoc-216/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vuong-Lan-Nhi-123/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Duong-Thanh-Phuong-97/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Phan-Van-Phuong-122/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Ngo-Thi-Phuong-125/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Pham-Hong-Thai-217/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Le-Quang-Thang-130/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Huy-Thien-103/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dao-Kim-Thinh-191/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Ha-Quang-Thinh-218/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Pham-Van-Thong-99/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Dang-Thi-Thu-101/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Nguyen-Van-Thuc-219/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Sinh-Thuong-220/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/KS-Truong-Cong-Trinh-102/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Lai-Huu-Phuong-Trung-105/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Duong-Huu-Tung-188/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Hong-Vinh-120/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Le-Thanh-Xuyen-192/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Do-Trung-Hieu-239/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Hoang-Thi-Kim-Anh-92/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Hoang-Thi-Kim-Chi-84/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thi-Giau-82/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Doan-Thi-Thu-Ha-91/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Do-Hanh-83/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Do-Thi-Thanh-Hien-90/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Tran-Thi-Kim-Hoa-88/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thi-Hoa-94/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thu-Huong-93/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Nguyen-Thi-Thanh-Nga-86/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Bui-Thu-Thuy-87/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Hoang-Thi-Hong-Yen-89/>
+2026-05-28 11:22:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Hoang-Yen-85/>
+2026-05-28 11:22:41 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-28 11:22:41 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: f:/science_data_warehouse_repo/output/hust/seee/raw_data/seee.jsonl
+2026-05-28 11:22:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 0.0,
+ 'deltafetch/skipped': 251,
+ 'downloader/request_bytes': 954,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 32863,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.817271,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 28, 4, 22, 41, 47010, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 317181,
+ 'httpcompression/response_count': 2,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 255,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'responses_per_minute': 120.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2026, 5, 28, 4, 22, 39, 229739, tzinfo=datetime.timezone.utc)}
+2026-05-28 11:22:41 [scrapy.core.engine] INFO: Spider closed (finished)

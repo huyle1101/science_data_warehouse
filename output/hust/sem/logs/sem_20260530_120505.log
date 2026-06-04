@@ -1,0 +1,280 @@
+2026-05-30 12:05:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-30 12:05:05 [scrapy.extensions.telnet] INFO: Telnet Password: 63536e424d724787
+2026-05-30 12:05:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-30 12:05:05 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 30,
+ 'AUTOTHROTTLE_START_DELAY': 0.5,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 10,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 128,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'avt_url',
+                        'ho_ten',
+                        'chuc_vu',
+                        'dai_hoc',
+                        'don_vi_truc_thuoc',
+                        'html_text',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/sem/logs\\sem_20260530_120505.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 5,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-30 12:05:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 12:05:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-30 12:05:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-30 12:05:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-30 12:05:08 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-30 12:05:08 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-30 12:05:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-30 12:05:08 [scrapy.core.engine] INFO: Spider opened
+2026-05-30 12:05:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-30 12:05:08 [sem_spider] INFO: Spider opened: sem_spider
+2026-05-30 12:05:08 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-kim-quyen>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-nguyen-danh-nguyen>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-dao-thanh-binh>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-pham-thi-kim-ngoc>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-tien-dung>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-nguyen-thi-thu-thuy>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-thai-minh-hanh>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-duong-manh-cuong>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-thi-ngoc-diep>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-trinh-phuong-ly>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-ha-thi-thu-trang>
+2026-05-30 12:05:14 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-doan-thi-thu-trang>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-do-hong-quan>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-dang-vu-tung>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-dang-thi-thu-ha>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-cao-to-linh>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-vu-viet-hung>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-vu-dinh-nghiem-hung>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-tran-ngoc-lan>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-tran-minh-anh>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-a-phan-y-lan>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-pham-mai-chi>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-a-nguyen-thi-yen>
+2026-05-30 12:05:20 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-vu-quang-2>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-a-nguyen-thi-thuy-hang>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-nguyen-thi-bich-nguyet>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-nguyen-tai-vuong>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-nguyen-quynh-hoa>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-phan-van-thanh>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-thai-minh-hanh>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-tran-thi-huong>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-trinh-thu-thuy>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-vu-hong-tuan>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-phan-dieu-huong>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-pham-canh-huy>
+2026-05-30 12:05:25 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-tien-lam>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-tien-p>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-tien-dung>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-thuc-huong-giang>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-thi-xuan-hoa>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-thi-vu-khuyen>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dr-nguyen-thi-thu-hien>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-thi-thanh-dan>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-thi-phuong-dung>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-thi-mai-chi>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-thi-mai-anh>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-thanh-huong>
+2026-05-30 12:05:29 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-phuong-anh>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-linh-dan>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-hoang-lan>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-nguyen-duc-trong>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ph-d-ngo-thu-giang>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-pham-thi-thanh-hong-2>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-nguyen-quang-chuong>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-nguyen-cam-giang>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-le-ung-hoa>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-le-thu-thuy>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-doan-hai-anh>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-cao-thuy-duong>
+2026-05-30 12:05:33 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-bui-thanh-nga>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/m-s-banh-thi-hong-lan>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-pham-thi-kim-ngoc-2>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-pham-thi-kim-ngoc>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-vu-quang>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-tran-van-binh>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-tran-thi-bich-ngoc>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-pham-thi-thanh-hong>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-nguyen-danh-nguyen>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-nguyen-dang-tue>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-nguyen-ai-doan>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/assoc-prof-dr-dao-thanh-binh>
+2026-05-30 12:05:37 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-tran-ngoc-lan>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-quynh-hoa>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-ngo-thu-giang>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-vu-khuyen>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thuc-huong-giang>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-vu-viet-hung>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-tran-thi-bich-ngoc>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-trinh-thu-thuy>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-ha-thi-thu-trang>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-tai-vuong>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-pham-thi-thanh-hong>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-tran-thi-huong>
+2026-05-30 12:05:41 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-thu-thuy>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-phan-van-thanh>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-banh-thi-hong-lan>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-hoang-lan>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-dang-thi-thu-ha>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-tien-phong>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-pham-canh-huy>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-doan-thi-thu-trang>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-dang-vu-tung>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-nguyen-dang-tue>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-cao-to-linh>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-vu-dinh-nghiem-hung>
+2026-05-30 12:05:45 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-phuong-dung>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-mai-chi>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-phuong-anh>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-xuan-hoa>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-thu-hien>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-duong-manh-cuong>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-tran-minh-anh>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-vu-hong-tuan>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-thi-bich-nguyet>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-bui-thanh-nga>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-doan-hai-anh>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-do-hong-quan>
+2026-05-30 12:05:49 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-le-van-hoa>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-cam-giang>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-pham-mai-chi>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-mai-anh>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-phan-dieu-huong>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-linh-dan>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-tran-van-binh>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-thi-yen>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-duc-trong>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-le-thu-thuy>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pgs-ts-vu-quang>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-quoc-trung>
+2026-05-30 12:05:53 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-phan-y-lan>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-van-lam>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thanh-huong>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-thi-thuy-hang>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-cao-thuy-duong>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ts-nguyen-thi-thanh-dan>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/ths-nguyen-quang-chuong>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/luong-thanh-nhan>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-hong-van>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/pham-thi-thu-ha>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/vu-hai-anh-2>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-hoang-lan>
+2026-05-30 12:05:57 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/do-thao-phuong>
+2026-05-30 12:06:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/cao-hong-van-anh>
+2026-05-30 12:06:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/dao-thi-viet-hang>
+2026-05-30 12:06:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/tran-dai-duong>
+2026-05-30 12:06:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-thu-ha>
+2026-05-30 12:06:01 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://sem.hust.edu.vn/lecturers/nguyen-thi-thanh-tam-xinh>
+2026-05-30 12:06:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-30 12:06:01 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: f:/science_data_warehouse_repo/output/hust/sem/raw_data\sem.jsonl
+2026-05-30 12:06:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 0.0,
+ 'deltafetch/skipped': 137,
+ 'downloader/request_bytes': 6127,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 707111,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'elapsed_time_seconds': 52.79344,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 30, 5, 6, 1, 42474, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 5846523,
+ 'httpcompression/response_count': 13,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 141,
+ 'request_depth_max': 12,
+ 'response_received_count': 13,
+ 'responses_per_minute': 15.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 12,
+ 'scheduler/dequeued/memory': 12,
+ 'scheduler/enqueued': 12,
+ 'scheduler/enqueued/memory': 12,
+ 'start_time': datetime.datetime(2026, 5, 30, 5, 5, 8, 249034, tzinfo=datetime.timezone.utc)}
+2026-05-30 12:06:01 [scrapy.core.engine] INFO: Spider closed (finished)

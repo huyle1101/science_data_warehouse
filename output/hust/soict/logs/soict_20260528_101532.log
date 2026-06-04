@@ -1,0 +1,179 @@
+2026-05-28 10:15:32 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-28 10:15:32 [scrapy.extensions.telnet] INFO: Telnet Password: 7c506b084e3f12f0
+2026-05-28 10:15:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-28 10:15:32 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 16,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'avt_url',
+                        'ho_ten',
+                        'html_text',
+                        'gioi_thieu',
+                        'vi_tri',
+                        'chuc_vu',
+                        'hoc_ham_hoc_vi',
+                        'qua_trinh_dao_tao',
+                        'email',
+                        'linh_vuc_nghien_cuu',
+                        'nghien_cuu_quan_tam',
+                        'du_an_hien_tai',
+                        'cong_trinh_tieu_bieu',
+                        'giai_thuong_khen_thuong',
+                        'cac_mon_giang_day',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/soict/logs/soict_20260528_101532.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 3,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-28 10:15:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_ua_rotator.middleware.RandomUserAgentMiddleware',
+ 'scrapy_ua_rotator.middleware.RetryUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-28 10:15:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-28 10:15:33 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 10:15:33 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 10:15:33 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-28 10:15:33 [scrapy.core.engine] INFO: Spider opened
+2026-05-28 10:15:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-28 10:15:33 [soict_spider] INFO: Spider opened: soict_spider
+2026-05-28 10:15:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 48 pages/min), scraped 43 items (at 43 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:16:33 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 43 items (at 0 items/min)
+2026-05-28 10:17:33 [scrapy.extensions.logstats] INFO: Crawled 98 pages (at 50 pages/min), scraped 91 items (at 48 items/min)
+2026-05-28 10:17:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-28 10:17:52 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (107 items) in: f:/science_data_warehouse_repo/output/hust/soict/raw_data/soict.jsonl
+2026-05-28 10:17:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 93.86,
+ 'deltafetch/stored': 107,
+ 'downloader/request_bytes': 55599,
+ 'downloader/request_count': 114,
+ 'downloader/request_method_count/GET': 114,
+ 'downloader/response_bytes': 2472697,
+ 'downloader/response_count': 114,
+ 'downloader/response_status_count/200': 114,
+ 'elapsed_time_seconds': 139.51937,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 28, 3, 17, 52, 669040, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 11488213,
+ 'httpcompression/response_count': 114,
+ 'item_scraped_count': 107,
+ 'items_per_minute': 46.187050359712224,
+ 'log_count/INFO': 76,
+ 'request_depth_max': 6,
+ 'response_received_count': 114,
+ 'responses_per_minute': 49.20863309352517,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 113,
+ 'scheduler/dequeued/memory': 113,
+ 'scheduler/enqueued': 113,
+ 'scheduler/enqueued/memory': 113,
+ 'start_time': datetime.datetime(2026, 5, 28, 3, 15, 33, 149670, tzinfo=datetime.timezone.utc)}
+2026-05-28 10:17:52 [scrapy.core.engine] INFO: Spider closed (finished)

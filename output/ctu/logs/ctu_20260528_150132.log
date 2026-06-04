@@ -1,0 +1,232 @@
+2026-05-28 15:01:32 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-28 15:01:32 [scrapy.extensions.telnet] INFO: Telnet Password: 4d74a7843756bcdc
+2026-05-28 15:01:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-28 15:01:32 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 0.5,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 32,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 500,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'ho_ten',
+                        'gioi_tinh',
+                        'email',
+                        'chuc_vu',
+                        'trinh_do_chuyen_mon',
+                        'hoc_ham',
+                        'don_vi',
+                        'de_tai_nckh_da_thuc_hien',
+                        'sach_va_giao_trinh_xuat_ban',
+                        'cong_trinh_nckh_da_cong_bo',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/ctu/logs/ctu_20260528_150132.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 3,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-28 15:01:32 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-28 15:01:32 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 15:01:33 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 15:01:34 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-28 15:01:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-28 15:01:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-28 15:01:34 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 15:01:34 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 15:01:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-28 15:01:34 [scrapy.core.engine] INFO: Spider opened
+2026-05-28 15:01:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-28 15:01:34 [ctu_spider] INFO: Spider opened: ctu_spider
+2026-05-28 15:01:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-28 15:02:34 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 53 pages/min), scraped 29 items (at 29 items/min)
+2026-05-28 15:03:34 [scrapy.extensions.logstats] INFO: Crawled 111 pages (at 58 pages/min), scraped 87 items (at 58 items/min)
+2026-05-28 15:03:34 [scrapy.extensions.logstats] INFO: Crawled 111 pages (at 0 pages/min), scraped 87 items (at 0 items/min)
+2026-05-28 15:04:34 [scrapy.extensions.logstats] INFO: Crawled 159 pages (at 48 pages/min), scraped 135 items (at 48 items/min)
+2026-05-28 15:05:34 [scrapy.extensions.logstats] INFO: Crawled 215 pages (at 56 pages/min), scraped 191 items (at 56 items/min)
+2026-05-28 15:06:34 [scrapy.extensions.logstats] INFO: Crawled 258 pages (at 43 pages/min), scraped 234 items (at 43 items/min)
+2026-05-28 15:07:34 [scrapy.extensions.logstats] INFO: Crawled 307 pages (at 49 pages/min), scraped 283 items (at 49 items/min)
+2026-05-28 15:08:34 [scrapy.extensions.logstats] INFO: Crawled 360 pages (at 53 pages/min), scraped 336 items (at 53 items/min)
+2026-05-28 15:09:34 [scrapy.extensions.logstats] INFO: Crawled 404 pages (at 44 pages/min), scraped 380 items (at 44 items/min)
+2026-05-28 15:10:34 [scrapy.extensions.logstats] INFO: Crawled 459 pages (at 55 pages/min), scraped 435 items (at 55 items/min)
+2026-05-28 15:11:34 [scrapy.extensions.logstats] INFO: Crawled 507 pages (at 48 pages/min), scraped 483 items (at 48 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 47 pages/min), scraped 530 items (at 47 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:12:34 [scrapy.extensions.logstats] INFO: Crawled 554 pages (at 0 pages/min), scraped 530 items (at 0 items/min)
+2026-05-28 15:13:34 [scrapy.extensions.logstats] INFO: Crawled 607 pages (at 53 pages/min), scraped 583 items (at 53 items/min)
+2026-05-28 15:14:34 [scrapy.extensions.logstats] INFO: Crawled 660 pages (at 53 pages/min), scraped 636 items (at 53 items/min)
+2026-05-28 15:15:34 [scrapy.extensions.logstats] INFO: Crawled 708 pages (at 48 pages/min), scraped 683 items (at 47 items/min)
+2026-05-28 15:16:34 [scrapy.extensions.logstats] INFO: Crawled 754 pages (at 46 pages/min), scraped 730 items (at 47 items/min)
+2026-05-28 15:17:34 [scrapy.extensions.logstats] INFO: Crawled 804 pages (at 50 pages/min), scraped 780 items (at 50 items/min)
+2026-05-28 15:17:34 [scrapy.extensions.logstats] INFO: Crawled 804 pages (at 0 pages/min), scraped 780 items (at 0 items/min)
+2026-05-28 15:18:34 [scrapy.extensions.logstats] INFO: Crawled 852 pages (at 48 pages/min), scraped 828 items (at 48 items/min)
+2026-05-28 15:18:34 [scrapy.extensions.logstats] INFO: Crawled 852 pages (at 0 pages/min), scraped 828 items (at 0 items/min)
+2026-05-28 15:19:34 [scrapy.extensions.logstats] INFO: Crawled 901 pages (at 49 pages/min), scraped 877 items (at 49 items/min)
+2026-05-28 15:20:34 [scrapy.extensions.logstats] INFO: Crawled 949 pages (at 48 pages/min), scraped 924 items (at 47 items/min)
+2026-05-28 15:21:34 [scrapy.extensions.logstats] INFO: Crawled 999 pages (at 50 pages/min), scraped 975 items (at 51 items/min)
+2026-05-28 15:22:34 [scrapy.extensions.logstats] INFO: Crawled 1046 pages (at 47 pages/min), scraped 1021 items (at 46 items/min)
+2026-05-28 15:23:34 [scrapy.extensions.logstats] INFO: Crawled 1094 pages (at 48 pages/min), scraped 1070 items (at 49 items/min)
+2026-05-28 15:24:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-28 15:24:01 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (1084 items) in: f:/science_data_warehouse_repo/output/ctu/raw_data/ctu.jsonl
+2026-05-28 15:24:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 97.83,
+ 'deltafetch/stored': 1084,
+ 'downloader/request_bytes': 693597,
+ 'downloader/request_count': 1108,
+ 'downloader/request_method_count/GET': 1108,
+ 'downloader/response_bytes': 30191796,
+ 'downloader/response_count': 1108,
+ 'downloader/response_status_count/200': 1107,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 1347.044707,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 28, 8, 24, 1, 841182, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 594873,
+ 'httpcompression/response_count': 22,
+ 'item_scraped_count': 1084,
+ 'items_per_minute': 48.28507795100223,
+ 'log_count/INFO': 87,
+ 'request_depth_max': 22,
+ 'response_received_count': 1108,
+ 'responses_per_minute': 49.35412026726058,
+ 'robotstxt/request_count': 2,
+ 'robotstxt/response_count': 2,
+ 'robotstxt/response_status_count/200': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1106,
+ 'scheduler/dequeued/memory': 1106,
+ 'scheduler/enqueued': 1106,
+ 'scheduler/enqueued/memory': 1106,
+ 'start_time': datetime.datetime(2026, 5, 28, 8, 1, 34, 796475, tzinfo=datetime.timezone.utc)}
+2026-05-28 15:24:01 [scrapy.core.engine] INFO: Spider closed (finished)

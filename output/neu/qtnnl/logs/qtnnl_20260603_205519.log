@@ -1,0 +1,72 @@
+03/06/2026 20:55:19 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_fxrmga5y
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=57883
+03/06/2026 20:55:25 On page 2
+03/06/2026 20:55:27 Found 10 scholar links on page 2
+03/06/2026 20:55:30 On page 3
+03/06/2026 20:55:33 Found 10 scholar links on page 3
+03/06/2026 20:55:36 On page 4
+03/06/2026 20:55:39 Found 10 scholar links on page 4
+03/06/2026 20:55:39 Found total 40 scholar links to process.
+03/06/2026 20:55:42 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-1733 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:44 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/ha-dieu-linh-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:46 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-huy-trung-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:48 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-duc-kien-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:51 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-ho-nam-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:54 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-phuong-mai-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:56 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-the-anh-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:55:59 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/tran-thi-oanh-khoa-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:02 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/vu-thi-mai-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:05 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-nganh-quan-tri-nhan-luc-khoa-63 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:08 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nganh-va-chuyen-nganh-dao-tao-cua-khoa-kinh-te-quan-ly-nguon-nhan-luc-1 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:11 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-chuyen-nganh-kt-qlnnl-khoa-62 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:13 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-nganh-quan-tri-nhan-luc-khoa-62 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:16 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/tran-huy-phuong-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:18 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-chuyen-nganh-kt-qlnnl-khoa-61 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:21 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-chuyen-nganh-ktqlnnl-khoa-60 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:23 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/chuong-trinh-dao-tao-nganh-quan-tri-nhan-luc-khoa-60 to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:26 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/dang-hong-son-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:29 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-vinh-giang-ktnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:32 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/la-ngoc-mai-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:34 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/pham-thuy-huong-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:36 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-vinh-giang-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:39 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-quynh-hoa-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:41 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/mai-quoc-bao to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:44 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-thi-huyen to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:46 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-ngoc-hien-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:49 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/pham-thi-bich-ngoc to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:51 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/hoang-thi-hue to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:54 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-duc-nhan to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:56 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/pham-huong-quynh-ktqlnnl to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:56:58 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-thi-hai-hanh to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:00 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-van-thuy-anh to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:03 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/vu-thi-uyen to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:05 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/ngo-quynh-an to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:07 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/tran-thi-mai-phuong to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:10 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/pham-thi-thanh-nhan to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:13 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/nguyen-nam-phuong to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:16 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/tran-xuan-cau to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:19 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/vu-hoang-ngan to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:21 Saved: https://khoaquanlynguonnhanluc.neu.edu.vn//vi/nhom-nganh-cong-nghe-thong-tin/phan-cong-nhiem-vu-khoa-kinh-te-quan-ly-nguon-nhan-luc to f:/science_data_warehouse_repo/output/neu/qtnnl/raw_data\qtnnl_20260603_205519.jsonl
+03/06/2026 20:57:21 Finished, total running time: 122.17 seconds
+03/06/2026 20:57:22 terminated browser with pid 27876 successfully
+03/06/2026 20:57:23 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_fxrmga5y

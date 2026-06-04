@@ -1,0 +1,276 @@
+2026-05-30 09:40:20 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-30 09:40:20 [scrapy.extensions.telnet] INFO: Telnet Password: 1a0df0936f0af7e2
+2026-05-30 09:40:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-30 09:40:20 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'avt_url',
+                        'ho_ten',
+                        'chuc_vu',
+                        'chuc_danh_kiem_nhiem',
+                        'don_vi',
+                        'email',
+                        'nhom_chuyen_mon',
+                        'dai_hoc',
+                        'don_vi_truc_thuoc',
+                        'html_text',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/smse/logs\\smse_20260530_094020.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 5,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-30 09:40:20 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-30 09:40:20 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:20 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:20 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:20 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-30 09:40:21 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 09:40:22 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-30 09:40:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-30 09:40:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-30 09:40:22 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-30 09:40:22 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-30 09:40:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-30 09:40:22 [scrapy.core.engine] INFO: Spider opened
+2026-05-30 09:40:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-30 09:40:22 [smse_spider] INFO: Spider opened: smse_spider
+2026-05-30 09:40:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/CN-Nguyen-Thi-Thu-Hang-39/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/CN-Do-Thi-Hue-40/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/CN-Nguyen-Thi-Phuong-Loan-41/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/CN-Bui-Thi-Lien-Anh-42/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/ThS-Nguyen-Ngoc-Lan-43/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/KS-Nguyen-Thi-Thuy-92/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Van-phong-truong-11/CN-Nguyen-Thi-Thu-Trang-93/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Le-Thai-Hung-4/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/GS-TS-Bui-Anh-Hoa-26/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Tran-Vu-Diem-Ngoc-21/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Trinh-Van-Trung-18/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Dang-Thi-Hong-Hue-6/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Pham-Mai-Khanh-36/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Nguyen-Hoang-Viet-32/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/GS-TS-Nguyen-Trong-Giang-122/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Nguyen-Hong-Hai-37/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Nguyen-Minh-Thuyet-30/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Dang-Quoc-Khanh-19/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Nguyen-Ngoc-Minh-14/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Duong-Ngoc-Binh-24/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Nguyen-Thi-Hoang-Oanh-8/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Pham-Quang-7/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Tran-Thi-Thu-Hien-31/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Tran-Duc-Huy-38/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Le-Van-Lich-33/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Bui-Duc-Long-23/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Tran-Thi-Xuan-17/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Le-Thi-Bang-10/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/ThS-Ngo-Quoc-Dung-27/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Nguyen-Cao-Son-28/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/ThS-Nguyen-Van-Duc-16/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Nguyen-Thi-Thao-20/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Nguyen-Anh-Son-12/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Le-Hong-Thang-22/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Do-Thanh-Dung-34/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Hoang-Thi-Ngoc-Quyen-35/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Hoang-Van-Vuong-9/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Nguyen-Hoai-Anh-13/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Nguyen-Thi-Van-Thanh-15/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Dao-Hong-Bach-123/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/PGS-TS-Dinh-Van-Hai-124/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Ha-Minh-Tan-125/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Le-Minh-Ngoc-126/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Do-Minh-Duc-136/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Ky-Thuat-Vat-Lieu-12/TS-Nguyen-Phu-Cuong-137/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Phan-Thanh-Thao-109/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Bui-Van-Huan-111/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Le-Khanh-Trang-110/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Vu-Manh-Hai-107/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Dao-Thi-Chinh-Thuy-102/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Ngo-Chi-Trung-112/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Nguyen-Nhat-Trinh-105/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Pham-Duc-Duong-114/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Dao-Anh-Tuan-101/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/ThS-Nguyen-Thi-Kim-Thu-106/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Chu-Dieu-Huong-100/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Phan-Duy-Nam-108/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Nguyen-Van-Toan-104/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Phan-Thanh-Tuan-113/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/ThS-Do-Thi-Hai-An-103/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Gian-Thi-Thu-Huong-115/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Hoang-Thanh-Thao-116/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/ThS-Ngo-Thi-Quynh-Chi-117/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Nguyen-Ngoc-Thang-118/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Nguyen-Thi-Thuy-Ngoc-119/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/TS-Tran-Thi-Minh-Kieu-120/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/PGS-TS-Nguyen-Minh-Tuan-134/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Det-May-Da-Giay-va-Thoi-Trang-13/ThS-Le-Thi-Mai-Anh-135/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/GS-TS-Huynh-Trung-Hai-1/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Nguyen-Thanh-Liem-2/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Doan-Anh-Vu-89/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Phung-Anh-Tuan-94/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Nguyen-Thi-Thuy-84/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Nguyen-Huy-Tung-85/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Bach-Trong-Phuc-83/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Nguyen-Pham-Duy-Linh-82/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/PGS-TS-Hoang-Thi-kieu-Nguyen-96/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Vu-Minh-Duc-87/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Nguyen-Chau-Giang-88/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Duong-Hong-Quyen-95/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Nguyen-Viet-Cuong-99/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Nguyen-Quang-Hung-97/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/TS-Nguyen-Trung-Hieu-98/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-lieu-Hoa-Hoc-Ung-Dung-14/Ths-Tran-Trung-Le-90/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Nguyen-Van-Quy-70/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/GS-TS-Nguyen-Phuc-Duong-52/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/GS-TS-Nguyen-Duc-Hoa-3/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Tran-Ngoc-Khiem-67/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Nguyen-Duy-Hung-68/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Tran-Thi-Viet-Nga-55/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-To-Thanh-Loan-49/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/GS-TS-Vu-Ngoc-Hung-59/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Dao-Xuan-Viet-53/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/GS-TS-Chu-Manh-Hoang-58/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Bui-Thi-Hang-47/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Pham-Hung-Vuong-62/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Chu-Manh-Hung-78/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Nguyen-Van-Duy-76/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Dang-Thi-Thanh-Le-77/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Nguyen-Duy-Cuong-71/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Cao-Xuan-Thang-63/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Le-Thi-Tam-64/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Ta-Quoc-Tuan-65/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Pham-Thi-Mai-Phuong-66/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Nguyen-Thi-Kim-Lien-51/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Dao-Thi-Thuy-Nguyet-50/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Doan-Quang-Tri-69/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Nguyen-Viet-Hung-46/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Tran-Trong-An-61/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Duong-Thanh-Tung-72/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Tran-Van-Dang-73/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Nguyen-Thi-Lan-74/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Pham-Van-Tuan-48/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Vu-Thu-Hien-60/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Nguyen-Khac-Man-54/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/PGS-TS-Chu-Thi-Xuan-79/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Khoa-Vat-Lieu-Dien-Tu-va-Linh-Kien-15/TS-Nguyen-Duc-Dung-80/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Tran-Thi-Thu-Trang-121/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Nguyen-Van-Khang-29/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Le-Thu-Ha-11/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/TS-Nguyen-Van-Toan-45/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Nguyen-Minh-Duc-25/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/CN-Tran-Thi-Kim-Dung-91/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/TS-Luong-Ngoc-Anh-44/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Pham-The-Kien-81/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/KS-Hoang-Quoc-Khanh-75/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/Nguyen-Minh-Hong-56/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/KS-Le-Thanh-Trung-127/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Le-Thi-Dung-128/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Cao-Thi-Hoai-Thuy-129/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/KS-Nguyen-Thi-Van-130/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Hoang-Thanh-Binh-131/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/ThS-Nguyen-Thi-Thu-Ha-132/>
+2026-05-30 09:40:28 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://smse.hust.edu.vn/vi/organs/person/Trung-tam-ky-thuat-16/KS-Luu-Bach-Hiep-133/>
+2026-05-30 09:40:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-30 09:40:28 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: f:/science_data_warehouse_repo/output/hust/smse/raw_data\smse.jsonl
+2026-05-30 09:40:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'deltafetch/skipped': 134,
+ 'downloader/request_bytes': 963,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 25029,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 5.643573,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 30, 2, 40, 28, 316581, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 213687,
+ 'httpcompression/response_count': 2,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 138,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'responses_per_minute': 24.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2026, 5, 30, 2, 40, 22, 673008, tzinfo=datetime.timezone.utc)}
+2026-05-30 09:40:28 [scrapy.core.engine] INFO: Spider closed (finished)

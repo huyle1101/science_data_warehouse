@@ -1,0 +1,80 @@
+04/06/2026 10:03:50 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_5mm2mnhy
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=55259
+04/06/2026 10:04:02 Switched to Vietnamese language.
+04/06/2026 10:04:02 Get 12 links from listing page.
+04/06/2026 10:04:02 Found 12 scholar links on page 1.
+04/06/2026 10:04:02 DEBUG is_last type: <class 'nodriver.cdp.runtime.ExceptionDetails'>, value: ExceptionDetails(exception_id=2, text='Uncaught', line_number=2, column_number=26, script_id=ScriptId('49'), url=None, stack_trace=None, exception=RemoteObject(type_='object', subtype='error', class_name='SyntaxError', value=None, unserializable_value=None, description='SyntaxError: Illegal return statement', deep_serialized_value=None, object_id=RemoteObjectId('-198763642891176998.1.5'), preview=None, custom_preview=None), execution_context_id=None, exception_meta_data=None), bool: True
+04/06/2026 10:04:06 DEBUG current type: <class 'int'>, value: 2
+04/06/2026 10:04:06 DEBUG next_page: 2, current == next_page: True
+04/06/2026 10:04:07 Get 12 links from listing page.
+04/06/2026 10:04:11 DEBUG is_last type: <class 'nodriver.cdp.runtime.ExceptionDetails'>, value: ExceptionDetails(exception_id=3, text='Uncaught', line_number=2, column_number=26, script_id=ScriptId('52'), url=None, stack_trace=None, exception=RemoteObject(type_='object', subtype='error', class_name='SyntaxError', value=None, unserializable_value=None, description='SyntaxError: Illegal return statement', deep_serialized_value=None, object_id=RemoteObjectId('-198763642891176998.1.9'), preview=None, custom_preview=None), execution_context_id=None, exception_meta_data=None), bool: True
+04/06/2026 10:04:15 DEBUG current type: <class 'nodriver.cdp.runtime.ExceptionDetails'>, value: ExceptionDetails(exception_id=4, text='Uncaught', line_number=0, column_number=0, script_id=ScriptId('51'), url=None, stack_trace=None, exception=RemoteObject(type_='object', subtype='error', class_name='SyntaxError', value=None, unserializable_value=None, description="SyntaxError: Identifier 'active' has already been declared", deep_serialized_value=None, object_id=RemoteObjectId('-198763642891176998.1.12'), preview=None, custom_preview=None), execution_context_id=None, exception_meta_data=None)
+04/06/2026 10:04:15 DEBUG next_page: 3, current == next_page: False
+04/06/2026 10:04:16 Get 12 links from listing page.
+04/06/2026 10:04:21 DEBUG is_last type: <class 'nodriver.cdp.runtime.ExceptionDetails'>, value: ExceptionDetails(exception_id=5, text='Uncaught', line_number=2, column_number=26, script_id=ScriptId('54'), url=None, stack_trace=None, exception=RemoteObject(type_='object', subtype='error', class_name='SyntaxError', value=None, unserializable_value=None, description='SyntaxError: Illegal return statement', deep_serialized_value=None, object_id=RemoteObjectId('-198763642891176998.1.15'), preview=None, custom_preview=None), execution_context_id=None, exception_meta_data=None), bool: True
+04/06/2026 10:04:25 DEBUG current type: <class 'nodriver.cdp.runtime.ExceptionDetails'>, value: ExceptionDetails(exception_id=6, text='Uncaught', line_number=0, column_number=0, script_id=ScriptId('51'), url=None, stack_trace=None, exception=RemoteObject(type_='object', subtype='error', class_name='SyntaxError', value=None, unserializable_value=None, description="SyntaxError: Identifier 'active' has already been declared", deep_serialized_value=None, object_id=RemoteObjectId('-198763642891176998.1.18'), preview=None, custom_preview=None), execution_context_id=None, exception_meta_data=None)
+04/06/2026 10:04:25 DEBUG next_page: 4, current == next_page: False
+04/06/2026 10:04:27 Get 1 links from listing page.
+04/06/2026 10:04:32 DEBUG is_last type: <class 'nodriver.cdp.runtime.ExceptionDetails'>, value: ExceptionDetails(exception_id=7, text='Uncaught', line_number=2, column_number=26, script_id=ScriptId('56'), url=None, stack_trace=None, exception=RemoteObject(type_='object', subtype='error', class_name='SyntaxError', value=None, unserializable_value=None, description='SyntaxError: Illegal return statement', deep_serialized_value=None, object_id=RemoteObjectId('-198763642891176998.1.21'), preview=None, custom_preview=None), execution_context_id=None, exception_meta_data=None), bool: True
+04/06/2026 10:04:32 No button 5, finished.
+04/06/2026 10:04:32 Found total 37 scholar links to process.
+04/06/2026 10:04:34 Saved: https://fit.neu.edu.vn/lecturer/th-s-pham-thao to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:36 Saved: https://fit.neu.edu.vn/lecturer/ths-nguyen-phuong-nam to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:38 Saved: https://fit.neu.edu.vn/lecturer/ts-tong-thi-hao-tam to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:40 Saved: https://fit.neu.edu.vn/lecturer/th-s-tran-thi-my-diep to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:43 Saved: https://fit.neu.edu.vn/lecturer/th-s-tong-thi-minh-ngoc to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:45 Saved: https://fit.neu.edu.vn/lecturer/ts-pham-xuan-lam to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:47 Saved: https://fit.neu.edu.vn/lecturer/ts-nguyen-trung-tuan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:49 Saved: https://fit.neu.edu.vn/lecturer/cn-nguyen-huong-giang to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:51 Saved: https://fit.neu.edu.vn/lecturer/ts-luu-minh-tuan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:53 Saved: https://fit.neu.edu.vn/lecturer/th-s-cao-thi-thu-huong to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:56 Saved: https://fit.neu.edu.vn/lecturer/ts-nguyen-ngoc-tuan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:04:58 Saved: https://fit.neu.edu.vn/lecturer/ts-nguyen-thanh-huong to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:01 Saved: https://fit.neu.edu.vn/lecturer/th-s-nguyen-quoc-thai to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:03 Saved: https://fit.neu.edu.vn/lecturer/th-s-pham-duc-trung to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:05 Saved: https://fit.neu.edu.vn/lecturer/ts-pham-minh-hoan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:07 Saved: https://fit.neu.edu.vn/lecturer/ts-nguyen-quynh-mai to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:09 Saved: https://fit.neu.edu.vn/lecturer/lecturer-1 to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:12 Saved: https://fit.neu.edu.vn/lecturer/pgs-ts-ha-minh-hoang to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:14 Saved: https://fit.neu.edu.vn/lecturer/lecturer to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:15 Saved: https://fit.neu.edu.vn/lecturer/ts-dang-minh-quan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:17 Saved: https://fit.neu.edu.vn/lecturer/th-s-ngo-thai-hoa to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:20 Saved: https://fit.neu.edu.vn/lecturer/ts-tran-hung to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:23 Saved: https://fit.neu.edu.vn/lecturer/ts-luong-van-thien to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:25 Saved: https://fit.neu.edu.vn/lecturer/ts-le-thi-hoai-thu to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:27 Saved: https://fit.neu.edu.vn/lecturer/th-s-nguyen-thi-minh-trang to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:29 Saved: https://fit.neu.edu.vn/lecturer/ths-tran-quang-toan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:31 Saved: https://fit.neu.edu.vn/lecturer/th-s-nguyen-thanh-hoang to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:33 Saved: https://fit.neu.edu.vn/lecturer/ths-nguyen-trung-kien to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:35 Saved: https://fit.neu.edu.vn/lecturer/ts-do-van-sang to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:37 Saved: https://fit.neu.edu.vn/lecturer/ts-vu-duc-minh to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:39 Saved: https://fit.neu.edu.vn/lecturer/ts-nguyen-kim-anh to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:42 Saved: https://fit.neu.edu.vn/lecturer/ts-nguyen-thi-kim-ngan to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:45 Saved: https://fit.neu.edu.vn/lecturer/th-s-dam-tien-thanh to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:47 Saved: https://fit.neu.edu.vn/lecturer/ths-le-duy-khanh to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:49 Saved: https://fit.neu.edu.vn/lecturer/ts-dang-tuan-anh to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:52 Saved: https://fit.neu.edu.vn/lecturer/th-s-pham-tuan-anh to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:54 Saved: https://fit.neu.edu.vn/lecturer/ths-ngo-duc-nghi to f:/science_data_warehouse_repo/output/neu/fit/raw_data\fit_20260604_100350.jsonl
+04/06/2026 10:05:54 Finished, total running time: 123.62 seconds
+04/06/2026 10:05:55 terminated browser with pid 37996 successfully
+04/06/2026 10:05:55 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_5mm2mnhy

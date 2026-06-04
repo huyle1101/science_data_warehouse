@@ -1,0 +1,49 @@
+03/06/2026 16:28:17 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_okw7d1ea
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=62293
+03/06/2026 16:28:24 On page 2
+03/06/2026 16:28:26 Found 17 scholar links to process.
+03/06/2026 16:28:29 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/pgs-ts-nguyen-ngoc-son-truong-khoa to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:28:42 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:28:42 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/pgs-ts-dang-thi-le-xuan-pho-truong-khoa to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:28:57 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:28:57 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/gs-ts-ngo-thang-loi to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:29:09 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:29:09 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-nguyen-quynh-hoa to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:29:23 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:29:23 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-bui-thi-thanh-huyen to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:29:36 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:29:36 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-phi-thi-hong-linh to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:29:50 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:29:50 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-le-huynh-mai to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:30:03 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:30:03 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-ngo-quoc-dung to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:30:16 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:30:16 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-nguyen-van-dai to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:30:29 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:30:29 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/pgs-ts-vu-cuong to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:30:42 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:30:42 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/pgs-ts-vu-thi-tuyet-mai to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:30:55 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:30:55 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/ts-nguyen-thi-hoa to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl
+03/06/2026 16:31:10 Table not found with selector: table[width="680"][border="1"]
+03/06/2026 16:31:10 Saved: https://khoakhpt.neu.edu.vn/vi/khoi-giang-vien/pgs-ts-nguyen-thi-phuong-thu to f:/science_data_warehouse_repo/output/neu/khpt/raw_data\khpt_20260603_162817.jsonl

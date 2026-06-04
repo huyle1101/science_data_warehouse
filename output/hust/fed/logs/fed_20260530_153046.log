@@ -1,0 +1,179 @@
+2026-05-30 15:30:46 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-30 15:30:46 [scrapy.extensions.telnet] INFO: Telnet Password: 615d11c82dc0dadc
+2026-05-30 15:30:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-30 15:30:46 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 16,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'avt_url',
+                        'ho_ten',
+                        'chuc_danh',
+                        'don_vi',
+                        'phong_lam_viec',
+                        'email',
+                        'dien_thoai',
+                        'qua_trinh_dao_tao',
+                        'qua_trinh_cong_tac',
+                        'linh_vuc_nghien_cuu',
+                        'linh_vuc_phu_trach_quan_tam',
+                        'cac_mon_giang_day',
+                        'de_tai_du_an',
+                        'cong_trinh_khoa_hoc',
+                        'sach_va_giao_trinh',
+                        'dai_hoc',
+                        'don_vi_truc_thuoc',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/fed/logs\\fed_20260530_153046.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 3,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:47 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 15:30:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 15:30:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-30 15:30:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-30 15:30:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-30 15:30:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-30 15:30:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-30 15:30:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-30 15:30:49 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-30 15:30:49 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-30 15:30:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-30 15:30:49 [scrapy.core.engine] INFO: Spider opened
+2026-05-30 15:30:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-30 15:30:49 [fed_spider] INFO: Spider opened: fed_spider
+2026-05-30 15:30:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/bo-mon-su-pham-cac-nganh-ky-thuat/pgs-ts-le-hieu-hoc-283959.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/bo-mon-su-pham-cac-nganh-ky-thuat/pgs-ts-pham-thi-thanh-hai-293944.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/ths-ha-thi-le-hien-183593.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/ths-tran-thi-phuong-lien-181803.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/bo-mon/bo-mon-su-pham-cac-nganh-ky-thuat/ts-nguyen-thi-huong-giang-181245.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-huyen-293950.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-dac-trung-183582.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/th-s-bui-ngoc-son-180476.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-thanh-tu-201767.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-vu-dinh-minh-293945.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-thanh-thuy-293946.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ths-dang-thu-huong-182363.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ths-nguyen-yen-chi-293951.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-vu-dinh-minh-293945.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/nguyen-tran-khanh-phuong-293948.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-nguyen-thi-duyen-293947.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-nguyen-van-hanh-182305.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/pgs-ts-bui-thi-thuy-hang-181550.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-le-huy-tung-183571.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/bai-viet/-/asset_publisher/B9piKf0Liwza/content/ths-tran-viet-hoang>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-duong-thi-thuy-mai-180448.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-nguyen-thi-tuyet-182286.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-nguyen-tien-long-182406.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ths-pham-hong-hanh-181762.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-hoang-thi-quynh-lan-181567.html>
+2026-05-30 15:30:51 [scrapy_deltafetch.middleware] INFO: Ignoring already visited: <GET https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-tran-thi-thanh-ha-293949.html>
+2026-05-30 15:30:51 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-30 15:30:51 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: f:/science_data_warehouse_repo/output/hust/fed/raw_data\fed.jsonl
+2026-05-30 15:30:51 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 0.0,
+ 'deltafetch/skipped': 26,
+ 'downloader/request_bytes': 978,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 14131,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.579037,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 30, 8, 30, 51, 13944, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 58463,
+ 'httpcompression/response_count': 2,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 30,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'responses_per_minute': 120.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2026, 5, 30, 8, 30, 49, 434907, tzinfo=datetime.timezone.utc)}
+2026-05-30 15:30:51 [scrapy.core.engine] INFO: Spider closed (finished)

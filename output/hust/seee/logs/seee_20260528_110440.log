@@ -1,0 +1,212 @@
+2026-05-28 11:04:40 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-05-28 11:04:40 [scrapy.extensions.telnet] INFO: Telnet Password: a9e5c051d71f2323
+2026-05-28 11:04:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-05-28 11:04:40 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 16,
+ 'BOT_NAME': 'science_dwh',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_FIELDS': ['url',
+                        'avt_url',
+                        'ho_ten',
+                        'chuc_vu',
+                        'chuc_danh_kiem_nhiem',
+                        'don_vi',
+                        'html_text',
+                        'gioi_thieu',
+                        'cong_trinh_tieu_bieu',
+                        'cac_mon_giang_day',
+                        'linh_vuc_nghien_cuu',
+                        'nhom_chuyen_mon',
+                        'lab_nghien_cuu',
+                        'dai_hoc',
+                        'don_vi_truc_thuoc',
+                        'thong_tin_khong_cong_bo',
+                        'is_extracted',
+                        'is_checked'],
+ 'LOG_FILE': 'f:/science_data_warehouse_repo/output/hust/seee/logs/seee_20260528_110440.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'science_dwh.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429, 403],
+ 'RETRY_TIMES': 3,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['science_dwh.spiders']}
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:04:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2026-05-28 11:04:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2026-05-28 11:04:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-05-28 11:04:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_deltafetch.DeltaFetch',
+ 'science_dwh.middlewares.ScienceDwhSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-05-28 11:04:43 [scrapy.core.spidermw] WARNING: Middleware scrapy_deltafetch.middleware.DeltaFetch doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 11:04:43 [scrapy.core.spidermw] WARNING: Middleware science_dwh.middlewares.ScienceDwhSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-05-28 11:04:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['science_dwh.pipelines.ScienceDwhPipeline']
+2026-05-28 11:04:43 [scrapy.core.engine] INFO: Spider opened
+2026-05-28 11:04:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-05-28 11:04:43 [seee_spider] INFO: Spider opened: seee_spider
+2026-05-28 11:04:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-05-28 11:05:43 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 8 pages/min), scraped 6 items (at 6 items/min)
+2026-05-28 11:06:43 [scrapy.extensions.logstats] INFO: Crawled 34 pages (at 26 pages/min), scraped 32 items (at 26 items/min)
+2026-05-28 11:07:43 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 20 pages/min), scraped 52 items (at 20 items/min)
+2026-05-28 11:08:43 [scrapy.extensions.logstats] INFO: Crawled 68 pages (at 14 pages/min), scraped 66 items (at 14 items/min)
+2026-05-28 11:09:43 [scrapy.extensions.logstats] INFO: Crawled 68 pages (at 0 pages/min), scraped 66 items (at 0 items/min)
+2026-05-28 11:10:43 [scrapy.extensions.logstats] INFO: Crawled 88 pages (at 20 pages/min), scraped 86 items (at 20 items/min)
+2026-05-28 11:10:43 [scrapy.extensions.logstats] INFO: Crawled 88 pages (at 0 pages/min), scraped 86 items (at 0 items/min)
+2026-05-28 11:11:43 [scrapy.extensions.logstats] INFO: Crawled 104 pages (at 16 pages/min), scraped 102 items (at 16 items/min)
+2026-05-28 11:12:43 [scrapy.extensions.logstats] INFO: Crawled 129 pages (at 25 pages/min), scraped 127 items (at 25 items/min)
+2026-05-28 11:13:43 [scrapy.extensions.logstats] INFO: Crawled 141 pages (at 12 pages/min), scraped 139 items (at 12 items/min)
+2026-05-28 11:14:43 [scrapy.extensions.logstats] INFO: Crawled 141 pages (at 0 pages/min), scraped 139 items (at 0 items/min)
+2026-05-28 11:15:43 [scrapy.extensions.logstats] INFO: Crawled 162 pages (at 21 pages/min), scraped 160 items (at 21 items/min)
+2026-05-28 11:16:40 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Trung-tam-Dao-tao-thuc-hanh-Dien-Dien-tu-7/ThS-Tao-Van-Cuong-214/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:16:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Trung-tam-Dao-tao-thuc-hanh-Dien-Dien-tu-7/ThS-Tao-Van-Cuong-214/>: HTTP status code is not handled or not allowed
+2026-05-28 11:16:43 [scrapy.extensions.logstats] INFO: Crawled 185 pages (at 23 pages/min), scraped 182 items (at 22 items/min)
+2026-05-28 11:17:43 [scrapy.extensions.logstats] INFO: Crawled 203 pages (at 18 pages/min), scraped 200 items (at 18 items/min)
+2026-05-28 11:17:43 [scrapy.extensions.logstats] INFO: Crawled 203 pages (at 0 pages/min), scraped 200 items (at 0 items/min)
+2026-05-28 11:18:43 [scrapy.extensions.logstats] INFO: Crawled 219 pages (at 16 pages/min), scraped 216 items (at 16 items/min)
+2026-05-28 11:19:09 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Khoa-Tu-dong-hoa-5/TS-Nguyen-Viet-Son-65/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Khoa-Tu-dong-hoa-5/TS-Nguyen-Viet-Son-65/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:11 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thi-Hien-245/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Nguyen-Thi-Hien-245/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Le-Hai-Anh-244/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/CN-Le-Hai-Anh-244/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:13 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Thi-Anh-Xuan-76/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Tran-Thi-Anh-Xuan-76/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:15 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Chu-Duc-Viet-75/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Chu-Duc-Viet-75/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:18 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Thuy-Nguyen-231/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:18 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/ThS-Vu-Thuy-Nguyen-231/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:18 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Vu-Thi-Thuy-Nga-54/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:19 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Vu-Thi-Thuy-Nga-54/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Giap-Van-Nam-63/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:21 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Giap-Van-Nam-63/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:22 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Hoai-Nam-47/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Hoai-Nam-47/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:24 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hoang-Dung-11/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Nguyen-Hoang-Dung-11/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:26 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vo-Le-Cuong-200/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vo-Le-Cuong-200/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:30 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Tran-Van-Top-198/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Tran-Van-Top-198/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:35 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Le-Viet-Tien-184/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Le-Viet-Tien-184/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:39 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thi-Hoai-Thu-113/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Nguyen-Thi-Hoai-Thu-113/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:40 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Minh-Dinh-109/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Minh-Dinh-109/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:41 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Duc-Hung-196/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/PGS-TS-Bui-Duc-Hung-196/>: HTTP status code is not handled or not allowed
+2026-05-28 11:19:43 [scrapy.extensions.logstats] INFO: Crawled 235 pages (at 16 pages/min), scraped 216 items (at 0 items/min)
+2026-05-28 11:19:47 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vu-Xuan-Hung-147/> (failed 4 times): 429 Unknown Status
+2026-05-28 11:19:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <429 https://seee.hust.edu.vn/vi/suborgans/person/Truong-Dien-Dien-tu-1/TS-Vu-Xuan-Hung-147/>: HTTP status code is not handled or not allowed
+2026-05-28 11:20:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-05-28 11:20:13 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (233 items) in: f:/science_data_warehouse_repo/output/hust/seee/raw_data/seee.jsonl
+2026-05-28 11:20:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'coverage_percent': 92.09,
+ 'deltafetch/stored': 233,
+ 'downloader/request_bytes': 606369,
+ 'downloader/request_count': 762,
+ 'downloader/request_method_count/GET': 762,
+ 'downloader/response_bytes': 4271858,
+ 'downloader/response_count': 762,
+ 'downloader/response_status_count/200': 235,
+ 'downloader/response_status_count/301': 235,
+ 'downloader/response_status_count/429': 292,
+ 'elapsed_time_seconds': 929.743048,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 5, 28, 4, 20, 13, 479588, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 20067541,
+ 'httpcompression/response_count': 527,
+ 'httperror/response_ignored_count': 18,
+ 'httperror/response_ignored_status_count/429': 18,
+ 'item_scraped_count': 233,
+ 'items_per_minute': 15.04843918191604,
+ 'log_count/ERROR': 18,
+ 'log_count/INFO': 39,
+ 'request_depth_max': 1,
+ 'response_received_count': 253,
+ 'responses_per_minute': 16.34015069967707,
+ 'retry/count': 274,
+ 'retry/max_reached': 18,
+ 'retry/reason_count/429 Unknown Status': 274,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 761,
+ 'scheduler/dequeued/memory': 761,
+ 'scheduler/enqueued': 761,
+ 'scheduler/enqueued/memory': 761,
+ 'start_time': datetime.datetime(2026, 5, 28, 4, 4, 43, 736540, tzinfo=datetime.timezone.utc)}
+2026-05-28 11:20:13 [scrapy.core.engine] INFO: Spider closed (finished)

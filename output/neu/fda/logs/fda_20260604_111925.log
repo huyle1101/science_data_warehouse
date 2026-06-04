@@ -1,0 +1,49 @@
+04/06/2026 11:19:25 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_a4pnadxy
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=56812
+04/06/2026 11:19:30 Get 21 links from listing page.
+04/06/2026 11:19:30 Found 21 scholar links on page 1.
+04/06/2026 11:19:30 Found total 21 scholar links to process.
+04/06/2026 11:19:32 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:35 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:37 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:40 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:42 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:44 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:46 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:49 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:52 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:54 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:56 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:19:59 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:02 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:05 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:08 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:11 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:13 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:17 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:19 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:21 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:24 Saved: None to f:/science_data_warehouse_repo/output/neu/fda/raw_data\fda_20260604_111925.jsonl
+04/06/2026 11:20:24 Finished, total running time: 59.30 seconds
+04/06/2026 11:20:25 terminated browser with pid 61132 successfully
+04/06/2026 11:20:26 successfully removed temp profile C:\Users\ADMIN\AppData\Local\Temp\uc_a4pnadxy

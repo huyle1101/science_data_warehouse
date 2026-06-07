@@ -82,28 +82,16 @@ class CtuSpiderSpider(scrapy.Spider):
         links = response.css('div.art-article a::attr(href)').getall()
         scholars = self.filter_valid_profile_links(links)
         for scholar in scholars:
-            # req = response.follow(
-            #     scholar,
-            #     callback = self.parse_scholar,
-            #     # dont_filter=True
-            # )
+
             yield response.follow(
                 scholar,
                 callback = self.parse_scholar,
                 # dont_filter=True
             )
-            # save scholar link in deltafetch to avoid mismatching url caused by redirection
-            # req.meta['deltafetch_key'] = scholar
-            # yield req
         next_page_relative = response.xpath('//font[@class="page-select"]/following-sibling::a[1]/@href').get()
         if next_page_relative is not None:
             next_page_url = response.urljoin(next_page_relative)
             yield response.follow(next_page_url, callback=self.parse)
-        
-        # for i in range(1,23):
-        #     next_page_url = f"https://www.ctu.edu.vn/webctu_staff/staff.php?page={i}"
-        #     if next_page_url:
-        #         yield response.follow(next_page_url, callback=self.parse)
 
     def parse_scholar(self, response):
 

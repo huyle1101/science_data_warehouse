@@ -1,0 +1,503 @@
+24/06/2026 16:26:12 starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--password-store=basic
+	--disable-infobars
+	--disable-breakpad
+	--disable-dev-shm-usage
+	--disable-session-crashed-bubble
+	--disable-search-engine-choice-screen
+	--user-data-dir=C:\Users\ADMIN\AppData\Local\Temp\uc_07j07qq8
+	--disable-session-crashed-bubble
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-blink-features=AutomationControlled
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=60409
+24/06/2026 16:26:17 Found total 12 scholar links to process.
+24/06/2026 16:26:41 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-dung-4/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:26:46 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-huan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:26:56 Saved: https://repository.ictu.edu.vn/giang-vien/do-dinh-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:27:03 Saved: https://repository.ictu.edu.vn/giang-vien/bui-anh-tu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:27:26 Saved: https://repository.ictu.edu.vn/giang-vien/ha-quang-tien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:27:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-nui/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:27:46 Saved: https://repository.ictu.edu.vn/giang-vien/phung-trung-nghia/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:28:11 Saved: https://repository.ictu.edu.vn/giang-vien/dang-quang-a/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:28:35 Saved: https://repository.ictu.edu.vn/giang-vien/tran-nhuan-kien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:28:41 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-duy-minh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:29:05 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:29:17 Saved: https://repository.ictu.edu.vn/giang-vien/quach-xuan-truong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:29:17 To next page, current_page=2
+24/06/2026 16:29:21 Found total 12 scholar links to process.
+24/06/2026 16:29:27 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thu-may/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:29:33 Saved: https://repository.ictu.edu.vn/giang-vien/bui-van-tung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:30:00 Saved: https://repository.ictu.edu.vn/giang-vien/bui-ngoc-tuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:30:12 Saved: https://repository.ictu.edu.vn/giang-vien/do-quynh-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:30:26 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-quyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:30:49 Saved: https://repository.ictu.edu.vn/giang-vien/doan-duc-hai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:30:56 Saved: https://repository.ictu.edu.vn/giang-vien/gia-thi-dinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:31:05 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-bac/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:31:19 Saved: https://repository.ictu.edu.vn/giang-vien/duong-hoa-an/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:31:31 Saved: https://repository.ictu.edu.vn/giang-vien/dam-bao-loc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:32:16 Saved: https://repository.ictu.edu.vn/giang-vien/dao-the-huy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:32:26 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-xuan-lam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:32:26 To next page, current_page=3
+24/06/2026 16:32:30 Found total 12 scholar links to process.
+24/06/2026 16:32:53 Saved: https://repository.ictu.edu.vn/giang-vien/la-thuy-linh-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:33:00 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-van-tam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:33:17 Saved: https://repository.ictu.edu.vn/giang-vien/le-hung-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:33:30 Saved: https://repository.ictu.edu.vn/giang-vien/le-thi-tuyet-ngan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:33:42 Saved: https://repository.ictu.edu.vn/giang-vien/le-trieu-tuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:33:48 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-duc-quynh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:01 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-cam-tu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:10 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-huu-huy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:12 Saved: https://repository.ictu.edu.vn/giang-vien/le-van-chung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:19 Saved: https://repository.ictu.edu.vn/giang-vien/ha-thi-thanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:42 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-van-quan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:49 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-manh-tuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:34:49 To next page, current_page=4
+24/06/2026 16:34:52 Found total 12 scholar links to process.
+24/06/2026 16:35:05 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-van-manh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:35:13 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-duc-binh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:35:27 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-hoang-nguyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:35:33 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-trung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:35:39 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-thi-vinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:35:45 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-hai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:35:54 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-dinh-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:36:18 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-huu-thang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:36:24 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-hien-trinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:36:37 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-ngoc-tuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:37:00 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-lan-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:37:09 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-hai-minh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:37:10 To next page, current_page=5
+24/06/2026 16:37:13 Found total 12 scholar links to process.
+24/06/2026 16:37:26 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thu-huyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:37:39 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-the-vinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:38:03 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-tuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:38:39 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-binh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:38:44 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-bich-diep/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:38:57 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-mai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:39:10 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-tung-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:39:34 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-loan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:39:44 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-nhan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:39:54 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-mai-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:39:59 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:40:23 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thu-huong-88-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:40:23 To next page, current_page=6
+24/06/2026 16:40:26 Found total 12 scholar links to process.
+24/06/2026 16:40:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-tao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:40:43 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-tuan-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:41:17 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:41:31 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thu-huong-88/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:41:44 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thuy-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:42:07 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:42:21 Saved: https://repository.ictu.edu.vn/giang-vien/pham-minh-tam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:42:35 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-toan-thang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:42:38 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-von-dim/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:42:48 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-tuan-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:42:54 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-giap/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:43:21 Saved: https://repository.ictu.edu.vn/giang-vien/pham-duc-long/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:43:21 To next page, current_page=7
+24/06/2026 16:43:25 Found total 12 scholar links to process.
+24/06/2026 16:43:36 Saved: https://repository.ictu.edu.vn/giang-vien/to-huu-nguyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:43:49 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thuy-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:03 Saved: https://repository.ictu.edu.vn/giang-vien/pham-van-hao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:09 Saved: https://repository.ictu.edu.vn/giang-vien/tran-le-duy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:22 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-thanh-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:25 Saved: https://repository.ictu.edu.vn/giang-vien/phan-thi-van-giang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:38 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-thu-huyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:45 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thanh-nam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:47 Saved: https://repository.ictu.edu.vn/giang-vien/phung-the-huan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:44:56 Saved: https://repository.ictu.edu.vn/giang-vien/tran-quang-quy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:45:05 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-xuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:45:18 Saved: https://repository.ictu.edu.vn/giang-vien/tran-minh-thanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:45:18 To next page, current_page=8
+24/06/2026 16:45:21 Found total 12 scholar links to process.
+24/06/2026 16:45:27 Saved: https://repository.ictu.edu.vn/giang-vien/truong-thi-viet-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:45:51 Saved: https://repository.ictu.edu.vn/giang-vien/vu-van-dam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:45:57 Saved: https://repository.ictu.edu.vn/giang-vien/vu-chien-thang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:46:02 Saved: https://repository.ictu.edu.vn/giang-vien/vu-duc-quang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:46:13 Saved: https://repository.ictu.edu.vn/giang-vien/vu-huy-luong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:46:23 Saved: https://repository.ictu.edu.vn/giang-vien/vu-vinh-quang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:47:19 Saved: https://repository.ictu.edu.vn/giang-vien/truong-thi-thu-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:47:26 Saved: https://repository.ictu.edu.vn/giang-vien/vu-xuan-nam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:47:36 Saved: https://repository.ictu.edu.vn/giang-vien/vu-duc-thai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:47:45 Saved: https://repository.ictu.edu.vn/giang-vien/truong-ha-hai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:47:54 Saved: https://repository.ictu.edu.vn/giang-vien/tran-van-khanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:48:07 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-thi-kim-thoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:48:07 To next page, current_page=9
+24/06/2026 16:48:10 Found total 12 scholar links to process.
+24/06/2026 16:48:24 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-kieu-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:48:37 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-quyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:48:50 Saved: https://repository.ictu.edu.vn/giang-vien/dam-thi-phuong-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:49:03 Saved: https://repository.ictu.edu.vn/giang-vien/chu-xuan-tien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:49:18 Saved: https://repository.ictu.edu.vn/giang-vien/chu-thi-tuyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:49:31 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-thanh-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:49:43 Saved: https://repository.ictu.edu.vn/giang-vien/dang-phuong-mai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:49:56 Saved: https://repository.ictu.edu.vn/giang-vien/bui-phuong-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:50:10 Saved: https://repository.ictu.edu.vn/giang-vien/bui-quynh-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:50:24 Saved: https://repository.ictu.edu.vn/giang-vien/bui-tuan-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:50:37 Saved: https://repository.ictu.edu.vn/giang-vien/dang-thi-kim-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:50:49 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-huong-thom/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:50:49 To next page, current_page=10
+24/06/2026 16:50:53 Found total 12 scholar links to process.
+24/06/2026 16:51:07 Saved: https://repository.ictu.edu.vn/giang-vien/dang-thi-loan-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:51:20 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-duc-hoang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:51:26 Saved: https://repository.ictu.edu.vn/giang-vien/dao-thi-thu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:51:51 Saved: https://repository.ictu.edu.vn/giang-vien/dao-tran-chung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:52:04 Saved: https://repository.ictu.edu.vn/giang-vien/dang-van-ngoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:52:18 Saved: https://repository.ictu.edu.vn/giang-vien/dao-thi-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:52:31 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-khanh-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:52:56 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-quy-long/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:53:02 Saved: https://repository.ictu.edu.vn/giang-vien/dao-thi-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:53:15 Saved: https://repository.ictu.edu.vn/giang-vien/dang-tuan-nam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:53:39 Saved: https://repository.ictu.edu.vn/giang-vien/dang-thi-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:53:52 Saved: https://repository.ictu.edu.vn/giang-vien/dang-thuong-hoai-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:53:52 To next page, current_page=11
+24/06/2026 16:53:56 Found total 12 scholar links to process.
+24/06/2026 16:54:09 Saved: https://repository.ictu.edu.vn/giang-vien/do-huy-khoi/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:54:21 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-thi-nguyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:54:34 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-mai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:54:57 Saved: https://repository.ictu.edu.vn/giang-vien/do-van-quyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:55:04 Saved: https://repository.ictu.edu.vn/giang-vien/do-dinh-luc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:55:18 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-bich-loan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:55:41 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-chi/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:55:55 Saved: https://repository.ictu.edu.vn/giang-vien/do-thu-hoai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:56:09 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-thi-ngoc-oanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:56:22 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-dieu-thu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:56:36 Saved: https://repository.ictu.edu.vn/giang-vien/do-van-dai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:56:39 Saved: https://repository.ictu.edu.vn/giang-vien/do-thi-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:56:39 To next page, current_page=12
+24/06/2026 16:56:43 Found total 12 scholar links to process.
+24/06/2026 16:57:07 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-thu-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:57:21 Saved: https://repository.ictu.edu.vn/giang-vien/ha-my-trinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:57:27 Saved: https://repository.ictu.edu.vn/giang-vien/doan-thi-bich-ngoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:57:29 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thuy-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:57:53 Saved: https://repository.ictu.edu.vn/giang-vien/doan-manh-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:06 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-thuy-nga/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:19 Saved: https://repository.ictu.edu.vn/giang-vien/doan-thi-thanh-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:26 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-mai-thuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:39 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-thanh-tam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:42 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-hong-an/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:51 Saved: https://repository.ictu.edu.vn/giang-vien/doan-ngoc-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:57 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-quy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:58:57 To next page, current_page=13
+24/06/2026 16:59:00 Found total 12 scholar links to process.
+24/06/2026 16:59:13 Saved: https://repository.ictu.edu.vn/giang-vien/ho-mau-viet/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:59:26 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-hai-yen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:59:40 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-van-thuc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 16:59:53 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thu-giang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:00:00 Saved: https://repository.ictu.edu.vn/giang-vien/ho-thi-tuyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:00:45 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-duyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:00:58 Saved: https://repository.ictu.edu.vn/giang-vien/ha-van-vuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:01:22 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-thuong-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:01:35 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-van-sau/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:01:41 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-canh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:01:55 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-ngoc-bich/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:02:08 Saved: https://repository.ictu.edu.vn/giang-vien/la-thi-quynh-mai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:02:08 To next page, current_page=14
+24/06/2026 17:02:12 Found total 12 scholar links to process.
+24/06/2026 17:02:29 Saved: https://repository.ictu.edu.vn/giang-vien/le-anh-tu-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:02:35 Saved: https://repository.ictu.edu.vn/giang-vien/le-khanh-duong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:02:48 Saved: https://repository.ictu.edu.vn/giang-vien/le-son-thai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:03:02 Saved: https://repository.ictu.edu.vn/giang-vien/lai-van-trung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:03:07 Saved: https://repository.ictu.edu.vn/giang-vien/le-anh-tu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:03:19 Saved: https://repository.ictu.edu.vn/giang-vien/le-thanh-hieu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:03:32 Saved: https://repository.ictu.edu.vn/giang-vien/le-thi-thu-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:03:45 Saved: https://repository.ictu.edu.vn/giang-vien/le-thi-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:03:58 Saved: https://repository.ictu.edu.vn/giang-vien/le-thi-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:04:11 Saved: https://repository.ictu.edu.vn/giang-vien/le-hoang-hiep/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:04:25 Saved: https://repository.ictu.edu.vn/giang-vien/le-hong-thu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:04:39 Saved: https://repository.ictu.edu.vn/giang-vien/le-thi-thu-huyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:04:39 To next page, current_page=15
+24/06/2026 17:04:42 Found total 12 scholar links to process.
+24/06/2026 17:04:55 Saved: https://repository.ictu.edu.vn/giang-vien/luong-quang-huy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:05:07 Saved: https://repository.ictu.edu.vn/giang-vien/ma-van-du/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:05:20 Saved: https://repository.ictu.edu.vn/giang-vien/ma-thi-van-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:05:34 Saved: https://repository.ictu.edu.vn/giang-vien/le-tuan-tu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:05:39 Saved: https://repository.ictu.edu.vn/giang-vien/le-thu-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:05:46 Saved: https://repository.ictu.edu.vn/giang-vien/le-tuan-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:05:59 Saved: https://repository.ictu.edu.vn/giang-vien/ly-my-vi/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:06:23 Saved: https://repository.ictu.edu.vn/giang-vien/luong-thi-thu-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:06:37 Saved: https://repository.ictu.edu.vn/giang-vien/ly-mai-chi/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:07:11 Saved: https://repository.ictu.edu.vn/giang-vien/ly-thu-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:07:24 Saved: https://repository.ictu.edu.vn/giang-vien/ma-van-thu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:07:31 Saved: https://repository.ictu.edu.vn/giang-vien/luong-thi-minh-hue/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:07:31 To next page, current_page=16
+24/06/2026 17:07:34 Found total 12 scholar links to process.
+24/06/2026 17:07:48 Saved: https://repository.ictu.edu.vn/giang-vien/mach-quy-duong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:07:53 Saved: https://repository.ictu.edu.vn/giang-vien/mai-van-hoan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:08:18 Saved: https://repository.ictu.edu.vn/giang-vien/mai-hoai-tam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:08:32 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-phuong-thuy-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:08:46 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-phuong-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:08:59 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-thi-bich-ngoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:09:13 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-mai-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:09:27 Saved: https://repository.ictu.edu.vn/giang-vien/mac-thi-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:09:50 Saved: https://repository.ictu.edu.vn/giang-vien/mai-thi-kim-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:10:03 Saved: https://repository.ictu.edu.vn/giang-vien/mai-ngoc-han/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:10:16 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-manh-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:10:19 Saved: https://repository.ictu.edu.vn/giang-vien/mong-quoc-tuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:10:19 To next page, current_page=17
+24/06/2026 17:10:23 Found total 12 scholar links to process.
+24/06/2026 17:10:29 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-ngoc-duong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:10:42 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-an-khanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:10:48 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-ngoc-hoan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:11:12 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-duy-nhiep/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:11:18 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-anh-chuyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:11:24 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-hong-tan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:11:29 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-kim-son/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:11:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-lan-oanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:11:49 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-khanh-ly/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:12:03 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-ngoc-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:12:10 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-thi-lan-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:13:05 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-thi-lan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:13:05 To next page, current_page=18
+24/06/2026 17:13:09 Found total 12 scholar links to process.
+24/06/2026 17:13:16 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:13:29 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-dung-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:13:41 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-tung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:13:55 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-dung-3/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:14:01 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-duyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:14:06 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-quang-hiep/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:14:19 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-phuong-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:14:43 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-sy-hiep/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:14:56 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-quang-minh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:15:13 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-dung-5/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:15:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-the-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:15:52 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-hong-hanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:15:52 To next page, current_page=19
+24/06/2026 17:15:56 Found total 12 scholar links to process.
+24/06/2026 17:16:20 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-ngoc-tu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:16:34 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-nhung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:16:46 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-giang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:17:00 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:17:03 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-kim-tuyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:17:16 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-huyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:17:30 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-ngan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:17:43 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-huyen-3/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:18:06 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-linh-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:18:19 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-phuong-thanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:18:32 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-minh-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:18:46 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-phuong-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:18:46 To next page, current_page=20
+24/06/2026 17:18:49 Found total 12 scholar links to process.
+24/06/2026 17:19:03 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thu-hien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:19:17 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:19:41 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-thuy-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:19:47 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-tuyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:20:00 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thuy-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:20:13 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thu-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:20:26 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thu-huong-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:20:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thu-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:20:59 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thuy-dung-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:21:05 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thu-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:21:29 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thuy-duong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:21:43 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thuy-lan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:21:43 To next page, current_page=21
+24/06/2026 17:21:46 Found total 12 scholar links to process.
+24/06/2026 17:22:00 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-tran-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:22:13 Saved: https://repository.ictu.edu.vn/giang-vien/nong-van-dong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:22:26 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-hoang-nuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:22:39 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-hong-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:23:03 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-xuan-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:23:16 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-xuan-kien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:23:29 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-tien-manh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:23:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-viet/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:23:49 Saved: https://repository.ictu.edu.vn/giang-vien/pham-ba-truong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:24:01 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-binh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:24:15 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-su/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:24:28 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-vu-kieu-van/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:24:29 To next page, current_page=22
+24/06/2026 17:24:32 Found total 12 scholar links to process.
+24/06/2026 17:24:46 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:24:59 Saved: https://repository.ictu.edu.vn/giang-vien/pham-van-ngoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:25:13 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-ngoc-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:25:26 Saved: https://repository.ictu.edu.vn/giang-vien/phan-thi-hien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:25:39 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-mai-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:04 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thuy-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:10 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-lien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:23 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-hong-nhung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:25 Saved: https://repository.ictu.edu.vn/giang-vien/phan-thi-cuc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:38 Saved: https://repository.ictu.edu.vn/giang-vien/phan-thi-nhu-quynh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:44 Saved: https://repository.ictu.edu.vn/giang-vien/pham-xuan-kien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:50 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-thuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:26:50 To next page, current_page=23
+24/06/2026 17:26:54 Found total 12 scholar links to process.
+24/06/2026 17:27:08 Saved: https://repository.ictu.edu.vn/giang-vien/quan-thi-to-quyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:27:32 Saved: https://repository.ictu.edu.vn/giang-vien/tran-minh-lien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:27:39 Saved: https://repository.ictu.edu.vn/giang-vien/tran-duy-minh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:27:52 Saved: https://repository.ictu.edu.vn/giang-vien/tran-duc-hoang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:28:05 Saved: https://repository.ictu.edu.vn/giang-vien/ta-thi-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:28:18 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:28:24 Saved: https://repository.ictu.edu.vn/giang-vien/tran-hai-thanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:28:37 Saved: https://repository.ictu.edu.vn/giang-vien/tran-nguyen-duy-trung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:28:51 Saved: https://repository.ictu.edu.vn/giang-vien/tran-quang-huy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:29:19 Saved: https://repository.ictu.edu.vn/giang-vien/tran-hong-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:29:33 Saved: https://repository.ictu.edu.vn/giang-vien/phung-thanh-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:29:47 Saved: https://repository.ictu.edu.vn/giang-vien/phan-thi-thanh-huyen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:29:47 To next page, current_page=24
+24/06/2026 17:29:51 Found total 12 scholar links to process.
+24/06/2026 17:30:04 Saved: https://repository.ictu.edu.vn/giang-vien/tran-vu-minh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:30:18 Saved: https://repository.ictu.edu.vn/giang-vien/trieu-thi-man/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:30:31 Saved: https://repository.ictu.edu.vn/giang-vien/tran-xuan-giang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:30:44 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-thanh-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:31:09 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-tuyet/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:31:32 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-hue/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:31:57 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-thuy-an/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:32:10 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-thu-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:32:23 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thu-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:32:47 Saved: https://repository.ictu.edu.vn/giang-vien/tran-tuan-viet/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:33:11 Saved: https://repository.ictu.edu.vn/giang-vien/tran-van-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:33:35 Saved: https://repository.ictu.edu.vn/giang-vien/tran-xuan-trong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:33:35 To next page, current_page=25
+24/06/2026 17:33:38 Found total 12 scholar links to process.
+24/06/2026 17:33:55 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-minh-duc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:34:20 Saved: https://repository.ictu.edu.vn/giang-vien/vi-thi-bich-ngoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:34:33 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-van-giac/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:34:47 Saved: https://repository.ictu.edu.vn/giang-vien/truong-thi-hang-nga/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:34:59 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-ngoc-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:35:12 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-ngoc-hien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:35:18 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-van-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:35:42 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-thuy-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:35:56 Saved: https://repository.ictu.edu.vn/giang-vien/truong-thi-phuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:36:53 Saved: https://repository.ictu.edu.vn/giang-vien/truong-manh-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:37:17 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-thi-ha-my/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:37:30 Saved: https://repository.ictu.edu.vn/giang-vien/trinh-thi-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:37:30 To next page, current_page=26
+24/06/2026 17:37:33 Found total 12 scholar links to process.
+24/06/2026 17:37:47 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-bich-ngoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:37:52 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-nguyet/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:38:05 Saved: https://repository.ictu.edu.vn/giang-vien/vo-van-truong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:38:19 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-quynh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:38:47 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thuy-hang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:39:00 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thu-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:39:13 Saved: https://repository.ictu.edu.vn/giang-vien/vu-hoang-son/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:39:26 Saved: https://repository.ictu.edu.vn/giang-vien/vu-hai-yen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:39:38 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-oanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:40:03 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thach-duong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:40:16 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:40:30 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thanh-hue/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:40:30 To next page, current_page=27
+24/06/2026 17:40:33 Found total 12 scholar links to process.
+24/06/2026 17:40:58 Saved: https://repository.ictu.edu.vn/giang-vien/do-xuan-quan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:41:12 Saved: https://repository.ictu.edu.vn/giang-vien/duong-minh-quoc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:41:24 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-ngoc-chau/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:41:30 Saved: https://repository.ictu.edu.vn/giang-vien/vu-viet-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:41:43 Saved: https://repository.ictu.edu.vn/giang-vien/do-thu-tra/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:41:49 Saved: https://repository.ictu.edu.vn/giang-vien/vu-van-dien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:41:52 Saved: https://repository.ictu.edu.vn/giang-vien/do-phuong-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:42:05 Saved: https://repository.ictu.edu.vn/giang-vien/duong-van-tai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:42:29 Saved: https://repository.ictu.edu.vn/giang-vien/cam-thi-thu-thuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:42:43 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-kim-thai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:42:57 Saved: https://repository.ictu.edu.vn/giang-vien/doan-thi-thu-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:43:11 Saved: https://repository.ictu.edu.vn/giang-vien/dang-cong-tan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:43:11 To next page, current_page=28
+24/06/2026 17:43:14 Found total 12 scholar links to process.
+24/06/2026 17:43:27 Saved: https://repository.ictu.edu.vn/giang-vien/le-viet-duy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:43:40 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-phuong-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:43:53 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-quyen-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:44:17 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-hoa-an/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:44:30 Saved: https://repository.ictu.edu.vn/giang-vien/luong-thi-theu/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:44:44 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-ha-giang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:45:07 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-hoang-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:45:21 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-phan-tung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:45:34 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-ngoc-yen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:46:20 Saved: https://repository.ictu.edu.vn/giang-vien/ma-thi-hong-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:46:33 Saved: https://repository.ictu.edu.vn/giang-vien/ha-van-ninh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:46:57 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-co-ban/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:46:57 To next page, current_page=29
+24/06/2026 17:47:00 Found total 12 scholar links to process.
+24/06/2026 17:47:13 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-xuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:47:37 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-loan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:48:00 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-huyen-trang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:48:25 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:48:49 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-van/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:49:01 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-nga/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:49:14 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thao/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:49:38 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-song-loan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:49:52 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thanh-lam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:50:27 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-van/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:50:51 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-tien-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:51:03 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-hoa/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:51:04 To next page, current_page=30
+24/06/2026 17:51:07 Found total 12 scholar links to process.
+24/06/2026 17:51:21 Saved: https://repository.ictu.edu.vn/giang-vien/pham-viet-thang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:51:34 Saved: https://repository.ictu.edu.vn/giang-vien/pham-cong-hung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:51:47 Saved: https://repository.ictu.edu.vn/giang-vien/tran-ngoc-an/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:52:01 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-diep/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:52:14 Saved: https://repository.ictu.edu.vn/giang-vien/pham-viet-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:52:26 Saved: https://repository.ictu.edu.vn/giang-vien/pham-ba-kien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:52:40 Saved: https://repository.ictu.edu.vn/giang-vien/tran-duy-hung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:52:53 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-thu-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:53:07 Saved: https://repository.ictu.edu.vn/giang-vien/thai-thi-loan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:53:20 Saved: https://repository.ictu.edu.vn/giang-vien/to-thi-huong-thuy/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:53:44 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-canh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:54:08 Saved: https://repository.ictu.edu.vn/giang-vien/ta-quang-chien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:54:08 To next page, current_page=31
+24/06/2026 17:54:12 Found total 12 scholar links to process.
+24/06/2026 17:54:36 Saved: https://repository.ictu.edu.vn/giang-vien/duong-van-to/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:55:00 Saved: https://repository.ictu.edu.vn/giang-vien/ha-duy-long/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:55:13 Saved: https://repository.ictu.edu.vn/giang-vien/chu-thi-tam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:55:59 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-phuong-khanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:56:45 Saved: https://repository.ictu.edu.vn/giang-vien/hang-dieu-dinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:57:41 Saved: https://repository.ictu.edu.vn/giang-vien/doan-man-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:58:15 Saved: https://repository.ictu.edu.vn/giang-vien/bui-thi-giang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:58:39 Saved: https://repository.ictu.edu.vn/giang-vien/cao-manh-cuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 17:59:36 Saved: https://repository.ictu.edu.vn/giang-vien/dinh-ngoc-duc/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:00:00 Saved: https://repository.ictu.edu.vn/giang-vien/bui-van-thanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:00:57 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-ba-lam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:01:43 Saved: https://repository.ictu.edu.vn/giang-vien/duong-thi-nhung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:01:43 To next page, current_page=32
+24/06/2026 18:01:46 Found total 12 scholar links to process.
+24/06/2026 18:02:42 Saved: https://repository.ictu.edu.vn/giang-vien/ma-hoai-tam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:03:28 Saved: https://repository.ictu.edu.vn/giang-vien/minh-thi-le/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:03:51 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-dinh-que/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:04:14 Saved: https://repository.ictu.edu.vn/giang-vien/le-ngoc-ha/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:04:49 Saved: https://repository.ictu.edu.vn/giang-vien/ngo-thi-thu-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:05:14 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-ngoc-hung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:05:59 Saved: https://repository.ictu.edu.vn/giang-vien/la-thuy-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:06:56 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-van-khanh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:07:20 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-manh-tuan/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:08:15 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-hoa-an-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:09:00 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-dai-hoang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:09:56 Saved: https://repository.ictu.edu.vn/giang-vien/hoang-thi-thuong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:09:56 To next page, current_page=33
+24/06/2026 18:10:00 Found total 12 scholar links to process.
+24/06/2026 18:10:24 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-viet-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:10:47 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-hung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:11:11 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-van-thinh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:11:36 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-ngoc-tuyet/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:12:11 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-diem/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:12:57 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-tu-an/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:13:59 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-lan-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:14:34 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thanh-huyen-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:15:20 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thuy-dung/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:15:55 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-them/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:16:52 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-thuy-duong-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:17:37 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-thi-hai-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:17:38 To next page, current_page=34
+24/06/2026 18:17:41 Found total 12 scholar links to process.
+24/06/2026 18:18:26 Saved: https://repository.ictu.edu.vn/giang-vien/phuong-t-dam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:19:22 Saved: https://repository.ictu.edu.vn/giang-vien/tran-huy-kiem/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:19:58 Saved: https://repository.ictu.edu.vn/giang-vien/vu-hai-yen-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:20:22 Saved: https://repository.ictu.edu.vn/giang-vien/nguyen-viet-hoang/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:21:07 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-thuy-an-2/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:21:31 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-lan-huong/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:22:16 Saved: https://repository.ictu.edu.vn/giang-vien/tran-hong-thai/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:23:02 Saved: https://repository.ictu.edu.vn/giang-vien/truong-tuan-linh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:23:26 Saved: https://repository.ictu.edu.vn/giang-vien/tran-thi-le-thi/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:23:39 Saved: https://repository.ictu.edu.vn/giang-vien/pham-thi-hong-tham/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:24:24 Saved: https://repository.ictu.edu.vn/giang-vien/quach-thi-mai-lien/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:25:10 Saved: https://repository.ictu.edu.vn/giang-vien/tran-kim-anh/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:25:10 To next page, current_page=35
+24/06/2026 18:25:13 Found total 2 scholar links to process.
+24/06/2026 18:25:59 Saved: https://repository.ictu.edu.vn/giang-vien/vu-hoai-nam/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:26:46 Saved: https://repository.ictu.edu.vn/giang-vien/vu-thi-hai-yen/ to f:/science_data_warehouse_repo/output/tnu/ictu/raw_data\ictu_20260624_162612.jsonl
+24/06/2026 18:26:46 No more pages
+24/06/2026 18:26:46 Found total 2 scholar links to process.

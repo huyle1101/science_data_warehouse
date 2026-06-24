@@ -1,0 +1,616 @@
+{
+  "ho_ten": "PGS. TS. Đỗ Thị Đông",
+  "chuc_danh_nc": "Giảng viên cao cấp",
+  "chuc_vu": "Giảng viên",
+  "so_dien_thoai": "0989334496",
+  "bai_bao": [
+    {
+      "stt": 1,
+      "ten": "5S- Chìa khóa cho sự thành công của những doanh nghiệp ở Nhật Bản và việc ứng dụng ở Việt Nam",
+      "noi_cong_bo": "Kinh tế và Phát triển, tháng 11/2001",
+      "nam": "2001",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 2,
+      "ten": "Năng lực cạnh tranh của ngành công nghiệp dệt may ở Việt Nam (Competitiveness of textile and garment industry in Vietnam)",
+      "noi_cong_bo": "Kỷ yếu Hội thảo quốc tế Chính sách thương mại và Công nghiệp của Việt Nam trong bối cảnh hội nhập, tháng 12/2002, thành viên tham gia",
+      "nam": "2002",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 3,
+      "ten": "Phân tích chuỗi giá trị: cơ hội đánh giá lại năng lực của các doanh nghiệp Việt Nam trong bối cảnh suy giảm kinh tế",
+      "noi_cong_bo": "Tạp chí Kinh tế & Phát triển – Kỳ II – Tháng 7/2009",
+      "nam": "2009",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 4,
+      "ten": "Tổ chức lại cụm công nghiệp dệt may nhằm tăng cường khả năng xuất khẩu của các doanh nghiệp may xuất khẩu của Việt Nam",
+      "noi_cong_bo": "Kinh tế và Phát triển, Tập II (số 154) tháng 4/2010, trang 56- 61",
+      "nam": "2010",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 5,
+      "ten": "Cải thiện vị trí của các doanh nghiệp may xuất khẩu của Việt Nam trong chuỗi giá trị toàn cầu",
+      "noi_cong_bo": "Kinh tế và Phát triển, Tập II, (số 162) tháng 12/2010, trang 48-52",
+      "nam": "2010",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 6,
+      "ten": "Đề xuất giảng dạy về quản trị chuỗi giá trị trong chương trình đào tạo quản trị kinh doanh”",
+      "noi_cong_bo": "Kinh tế và Phát triển, Tập II (số 164) tháng 2/2011",
+      "nam": "2011",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 7,
+      "ten": "Giải pháp nào cho các doanh nghiệp may xuất khẩu của Việt Nam, Công nghiệp",
+      "noi_cong_bo": "Công nghiệp, Số 45 (3/2011)",
+      "nam": "2011",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 8,
+      "ten": "Hệ thống tư vấn kinh doanh của Phòng Thương mại Công nghiệp Nhật Bản (JCCI)",
+      "noi_cong_bo": "Công nghiệp, Số 43 (3/2011)",
+      "nam": "2011",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 9,
+      "ten": "Đề xuất phương pháp đánh giá chất lượng chương trình đào tạo cử nhân quản trị kinh doanh",
+      "noi_cong_bo": "Kỷ yếu hội thảo quốc gia, tháng 10, 2011, tác giả",
+      "nam": "2011",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 10,
+      "ten": "Chất lượng tăng trưởng kinh tế của ngành may xuất khẩu cua Việt Nam: Góc nhìn từ chuỗi giá trị",
+      "noi_cong_bo": "Kỷ yếu Hội thảo quốc tế về Chất lượng tăng trưởng KT VN giai đoạn 2001-2010, tháng 2. 2011, tác giả",
+      "nam": "2011",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 11,
+      "ten": "Động lực lao động của các công nhân ở doanh nghiệp công nghiệp hỗ trợ trên địa bàn Hà Nội: Thực trạng và khuyến nghị đối với các nhà đầu tư nước ngoài",
+      "noi_cong_bo": "Kỷ yếu Hội thảo quốc tế về Thu hút các doanh nghiệp nhỏ và vừa Nhật Bản nhằm phát triển công nghiệp hỗ trợ Việt Nam tại các khu công nghiệp, khu chế xuất và khu kinh tế, tháng 2/2012, Hà Nội",
+      "nam": "2012",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 12,
+      "ten": "Viet Nam in the global value chain: Improvement of Vietnamese garments exporting enterprises’ position",
+      "noi_cong_bo": "Kỷ yếu Hội thảo quốc tế Business Administration in a Global Society, tháng 8/2012",
+      "nam": "2012",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 13,
+      "ten": "Đề xuất hệ thống tiêu chí đánh giá chất lượng dịch vụ thẻ ngân hàng- Qua thử nghiệm ở Ngân hàng thương mại cổ phần Công thương Việt Nam",
+      "noi_cong_bo": "Kinh tế và Phát triển, số 181 (II), tháng 7/2012",
+      "nam": "2012",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 14,
+      "ten": "Triển khai mua hàng xanh ở Đài Loan và những bài học kinh nghiệm đối với Việt Nam",
+      "noi_cong_bo": "TC KTPT/163(2)/2013",
+      "nam": "2013",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 15,
+      "ten": "Assessment of green purchasing demand in Hanoi, Vietnam",
+      "noi_cong_bo": "The 9th International Conference on Humanities and Social Sciences, Thái Lan",
+      "nam": "2013",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 16,
+      "ten": "Bẫy thu nhập trung bình: Thực trạng ở Malaysia và Thái Lan và những gợi ý đối với Việt Nam",
+      "noi_cong_bo": "Tạp chí Kinh tế và Phát triển, số 205(II), tháng 7/2014, trang 134-144",
+      "nam": "2014",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 17,
+      "ten": "Nhận diện các loại lãng phí trong các tổ chức ở Việt Nam",
+      "noi_cong_bo": "Kỷ yếu hội thảo quốc gia “Quản trị tinh gọn tại các doanh nghiệp vừa và nhỏ Việt Nam: Thực trạng và giải pháp, 2013”, tháng 4, 2014",
+      "nam": "2014",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 18,
+      "ten": "Use of knowledge sharing tools in small and medium enterprises in Hanoi, Vietnam",
+      "noi_cong_bo": "The 2nd international seminar and conference on Learning organization: “Learning Organization in Increasing The Organization Performance”, Indonesia",
+      "nam": "2014",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 19,
+      "ten": "10 sự kiện kinh tế nổi bật của Việt Nam năm 2014",
+      "noi_cong_bo": "Tạp chí Kinh tế và Phát triển, số 211, tháng 1/2015, trang 13-23",
+      "nam": "2015",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 20,
+      "ten": "Đề xuất đào tạo tinh thần doanh nhân xã hội ở các trường đại học: Nghiên cứu tình huống tại Đại học Kinh tế quốc dân",
+      "noi_cong_bo": "Hội thảo quốc tế “Doanh nghiệp xã hội ở Việt Nam: Vai trò của các Trường đại học và các tổ chức nghiên cứu”, Đại học KTQD, Hà Nội",
+      "nam": "2015",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 21,
+      "ten": "Backward linkages of garment enterprises in the North of Vietnam",
+      "noi_cong_bo": "Hội thảo quốc tế Pan Pacific 32",
+      "nam": "2015",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 22,
+      "ten": "Quá trình công nghiệp hóa của Hàn Quốc và Đài Loan và một số gợi ý đối với Việt Nam",
+      "noi_cong_bo": "Tạp chí Kinh tế và Phát triển, số 217 (II), tháng 7/2015",
+      "nam": "2015",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 23,
+      "ten": "Các hoạt động nuôi dưỡng tinh thần kinh doanh xã hội: Kinh nghiệm của một số trường đại học ở Anh và gợi ý đối với Việt Nam xã hội”",
+      "noi_cong_bo": "Hội thảo Quốc tế “Hệ sinh thái cho Tinh thần kinh doanh xã hội và sáng tạo",
+      "nam": "2016",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 24,
+      "ten": "Cách mạng công nghiệp lần thứ tư và những yêu cầu đặt ra đối với đào tạo nguồn nhân lực của Việt Nam",
+      "noi_cong_bo": "Tạp chí Kinh tế và Phát triển, số 233, tháng 11 năm 2016, trang 62-69",
+      "nam": "2016",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 25,
+      "ten": "Hệ thống quản lý chất lượng theo tiêu chuẩn ISO 9000: Phiên bản năm 2015 và những lưu ý khi áp dụng đối với các doanh nghiệp",
+      "noi_cong_bo": "Kỷ yếu hội thảo khoa học quốc tế “Doanh nghiệp Việt Nam trong TPP” ICYREB 2016, Trường ĐH KT TPHCM, 16/11/2016",
+      "nam": "2016",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 26,
+      "ten": "Lean application in Vietnamese supermarket",
+      "noi_cong_bo": "Proceedings of Asia Pacific Conference on Information management 2016: Common platform to a sustainable society in the dynamic Asia Pacific, Vietnam National University Press, Hanoi",
+      "nam": "2016",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 27,
+      "ten": "Evaluating quality of productivity courses in Vietnam",
+      "noi_cong_bo": "Hội thảo quốc tế “Socio – Economic and Environmental issues in development”, Đại học KTQD, Hà Nội",
+      "nam": "2016",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 28,
+      "ten": "Industry 4.0 and its expected influences to future of jobs in Vietnam",
+      "noi_cong_bo": "Hội thảo quốc tế “Knowledge transfer and transformation: Global and Local business for competitiveness and social justice”, 439-450, Nepal",
+      "nam": "3/2017",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 29,
+      "ten": "Quá trình phát triển thành nước công nghiệp hiện đại của Israel và một số gợi ý đối với Việt Nam",
+      "noi_cong_bo": "Hội thảo khoa học quốc gia “Hệ tiêu chí nước công nghiệp theo hướng hiện đại áp dụng cho Việt Nam trong bối cảnh mới của toàn cầu hóa và cách mạng công nghiệp lần thứ 4”, Thành phố Hồ Chí Minh, ngày 10/5/2017, 271-286",
+      "nam": "5/2017",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 30,
+      "ten": "Nhận thức và thái độ về mua hàng xanh của người tiêu dùng trẻ ở địa bàn Hà Nội",
+      "noi_cong_bo": "Hội thảo khoa học quốc tế “Sustainable production and consumption”, Hà Nội, ngày 18/10/2017, 371- 379",
+      "nam": "10/2017",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 31,
+      "ten": "Sử dụng chỉ số đổi mới toàn cầu để đánh giá mức độ đổi mới sáng tạo của một quốc gia: Kết quả đánh giá Việt Nam và một vài gợi ý đối với việc sử dụng chỉ số",
+      "noi_cong_bo": "Hội thảo khoa học quốc gia: Hệ tiêu chí nước công nghiệp theo hướng hiện đại và định hướng cho Việt Nam, ĐH KTQD và HĐ LLTW, tháng 9 năm 2018",
+      "nam": "9/2018",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 32,
+      "ten": "Internet of things: Applications in business field in foreign countries and implications to Vietnamese enterprises",
+      "noi_cong_bo": "Hội thảo khoa học quốc tế: Business sustainability development in the context of Industry 4.0",
+      "nam": "9/2018",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 33,
+      "ten": "Vietnamese students' awareness of Industry 4.0: a questionnaire survey",
+      "noi_cong_bo": "The 1st international conference on contemporaty issues in economics, management and business",
+      "nam": "11/2018",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 34,
+      "ten": "Vietnamese students' awareness of Industry 4.0: An imperical research",
+      "noi_cong_bo": "Journal of Economics and Development, Special issue, Volume 21, 2019, page 134- 152",
+      "nam": "1/2019",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 35,
+      "ten": "Knowledge sharing and innovative work behaviour: The case of Vietnam",
+      "noi_cong_bo": "Uncertain Supply Chain Management, số 7, 2019, trang 619- 634 (SCOPUS)",
+      "nam": "5/2019",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 36,
+      "ten": "Khởi nghiệp sáng tạo trong điều kiện cách mạng công nghiệp lần thứ tư ở Việt Nam",
+      "noi_cong_bo": "Kỷ yếu hội thảo khoa học quốc gia: Công nghiệp 4.0 và phát triển doanh nghiệp Việt Nam, ngày 12/12/2019, ĐH CNHN, HN, ISBN 978-604-65- 4742-1, trang, 12-26",
+      "nam": "12/2019",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 37,
+      "ten": "Nghiên cứu thực tiễn về cộng đồng thương hiệu trực tuyến ở Việt Nam",
+      "noi_cong_bo": "Kỷ yếu hội thảo khoa học quốc tế về Kinh doanh số và Marketing trong kỷ nguyên toàn cầu hoá, ngày 12 tháng 11 năm 2019, ĐH KTQD, Hà Nội, trang 20- 35",
+      "nam": "11/2019",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 38,
+      "ten": "Ảnh hưởng của đại dịch COVID- 19 đối với hoạt động kinh doanh của các doanh nghiệp: Nghiên cứu thực tiễn ở miền Bắc Việt Nam",
+      "noi_cong_bo": "Tạp chí Kinh tế và Phát triển, Số 274, tháng 4/2020, trang 54-63",
+      "nam": "4/2020",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 39,
+      "ten": "Factors influence knowledge sharing among undergraduate students: A case study of students in Hanoi, Vietnam",
+      "noi_cong_bo": "Kỷ yếu hội thảo khoa học quốc tế về Recent developments in Social Science and Business Management (ICRDSSBM), Bangkok. Thailand",
+      "nam": "6/2020",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 40,
+      "ten": "Factors Influence Customers’ Satisfaction toward Online Brand Community: A Case Study of National Economics University’s Online Brand Communities",
+      "noi_cong_bo": "Kỷ yếu Hội thảo khoa học quốc tế: 12th International Conference on Socio- economic and Environmental Issues in Development, 2020 At National Economics University, Hanoi, Vietnam, 17/7/2020",
+      "nam": "7/2020",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 41,
+      "ten": "Training need assessment on innovation management: A study of National Economics University’s Alumni",
+      "noi_cong_bo": "Kỷ yếu Hội thảo khoa học: International Reserach Conference on Innovation and Entrepreneurship for sustainable development goals: A journey of 5 years and the path ahead, 18/8/2020, trang 282- 293",
+      "nam": "2020",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 42,
+      "ten": "Ảnh hưởng của các nhân tố cá nhân đối với hành vi tiêu dùng xanh của các sinh viên học tập trên địa bàn Hà Nội",
+      "noi_cong_bo": "Tạp chí Kinh tế và Phát triển, Số 278(II), tháng 8/2020, trang 133- 142",
+      "nam": "2020",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 43,
+      "ten": "Service failures in higher education: A case study of National Economics University",
+      "noi_cong_bo": "Kỷ yếu Hội thảo khoa học: International Conference on Emerging Challenges: Management for Digital Evolution, Hạ Long, Quảng Ninh, 2-3/11/2020",
+      "nam": "11/2020",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 44,
+      "ten": "Vietnamese students’ perception of the top 10 skills to thrive in Industry 4.0",
+      "noi_cong_bo": "Kỷ yếu Hội thảo khoa học: International Conference on Emerging Challenges: Management for Digital Evolution, Hạ Long, Quảng Ninh, 2-3/11/2020",
+      "nam": "11/2020",
+      "vai_tro": "Tác giả"
+    },
+    {
+      "stt": 45,
+      "ten": "Factors influencing knowledge sharing in higher education: An empirical study of students in Vietnam",
+      "noi_cong_bo": "Journal Of Organizational Behavior Research, Vol. 6, No. 2, pp. 134- 151. (ESCI)",
+      "nam": "9/2021",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 46,
+      "ten": "Sources of individual innovation at work",
+      "noi_cong_bo": "International Conference on Emerging Challenges: Business transformantion and circular economy, NXB Bách Khoa, trang 305-315, ISBN 978-604- 316-422-0",
+      "nam": "11/2021",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 47,
+      "ten": "Impact of digitalization on customer value creation in SMEs in Vietnam",
+      "noi_cong_bo": "Webology, Vol. 19, No. 2, pp. 6451-6464 (SCOPUS)",
+      "nam": "3/2022",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 48,
+      "ten": "The relationships between online knowledge sharing, innovative work bahavior, and academic performance: evidence from Vietnam",
+      "noi_cong_bo": "International Journal of ebussiness and egovernment studies, Vol. 14, No. 1, pp 181-203 (SCOPUS)",
+      "nam": "6/2022",
+      "vai_tro": "Tác giả chính"
+    }
+  ],
+  "sach_giao_trinh": [
+    {
+      "stt": 1,
+      "ten": "Chính sách thương mại và công nghiệp của Việt Nam trong bối cảnh hội nhập",
+      "noi_cong_bo": "NXB Thống kê",
+      "nam": "2003",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 2,
+      "ten": "Hoàn thiện quản lý nhà nước các doanh nghiệp có vốn đầu tư trực tiếp nước ngoài ở Hà Nội",
+      "noi_cong_bo": "NXB Chính trị Quốc gia",
+      "nam": "2004",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 3,
+      "ten": "Công nghiệp hóa, hiện đại hóa nông nghiệp và nông thôn ở Việt Nam",
+      "noi_cong_bo": "NXB Chính trị Quốc gia",
+      "nam": "2006",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 4,
+      "ten": "Socially sensitive enterprise restructuring in Asia : country context and examples",
+      "noi_cong_bo": "NXB Asian Productivity Organization",
+      "nam": "2007",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 5,
+      "ten": "Vấn đề sở hữu trong nền kinh tế thị trường định hướng xã hội chủ nghĩa của Việt Nam",
+      "noi_cong_bo": "NXB Chính trị Quốc gia",
+      "nam": "2010",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 6,
+      "ten": "Shindanshi: Hệ thống tư vấn quản trị doanh nghiệp vừa và nhỏ ở Nhật Bản",
+      "noi_cong_bo": "NXB Giao thông Vận tải (Tiếng Việt và Tiếng Anh)",
+      "nam": "2010",
+      "vai_tro": "Đồng tác giả"
+    },
+    {
+      "stt": 7,
+      "ten": "Giáo trình Nghiên cứu kinh doanh",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2011",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 8,
+      "ten": "Giáo trình Quản trị Chất lượng",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2012",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 9,
+      "ten": "Kinh tế Việt Nam năm 2012: Ổn định kinh tế Vĩ mô và thúc đẩy tái cơ cấu kinh tế",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2013",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 10,
+      "ten": "Bài tập Quản trị chất lượng",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2013",
+      "vai_tro": "Chủ biên"
+    },
+    {
+      "stt": 11,
+      "ten": "Giáo trình Quản trị kinh doanh",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2015",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 12,
+      "ten": "Phát triển đất nước thành nước công nghiệp hiện đại theo định hướng xã hội chủ nghĩa",
+      "noi_cong_bo": "NXB Khoa học Xã hội",
+      "nam": "2015",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 13,
+      "ten": "Giáo trình Khởi sự kinh doanh",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2016",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 14,
+      "ten": "Cách mạng công nghiệp 4.0: Vấn đề đặt ra cho phát triển kinh tế - xã hội và hội nhập quốc tế của Việt Nam",
+      "noi_cong_bo": "NXB Chính trị quốc gia sự thật 2017",
+      "nam": "2017",
+      "vai_tro": null
+    },
+    {
+      "stt": 15,
+      "ten": "Improvement Alternatives for productivity courses: A review of training courses in APO member countries",
+      "noi_cong_bo": "NXB Asian Productivity Organization",
+      "nam": "2018",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 16,
+      "ten": "Lãnh đạo",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2019",
+      "vai_tro": "Tham gia"
+    },
+    {
+      "stt": 17,
+      "ten": "Phân tích chuỗi giá trị và tổ chức quan hệ liên kết của các doanh nghiệp: Lý thuyết và nghiên cứu trường hợp của các doanh nghiệp may xuất khẩu ở Việt Nam (tái bản lần thứ nhất)",
+      "noi_cong_bo": "NXB ĐH KTQD",
+      "nam": "2021",
+      "vai_tro": "Tác giả"
+    }
+  ],
+  "de_tai_du_an": [
+    {
+      "stt": 1,
+      "vai_tro": "chu_tri",
+      "ten": "Kinh nghiệm quốc tế về phát triển đất nước thành nước công nghiệp hiện đại và những bài học tham khảo với Việt Nam",
+      "thoi_gian": "2013-2014, thuộc Đề KX.04.07/ 11-15 “Phát triển đất nước thành nước công nghiệp hiện đại theo định hướng xã hội chủ nghĩa”",
+      "tinh_trang": "Đã nghiệm thu, đạt loại tốt",
+      "cap_quan_ly": "Tương đương cấp bộ"
+    },
+    {
+      "stt": 2,
+      "vai_tro": "chu_tri",
+      "ten": "Assessment of green purchasing in Vietnam/ Đánh giá nhu cầu mua sắm xanh ở Việt Nam, KTQD/E2013.53",
+      "thoi_gian": "2013-2015",
+      "tinh_trang": "Đã nghiệm thu, đạt loại tốt",
+      "cap_quan_ly": "Cấp cơ sở"
+    },
+    {
+      "stt": 3,
+      "vai_tro": "chu_tri",
+      "ten": "Industry 4.0 and its requirements to higher education in Vietnam/ Cách mạng công nghiệp lần thứ tư và những yêu cầu đặt ra đối với giáo dục đại học ở Việt Nam, KTQD/E2017.28",
+      "thoi_gian": "2017",
+      "tinh_trang": "Đã nghiệm thu, đạt loại xuất sắc",
+      "cap_quan_ly": "Cấp cơ sở"
+    },
+    {
+      "stt": 4,
+      "vai_tro": "chu_tri",
+      "ten": "Tổng quan về hệ tiêu chí nước công nghiệp theo hướng hiện đại",
+      "thoi_gian": "2017 thuộc Đề tài cấp nhà nước KX.04.13/ 16-20 “Hệ tiêu chí nước công nghiệp theo hướng hiện đại”",
+      "tinh_trang": "Đã nghiệm thu, tốt",
+      "cap_quan_ly": "Tương đương bộ"
+    },
+    {
+      "stt": 5,
+      "vai_tro": "chu_tri",
+      "ten": "Năng lực đổi mới sáng tạo của sinh viên trong khối ngành kinh tế và quản trị kinh doanh ở Việt Nam, mã số B2020.KHA.06",
+      "thoi_gian": "2020-2021",
+      "tinh_trang": "Đang thực hiện",
+      "cap_quan_ly": "Bộ"
+    },
+    {
+      "stt": 1,
+      "vai_tro": "tham_gia",
+      "ten": "Đánh giá chính sách quản lý nhà nước các doanh nghiệp đầu tư trực tiếp nước ngoài trên địa bàn Hà Nội",
+      "thoi_gian": "2002 - 2003",
+      "tinh_trang": "Đã nghiệm thu, tốt",
+      "cap_quan_ly": "Bộ"
+    },
+    {
+      "stt": 2,
+      "vai_tro": "tham_gia",
+      "ten": "Các tiêu chí đánh giá chất lượng đào tạo quản trị kinh doanh",
+      "thoi_gian": "2004 - 2005",
+      "tinh_trang": "Đã nghiệm thu, khá",
+      "cap_quan_ly": "Bộ"
+    },
+    {
+      "stt": 3,
+      "vai_tro": "tham_gia",
+      "ten": "Giải pháp phát triển công nghiệp hỗ trợ cho ngành dệt may Việt Nam trong điều kiện là thành viên của WTO",
+      "thoi_gian": "2009 - 2010",
+      "tinh_trang": "Đã nghiệm thu, đạt yêu cầu",
+      "cap_quan_ly": "Bộ"
+    },
+    {
+      "stt": 4,
+      "vai_tro": "tham_gia",
+      "ten": "Nâng cao năng lực cạnh tranh của các doanh nghiệp may mặc Việt Nam trong hội nhập kinh tế quốc tế",
+      "thoi_gian": "2010 - 2011",
+      "tinh_trang": "Đã nghiệm thu, xuất sắc",
+      "cap_quan_ly": "Cơ sở"
+    },
+    {
+      "stt": 5,
+      "vai_tro": "tham_gia",
+      "ten": "Kinh tế Việt Nam 2012- Ổn định kinh tế vĩ mô và thúc đẩy tái cấu trúc nền kinh tế",
+      "thoi_gian": "2012 - 2013",
+      "tinh_trang": "Đã nghiệm thu, xuất sắc",
+      "cap_quan_ly": "Cơ sở"
+    },
+    {
+      "stt": 6,
+      "vai_tro": "tham_gia",
+      "ten": "Phát triển đất nước thành nước công nghiệp hiện đại theo định hướng XHCN",
+      "thoi_gian": "2012 - 2015",
+      "tinh_trang": "Đã nghiệm thu, xuất sắc",
+      "cap_quan_ly": "Nhà nước"
+    },
+    {
+      "stt": 7,
+      "vai_tro": "tham_gia",
+      "ten": "Chia sẻ tri thức nhằm gia tăng tài sản vô hình cho một số doanh nghiệp viễn thông Việt Nam",
+      "thoi_gian": "2014 - 2015",
+      "tinh_trang": "Đã nghiệm thu, xuất sắc",
+      "cap_quan_ly": "Cơ sở"
+    },
+    {
+      "stt": 8,
+      "vai_tro": "tham_gia",
+      "ten": "Hệ tiêu chí nước công nghiệp theo hướng hiện đại, Thư ký, KX.04.13/16-20",
+      "thoi_gian": "2016 - 2020",
+      "tinh_trang": "Đã nghiệm thu, xuất sắc",
+      "cap_quan_ly": "Nhà nước"
+    },
+    {
+      "stt": 9,
+      "vai_tro": "tham_gia",
+      "ten": "Giải pháp chuyển từ gia công sang xuất khẩu trực tiếp của các doanh nghiệp may mặc Việt Nam trong bối cảnh FTA thế hệ mới , thành viên, KTQD/V2017.42, chủ nhiệm TS. Nguyễn Kế Nghĩa",
+      "thoi_gian": "2017",
+      "tinh_trang": "Đã nghiệm thu, tốt",
+      "cap_quan_ly": "Cơ sở"
+    },
+    {
+      "stt": 10,
+      "vai_tro": "tham_gia",
+      "ten": "Training in Innovation Management: International Experience and Lessons for Vietnam. KTQD/E2019.7",
+      "thoi_gian": "2019",
+      "tinh_trang": "Đã nghiệm thu, tốt",
+      "cap_quan_ly": "Cơ sở"
+    },
+    {
+      "stt": 11,
+      "vai_tro": "tham_gia",
+      "ten": "Sources of Innovation: An Imperical research of small and medium enterprises in Hanoi, Vietnam, mã số",
+      "thoi_gian": "2020",
+      "tinh_trang": "Đã nghiệm thu, tốt",
+      "cap_quan_ly": "Cơ sở"
+    }
+  ],
+  "bang_sang_che": [
+    {
+      "stt": 1,
+      "ten": "Chứng nhận đăng ký kết quả thực hiện nhiệm vụ KHCN cấp Nhà nước KX.04.07/11-15",
+      "co_quan_cap": "Cục Thông tin và Khoa học công nghệ quốc gia, Bộ Khoa học và Công nghệ quốc gia",
+      "ngay_cap": "26/4/2016",
+      "so_tac_gia": 10
+    },
+    {
+      "stt": 2,
+      "ten": "Chứng nhận đăng ký kết quả thực hiện nhiệm vụ KHCN cấp Nhà nước KX.04.13/16-20. Số đăng ký 2020-52- 171/KQNC",
+      "co_quan_cap": "Cục Thông tin và Khoa học công nghệ quốc gia, Bộ Khoa học và Công nghệ quốc gia",
+      "ngay_cap": "20/2/2020",
+      "so_tac_gia": 23
+    }
+  ],
+  "giai_thuong_kh": [
+    "Khen thưởng giảng viên có thành tích hướng dẫn sinh viên NCKH đạt giải nhất cấp trường năm 2017",
+    "Khen thưởng giảng viên có thành tích hướng dẫn sinh viên NCKH đạt nhiều giải thưởng “Sinh viên NCKH Đại học Kinh tế Quốc dân – Vietcombank” 2020",
+    "Khen thưởng giảng viên có thành tích hướng dẫn sinh viên NCKH đạt nhiều giải thưởng “Sinh viên NCKH Đại học Kinh tế Quốc dân – Vietcombank” năm 2021. Số 1669/ QĐ – ĐH KTQD, ngày 29 tháng 9 năm 2021"
+  ]
+}

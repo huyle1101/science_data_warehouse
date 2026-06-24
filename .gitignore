@@ -10,6 +10,6 @@ page_*.html
 .env
 html_text.txt
 # output/
-patch.py
-Do-Thi-Dong.pdf
-patch.json
+# patch.py
+# Do-Thi-Dong.pdf
+# patch.json 
